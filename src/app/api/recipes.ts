@@ -20,7 +20,7 @@ export async function fetchEnums(): Promise<Enums> {
   return res.json()
 }
 
-const IMAGE_EXTENSIONS = ['jpg', 'png', 'webp']
+const IMAGE_EXTENSIONS = ['png', 'jpg', 'webp']
 
 // candidates in order of preference – the image component tries them one by one
 export function recipeImageUrls(id: string) {

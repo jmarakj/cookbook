@@ -1,0 +1,84 @@
+{
+  "id": "polievka-hokkaido",
+  "name": "Polievka Hokkaido",
+  "category": ["soup"],
+  "yield": 4,
+  "times": {
+    "prep": 10,
+    "cook": 20,
+    "rest": 0,
+    "total": 30
+  },
+  "ingredients": [
+    {
+      "id": "pumpkin_hokkaido",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "tekvica Hokkaido"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "carrot",
+      "amount": 4,
+      "unit": "pcs",
+      "notes": "3–4 kusy"
+    },
+    {
+      "id": "potato",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "1–2 kusy"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "mleté čierne korenie"
+    },
+    {
+      "id": "pumpkin_seed_oil",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "na pokvapkanie pri podávaní"
+    },
+    {
+      "id": "croutons",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "chlebové krutóny na podávanie"
+    },
+    {
+      "id": "oil_cooking",
+      "amount": null,
+      "unit": null,
+      "notes": "na opečenie cibule a prípravu krutónov"
+    },
+    {
+      "id": "bread",
+      "amount": null,
+      "unit": null,
+      "notes": "starší chlieb na krutóny"
+    }
+  ],
+  "steps": [
+    "Cibuľu očistite a nakrájajte nadrobno. Na troche oleja ju v hrnci nechajte zosklovatieť.",
+    "Zemiaky a mrkvu očistite, nakrájajte a pridajte k cibuli.",
+    "Tekvicu Hokkaido umyte, rozpoľte, odstráňte semienka a dužinu nakrájajte na kocky. Šupku ponechajte, ak nie je poškodená.",
+    "Tekvicu pridajte do hrnca, zalejte vodou, osoľte a varte približne 20 minút, kým zelenina nezmäkne.",
+    "Polievku rozmixujte dohladka. Podľa potreby pridajte vodu a dochuťte mletým čiernym korením.",
+    "Starší chlieb nakrájajte na kocky a na troche oleja ho na veľmi miernom ohni opečte alebo pomaly vysušte.",
+    "Polievku podávajte s chlebovými krutónmi a pokvapkanú tekvicovým olejom."
+  ],
+  "notes": "Tekvicu Hokkaido netreba šúpať, ak je šupka nepoškodená."
+}

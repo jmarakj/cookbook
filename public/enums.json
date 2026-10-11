@@ -19,6 +19,18 @@
         {
             "id": "fried",
             "label": "Vyprážané"
+        },
+        {
+            "id": "soup",
+            "label": "Polievky"
+        },
+        {
+            "id": "rissotto",
+            "label": "Rizoto"
+        },
+        {
+            "id": "pasta",
+            "label": "Cestoviny"
         }
     ],
     "units": [
@@ -57,6 +69,10 @@
         {
             "id": "to_taste",
             "label": "podľa chuti"
+        },
+        {
+            "id": "cup",
+            "label": "šálka"
         }
     ],
     "ingredients": [
@@ -283,6 +299,178 @@
         {
             "id": "bay_leaf",
             "label": "bobkový list"
+        },
+        {
+            "id": "tomato_paste",
+            "label": "paradajkový pretlak"
+        },
+        {
+            "id": "sugar_brown",
+            "label": "trstinový cukor"
+        },
+        {
+            "id": "olive_oil",
+            "label": "olivový olej"
+        },
+        {
+            "id": "herb_mix",
+            "label": "zmes byliniek"
+        },
+        {
+            "id": "parmesan",
+            "label": "parmezán"
+        },
+        {
+            "id": "basil",
+            "label": "bazalka"
+        },
+        {
+            "id": "croutons",
+            "label": "krutóny"
+        },
+        {
+            "id": "pumpkin_hokkaido",
+            "label": "tekvica Hokkaido"
+        },
+        {
+            "id": "carrot",
+            "label": "mrkva"
+        },
+        {
+            "id": "pumpkin_seed_oil",
+            "label": "tekvicový olej"
+        },
+        {
+            "id": "eggplant",
+            "label": "baklažán"
+        },
+        {
+            "id": "zucchini",
+            "label": "cuketa"
+        },
+        {
+            "id": "herbes_de_provence",
+            "label": "provensalské korenie"
+        },
+        {
+            "id": "beetroot",
+            "label": "cvikla"
+        },
+        {
+            "id": "white_wine",
+            "label": "biele víno"
+        },
+        {
+            "id": "vegetable_stock",
+            "label": "zeleninový vývar"
+        },
+        {
+            "id": "dill",
+            "label": "kôpor"
+        },
+        {
+            "id": "shallot",
+            "label": "šalotka"
+        },
+        {
+            "id": "saffron",
+            "label": "šafran"
+        },
+        {
+            "id": "sweet_potato",
+            "label": "batát"
+        },
+        {
+            "id": "bryndza",
+            "label": "bryndza"
+        },
+        {
+            "id": "chives",
+            "label": "pažítka"
+        },
+        {
+            "id": "puff_pastry",
+            "label": "lístkové cesto"
+        },
+        {
+            "id": "hermelin_cheese",
+            "label": "syr Hermelín"
+        },
+        {
+            "id": "spinach_baby",
+            "label": "baby špenát"
+        },
+        {
+            "id": "lemon_juice",
+            "label": "citrónová šťava"
+        },
+        {
+            "id": "walnuts",
+            "label": "vlašské orechy"
+        },
+        {
+            "id": "processed_cheese",
+            "label": "tavený syr"
+        },
+        {
+            "id": "bell_pepper_yellow",
+            "label": "žltá paprika"
+        },
+        {
+            "id": "chicken_breast",
+            "label": "kuracie mäso"
+        },
+        {
+            "id": "corn",
+            "label": "kukurica"
+        },
+        {
+            "id": "tortilla",
+            "label": "tortilla"
+        },
+        {
+            "id": "lettuce_mix",
+            "label": "šalátová zmes"
+        },
+        {
+            "id": "tartar_sauce",
+            "label": "tatárska omáčka"
+        },
+        {
+            "id": "lime_zest",
+            "label": "limetková kôra"
+        },
+        {
+            "id": "gyros_spice",
+            "label": "gyros korenie"
+        },
+        {
+            "id": "grill_seasoning",
+            "label": "grilovacie korenie"
+        },
+        {
+            "id": "pasta_wide",
+            "label": "široké rezance"
+        },
+        {
+            "id": "tvaroh",
+            "label": "plnotučný hrudkovitý tvaroh"
+        },
+        {
+            "id": "spaghetti",
+            "label": "špagety"
+        },
+        {
+            "id": "pasta_water",
+            "label": "voda z varenia cestovín"
+        },
+        {
+            "id": "parsley_fresh",
+            "label": "čerstvá petržlenová vňať"
+        },
+        {
+            "id": "bread",
+            "label": "chlieb"
         }
     ]
 }

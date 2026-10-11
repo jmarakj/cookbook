@@ -1,0 +1,59 @@
+{
+  "id": "rezance-s-tvarohom-a-slaninou",
+  "name": "Rezance s tvarohom a slaninou",
+  "category": ["traditional", "quick"],
+  "yield": 3,
+  "times": {
+    "prep": 5,
+    "cook": 15,
+    "rest": 0,
+    "total": 20
+  },
+  "ingredients": [
+    {
+      "id": "pasta_wide",
+      "amount": 400,
+      "unit": "g",
+      "notes": "široké rezance"
+    },
+    {
+      "id": "bacon",
+      "amount": 150,
+      "unit": "g",
+      "notes": "oravská slanina"
+    },
+    {
+      "id": "tvaroh",
+      "amount": 250,
+      "unit": "g",
+      "notes": "plnotučný hrudkovitý tvaroh"
+    },
+    {
+      "id": "sour_cream",
+      "amount": 100,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "mleté"
+    }
+  ],
+  "steps": [
+    "Dajte variť vodu na cestoviny. Slaninu nakrájajte na malé kúsky a tvaroh premiešajte s kyslou smotanou.",
+    "Slaninu opečte na panvici, kým pustí masť a začne byť chrumkavá.",
+    "Vriacu vodu osoľte a rezance uvarte podľa návodu na obale.",
+    "Uvarené rezance sceďte a prelejte výpekom zo slaniny.",
+    "Rezance premiešajte s tvarohom a kyslou smotanou a nakoniec pridajte opečenú slaninu.",
+    "Ochutnajte a podľa potreby dochuťte soľou a mletým čiernym korením."
+  ],
+  "notes": null
+}

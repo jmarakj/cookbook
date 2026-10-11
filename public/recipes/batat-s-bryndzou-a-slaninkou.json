@@ -1,0 +1,67 @@
+{
+  "id": "batat-s-bryndzou-a-slaninkou",
+  "name": "Zapečený batát s bryndzou a slaninkou",
+  "category": ["traditional"],
+  "yield": 2,
+  "times": {
+    "prep": 10,
+    "cook": 50,
+    "rest": 0,
+    "total": 60
+  },
+  "ingredients": [
+    {
+      "id": "sweet_potato",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "stredne veľké"
+    },
+    {
+      "id": "bryndza",
+      "amount": 125,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "bacon",
+      "amount": 125,
+      "unit": "g",
+      "notes": "nakrájaná na kocky alebo plátky"
+    },
+    {
+      "id": "spring_onion",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "jarné cibuľky, nadrobno nakrájané"
+    },
+    {
+      "id": "olive_oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": "na potretie batátov"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "mleté"
+    },
+    {
+      "id": "chives",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "nasekané, voliteľné na servírovanie"
+    }
+  ],
+  "steps": [
+    "Rúru predhrejte na 190 °C. Batáty dôkladne umyte, nešúpte ich a pozdĺžne prekrojte na polovice. Reznú stranu popichajte vidličkou, potrite olivovým olejom a položte na plech vystlaný papierom na pečenie.",
+    "Batáty pečte približne 40–45 minút, kým dužina nezmäkne.",
+    "Medzitým na panvici opečte slaninu dochrumkava. Jarnú cibuľku nakrájajte nadrobno.",
+    "Upečené batáty nechajte mierne vychladnúť. Lyžicou opatrne vydlabte väčšinu dužiny do misky, pričom zachovajte neporušené šupky.",
+    "K dužine pridajte bryndzu, časť opečenej slaniny, jarnú cibuľku a čierne korenie. Všetko roztlačte vidličkou a premiešajte.",
+    "Zmes rozdeľte do vydlabaných batátových šupiek a navrch pridajte zvyšnú slaninu.",
+    "Batáty vráťte do rúry a zapekajte ďalších 10–15 minút pri 190 °C.",
+    "Pred podávaním posypte nasekanou pažítkou alebo ďalšou jarnou cibuľkou."
+  ],
+  "notes": "Soľ zvyčajne netreba pridávať, pretože bryndza a slanina sú slané. Čas prípravy je približne 50–60 minút podľa veľkosti batátov."
+}

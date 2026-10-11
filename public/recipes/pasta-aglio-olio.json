@@ -1,0 +1,61 @@
+{
+  "id": "pasta-aglio-olio",
+  "name": "Pasta aglio e olio",
+  "category": ["quick", "pasta"],
+  "yield": 4,
+  "times": {
+    "prep": 10,
+    "cook": 15,
+    "rest": 0,
+    "total": 25
+  },
+  "ingredients": [
+    {
+      "id": "olive_oil",
+      "amount": 120,
+      "unit": "ml",
+      "notes": "extra panenský"
+    },
+    {
+      "id": "garlic",
+      "amount": 6,
+      "unit": "pcs",
+      "notes": "strúčiky, nakrájané na tenké plátky"
+    },
+    {
+      "id": "pasta_water",
+      "amount": 120,
+      "unit": "ml",
+      "notes": "odložená voda z varenia cestovín"
+    },
+    {
+      "id": "parsley_fresh",
+      "amount": 0.5,
+      "unit": "cup",
+      "notes": "čerstvá talianska petržlenová vňať, nasekaná"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "do vody na cestoviny"
+    },
+    {
+      "id": "parmesan",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "voliteľne, nastrúhaný"
+    }
+  ],
+  "steps": [
+    "Vo veľkom hrnci priveďte do varu osolenú vodu a spaghetti uvarte al dente podľa návodu na obale.",
+    "Pred scedením odoberte približne 120 ml vody z varenia cestovín.",
+    "Počas varenia cestovín zohrejte olivový olej na veľkej panvici na miernom ohni.",
+    "Pridajte na plátky nakrájaný cesnak a pomaly ho opekajte, kým nezmäkne a jemne zozlátne. Dávajte pozor, aby nezhnedol a nezhorkol.",
+    "Do panvice pridajte scedené spaghetti a časť odloženej vody z cestovín.",
+    "Premiešavajte a podľa potreby postupne prilievajte ďalšiu vodu, kým olej a škrobová voda vytvoria jemnú omáčku obalujúcu cestoviny.",
+    "Vmiešajte nasekanú petržlenovú vňať a podľa chuti dosoľte.",
+    "Podávajte ihneď, prípadne posypte nastrúhaným parmezánom."
+  ],
+  "notes": "Cesnak opekajte na miernom ohni, aby sa nespálil."
+}

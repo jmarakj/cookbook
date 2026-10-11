@@ -1,0 +1,73 @@
+{
+  "id": "sedliacke-fondue-stana-danciaka",
+  "name": "Sedliacke fondue Stana Dančiaka",
+  "category": ["traditional"],
+  "yield": 6,
+  "times": {
+    "prep": 20,
+    "cook": 20,
+    "rest": 0,
+    "total": 40
+  },
+  "ingredients": [
+    {
+      "id": "bread",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "celý bochník chleba"
+    },
+    {
+      "id": "bacon",
+      "amount": 500,
+      "unit": "g",
+      "notes": "oravská slanina"
+    },
+    {
+      "id": "processed_cheese",
+      "amount": 3,
+      "unit": "pcs",
+      "notes": "črievka taveného syra"
+    },
+    {
+      "id": "bell_pepper",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "červená paprika"
+    },
+    {
+      "id": "bell_pepper_yellow",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "žltá paprika"
+    },
+    {
+      "id": "sour_cream",
+      "amount": 200,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "mleté"
+    }
+  ],
+  "steps": [
+    "Slaninu nakrájajte na kocky a na panvici ju vyškvarte. Vypečenú masť odložte.",
+    "K slanine pridajte na kocky nakrájané papriky a krátko ich opečte.",
+    "Pridajte tavený syr a za miešania ho nechajte rozpustiť.",
+    "Zmes osoľte a okoreňte, odstavte z platne a vmiešajte kyslú smotanu.",
+    "Z bochníka chleba odrežte vrchnú časť a vydlabte striedku. Odrezaný vršok aj striedku odložte.",
+    "Chlieb zvnútra aj zvonka potrite odloženou vypečenou masťou a položte ho na plech. Okolo rozložte vydlabanú striedku.",
+    "Chlieb naplňte syrovou zmesou a prikryte odrezaným vrškom.",
+    "Pečte v rúre vyhriatej na 200 °C pri hornom a dolnom ohreve približne 20 minút."
+  ],
+  "notes": "Podávajte teplé, s upečenou chlebovou striedkou namáčanou do syrovej plnky. Počet porcií je orientačný."
+}

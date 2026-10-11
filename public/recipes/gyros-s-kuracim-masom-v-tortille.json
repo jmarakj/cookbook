@@ -1,0 +1,121 @@
+{
+  "id": "gyros-s-kuracim-masom-v-tortille",
+  "name": "Gyros s kuracím mäsom v tortille",
+  "category": ["quick"],
+  "yield": 4,
+  "times": {
+    "prep": 20,
+    "cook": 15,
+    "rest": 0,
+    "total": 35
+  },
+  "ingredients": [
+    {
+      "id": "chicken_breast",
+      "amount": 500,
+      "unit": "g",
+      "notes": "kuracie mäso"
+    },
+    {
+      "id": "tomato",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "paradajky"
+    },
+    {
+      "id": "bell_pepper",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "corn",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "1 konzerva"
+    },
+    {
+      "id": "tortilla",
+      "amount": 5,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "cibuľa"
+    },
+    {
+      "id": "lettuce_mix",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "šalátová zmes podľa výberu"
+    },
+    {
+      "id": "yogurt_plain",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "1 téglik bieleho jogurtu"
+    },
+    {
+      "id": "tartar_sauce",
+      "amount": 5,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "lime_zest",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "nastrúhaná kôra z limetky alebo citróna"
+    },
+    {
+      "id": "gyros_spice",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "mleté"
+    },
+    {
+      "id": "grill_seasoning",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": null
+    },
+    {
+      "id": "paprika_sweet",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "sladká mletá paprika"
+    },
+    {
+      "id": "oil_cooking",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": "na opekanie mäsa a zeleniny"
+    }
+  ],
+  "steps": [
+    "Cibuľu nakrájajte nadrobno a na rozpálenom oleji ju opečte dozlatista.",
+    "Kuracie mäso nakrájajte na malé kocky, pridajte k cibuli a opečte.",
+    "Mäso osoľte, okoreňte čiernym korením, gyros korením, grilovacím korením a sladkou mletou paprikou. Za občasného miešania opekajte, kým nebude mäkké a dôkladne prepečené.",
+    "Paradajky a papriky nakrájajte na kocky. Kukuricu sceďte a podľa potreby prepláchnite. Zeleninu zmiešajte so šalátovou zmesou, osoľte a pokvapkajte trochou oleja.",
+    "V miske zmiešajte biely jogurt s tatárskou omáčkou, pridajte soľ, čierne korenie a trochu nastrúhanej limetkovej alebo citrónovej kôry. Podľa chuti môžete použiť aj citrónovú šťavu.",
+    "Tortilly krátko opečte na suchej rozohriatej panvici, približne 5 sekúnd z každej strany.",
+    "Na každú tortillu rozložte šalát so zeleninou, kuracie mäso a jogurtový dressing.",
+    "Tortillu preložte napoly a podľa potreby zaistite špáradlom. Podávajte ihneď."
+  ],
+  "notes": null
+}

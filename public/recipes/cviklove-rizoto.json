@@ -1,0 +1,103 @@
+{
+  "id": "cviklove-rizoto",
+  "name": "Krémové cviklové rizoto",
+  "category": ["rissotto"],
+  "yield": 4,
+  "times": {
+    "prep": 10,
+    "cook": 65,
+    "rest": 0,
+    "total": 75
+  },
+  "ingredients": [
+    {
+      "id": "beetroot",
+      "amount": 500,
+      "unit": "g",
+      "notes": "čerstvá cvikla"
+    },
+    {
+      "id": "olive_oil",
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "butter",
+      "amount": null,
+      "unit": null,
+      "notes": "menší kúsok"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "nadrobno nakrájaná"
+    },
+    {
+      "id": "garlic",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "strúčik, nadrobno nakrájaný"
+    },
+    {
+      "id": "rice",
+      "amount": 250,
+      "unit": "g",
+      "notes": "ryža na rizoto"
+    },
+    {
+      "id": "white_wine",
+      "amount": 150,
+      "unit": "ml",
+      "notes": "biele víno"
+    },
+    {
+      "id": "vegetable_stock",
+      "amount": 700,
+      "unit": "ml",
+      "notes": "horúci zeleninový vývar"
+    },
+    {
+      "id": "parmesan",
+      "amount": null,
+      "unit": null,
+      "notes": "hrsť nastrúhaného parmezánu, časť odložte na podávanie"
+    },
+    {
+      "id": "sour_cream",
+      "amount": 4,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "dill",
+      "amount": null,
+      "unit": null,
+      "notes": "hrsť nasekaného kôpru"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": "to_taste",
+      "notes": null
+    }
+  ],
+  "steps": [
+    "Rúru predhrejte na 180 °C. Cviklu ošúpte, odstráňte konce a nakrájajte na väčšie mesiačiky.",
+    "Cviklu položte na alobal, pokvapkajte jednou lyžicou olivového oleja, osoľte a okoreňte. Zabaľte ju a pečte približne 60 minút, kým nezmäkne.",
+    "V hrnci vhodnom do rúry s pokrievkou zohrejte zvyšný olivový olej s maslom. Pridajte cibuľu a cesnak a restujte 3–5 minút, kým nezmäknú.",
+    "Prisypte ryžu a premiešajte, aby sa obalila tukom. Prilejte biele víno a nechajte približne 5 minút prebublávať.",
+    "Prilejte horúci zeleninový vývar, premiešajte, prikryte a vložte do rúry. Pečte približne 15 minút, kým ryža nezmäkne.",
+    "Upečenú cviklu vyberte z rúry. Približne štvrtinu rozmixujte na pyré a zvyšok nakrájajte na malé kúsky.",
+    "Do rizota vmiešajte cviklové pyré, nakrájanú cviklu a väčšinu parmezánu.",
+    "Podávajte s kyslou smotanou, nasekaným kôprom a zvyšným parmezánom."
+  ],
+  "notes": "Pri pečení cvikly použite kuchynské rukavice, ak si nechcete zafarbiť ruky."
+}
