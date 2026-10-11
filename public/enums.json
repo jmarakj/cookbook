@@ -471,6 +471,26 @@
         {
             "id": "bread",
             "label": "chlieb"
+        },
+        {
+            "id": "beef_roast",
+            "label": "hovädzia roštenka"
+        },
+        {
+            "id": "mustard",
+            "label": "plnotučná horčica"
+        },
+        {
+            "id": "pickles",
+            "label": "kyslé uhorky"
+        },
+        {
+            "id": "pickle_brine",
+            "label": "nálev z kyslých uhoriek"
+        },
+        {
+            "id": "beef_broth",
+            "label": "hovädzí vývar"
         }
     ]
 }
