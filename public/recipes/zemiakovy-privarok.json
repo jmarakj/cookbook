@@ -17,12 +17,6 @@
       "notes": "ošúpané a nakrájané na kocky"
     },
     {
-      "id": "vegeta",
-      "amount": null,
-      "unit": null,
-      "notes": "podľa chuti"
-    },
-    {
       "id": "bay_leaf",
       "amount": 1,
       "unit": "pcs",
@@ -41,7 +35,7 @@
       "notes": "na zahustenie"
     },
     {
-      "id": "cream_whipping",
+      "id": "whipping_cream",
       "amount": 200,
       "unit": "ml",
       "notes": null

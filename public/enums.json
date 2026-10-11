@@ -185,10 +185,6 @@
             "label": "kakao"
         },
         {
-            "id": "baking_powder",
-            "label": "prášok do pečiva"
-        },
-        {
             "id": "flour_semi_coarse",
             "label": "polohrubá múka"
         },
@@ -271,10 +267,6 @@
         {
             "id": "potato",
             "label": "zemiak"
-        },
-        {
-            "id": "pork_lard",
-            "label": "bravčová masť"
         },
         {
             "id": "bacon",
