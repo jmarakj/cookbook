@@ -1,7 +1,8 @@
 {
   "id": "pasta-aglio-olio",
   "name": "Pasta aglio e olio",
-  "category": ["quick", "pasta"],
+  "category": ["vegetarian", "pasta"],
+  "cuisine": "it",
   "yield": 4,
   "times": {
     "prep": 10,
@@ -10,6 +11,12 @@
     "total": 25
   },
   "ingredients": [
+    {
+      "id": "spaghetti",
+      "amount": 450,
+      "unit": "g",
+      "notes": null
+    },
     {
       "id": "olive_oil",
       "amount": 120,
@@ -26,36 +33,33 @@
       "id": "pasta_water",
       "amount": 120,
       "unit": "ml",
-      "notes": "odložená voda z varenia cestovín"
+      "notes": "odložená"
     },
     {
       "id": "parsley_fresh",
-      "amount": 0.5,
-      "unit": "cup",
-      "notes": "čerstvá talianska petržlenová vňať, nasekaná"
+      "amount": 15,
+      "unit": "g",
+      "notes": "nasekaná"
     },
     {
       "id": "salt",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": "do vody na cestoviny"
     },
     {
       "id": "parmesan",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "voliteľne, nastrúhaný"
+      "unit": null,
+      "notes": "nastrúhaný, voliteľné"
     }
   ],
   "steps": [
-    "Vo veľkom hrnci priveďte do varu osolenú vodu a spaghetti uvarte al dente podľa návodu na obale.",
-    "Pred scedením odoberte približne 120 ml vody z varenia cestovín.",
-    "Počas varenia cestovín zohrejte olivový olej na veľkej panvici na miernom ohni.",
-    "Pridajte na plátky nakrájaný cesnak a pomaly ho opekajte, kým nezmäkne a jemne zozlátne. Dávajte pozor, aby nezhnedol a nezhorkol.",
-    "Do panvice pridajte scedené spaghetti a časť odloženej vody z cestovín.",
-    "Premiešavajte a podľa potreby postupne prilievajte ďalšiu vodu, kým olej a škrobová voda vytvoria jemnú omáčku obalujúcu cestoviny.",
-    "Vmiešajte nasekanú petržlenovú vňať a podľa chuti dosoľte.",
-    "Podávajte ihneď, prípadne posypte nastrúhaným parmezánom."
+    "Vo veľkom hrnci priveďte do varu osolenú vodu a špagety uvarte al dente podľa návodu na obale. Pred scedením odoberte približne 120 ml vody z varenia.",
+    "Medzitým zohrejte olivový olej na veľkej panvici na miernom ohni. Pridajte cesnak a pomaly ho opekajte, kým nezmäkne a jemne nezozlátne. Nesmie zhnednúť, inak zhorkne.",
+    "Do panvice pridajte scedené špagety a časť odloženej vody. Premiešavajte a podľa potreby prilievajte ďalšiu vodu, kým olej a škrobová voda nevytvoria jemnú omáčku.",
+    "Vmiešajte petržlenovú vňať a podľa chuti dosoľte.",
+    "Podávajte ihneď, podľa chuti posypané parmezánom."
   ],
-  "notes": "Cesnak opekajte na miernom ohni, aby sa nespálil."
+  "notes": null
 }

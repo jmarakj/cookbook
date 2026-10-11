@@ -7,6 +7,7 @@ import './RecipeDetailPage.css'
 
 const MIN_SERVINGS = 2
 const MAX_SERVINGS = 8
+const SERVINGS_STEP = 2
 
 function scaleAmount(amount: number, baseYield: number, servings: number) {
   return Math.round((amount * servings * 100) / baseYield) / 100
@@ -80,83 +81,104 @@ function RecipeView({ id }: { id: string }) {
   const currentServings =
     baseYield == null
       ? null
-      : (servings ?? Math.min(MAX_SERVINGS, Math.max(MIN_SERVINGS, baseYield)))
+      : (servings ??
+        Math.min(
+          MAX_SERVINGS,
+          Math.max(MIN_SERVINGS, Math.ceil(baseYield / SERVINGS_STEP) * SERVINGS_STEP),
+        ))
 
   return (
     <main className="recipe">
-      <BackButton />
-      <RecipeImage id={id} alt={recipe.name} />
+      <div className="top">
+        <BackButton />
+      </div>
 
-      <h1>{recipe.name}</h1>
+      <div className="columns">
+        <section>
+          <RecipeImage id={id} alt={recipe.name} />
+        </section>
 
-      <ul className="tags">
-        {recipe.category.map((c) => (
-          <li key={c}>{labelOf(enums?.categories, c)}</li>
-        ))}
-      </ul>
+        <section>
+          <h1>
+            {recipe.name}
+          </h1>
 
-      <dl className="times">
-        <div>
-          <dt>Príprava</dt>
-          <dd>{recipe.times.prep} min</dd>
-        </div>
-        <div>
-          <dt>Varenie</dt>
-          <dd>{recipe.times.cook} min</dd>
-        </div>
-        <div>
-          <dt>Odpočinok</dt>
-          <dd>{recipe.times.rest} min</dd>
-        </div>
-        <div>
-          <dt>Spolu</dt>
-          <dd>{recipe.times.total} min</dd>
-        </div>
-      </dl>
+          <ul className="tags">
+            {recipe.category.map((c) => (
+              <li key={c}>{labelOf(enums?.categories, c)}</li>
+            ))}
+          </ul>
 
-      <h2>Ingrediencie</h2>
-      {currentServings != null && (
-        <label className="servings">
-          Porcie: <strong>{currentServings}</strong>
-          <input
-            type="range"
-            min={MIN_SERVINGS}
-            max={MAX_SERVINGS}
-            value={currentServings}
-            onChange={(e) => setServings(Number(e.target.value))}
-          />
-        </label>
-      )}
-      <table className="ingredients">
-        <tbody>
-          {recipe.ingredients.map((ing) => (
-            <tr key={ing.id}>
-              <td>
-                {ing.amount != null &&
-                  `${baseYield != null && currentServings != null ? scaleAmount(ing.amount, baseYield, currentServings) : ing.amount} ${ing.unit ? labelOf(enums?.units, ing.unit) : ''}`}
-              </td>
-              <td>
-                {labelOf(enums?.ingredients, ing.id)}
-                {ing.notes && <em> ({ing.notes})</em>}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+          <dl className="times">
+            {(
+              [
+                ['Príprava', recipe.times.prep],
+                ['Varenie', recipe.times.cook],
+                ['Čakanie', recipe.times.rest],
+                ['Spolu', recipe.times.total],
+              ] as const
+            )
+              .filter(([, minutes]) => minutes)
+              .map(([label, minutes]) => (
+                <div key={label}>
+                  <dt>{label}</dt>
+                  <dd>{minutes} min</dd>
+                </div>
+              ))}
+          </dl>
+        </section>
+      </div>
 
-      <h2>Postup</h2>
-      <ol className="steps">
-        {recipe.steps.map((step, i) => (
-          <li key={i}>{step}</li>
-        ))}
-      </ol>
+      <div className="columns">
+        <section>
+          <h2>Ingrediencie</h2>
+          {currentServings != null && (
+            <label className="servings">
+              Porcie: <strong>{currentServings}</strong>
+              <input
+                type="range"
+                min={MIN_SERVINGS}
+                max={MAX_SERVINGS}
+                step={SERVINGS_STEP}
+                value={currentServings}
+                onChange={(e) => setServings(Number(e.target.value))}
+              />
+            </label>
+          )}
+          <table className="ingredients">
+            <tbody>
+              {recipe.ingredients.map((ing) => (
+                <tr key={ing.id}>
+                  <td>
+                    {ing.amount != null &&
+                      `${baseYield != null && currentServings != null ? scaleAmount(ing.amount, baseYield, currentServings) : ing.amount} ${ing.unit ? labelOf(enums?.units, ing.unit) : ''}`}
+                  </td>
+                  <td>
+                    {labelOf(enums?.ingredients, ing.id)}
+                    {ing.notes && <em> ({ing.notes})</em>}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
 
-      {recipe.notes && (
-        <>
-          <h2>Poznámky</h2>
-          <p>{recipe.notes}</p>
-        </>
-      )}
+        <section>
+          <h2>Postup</h2>
+          <ol className="steps">
+            {recipe.steps.map((step, i) => (
+              <li key={i}>{step}</li>
+            ))}
+          </ol>
+
+          {recipe.notes && (
+            <>
+              <h2>Poznámky</h2>
+              <p>{recipe.notes}</p>
+            </>
+          )}
+        </section>
+      </div>
     </main>
   )
 }

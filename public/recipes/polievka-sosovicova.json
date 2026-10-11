@@ -1,7 +1,8 @@
 {
   "id": "polievka-sosovicova",
   "name": "Vianočná šošovicová polievka z Horehronia",
-  "category": ["traditional"],
+  "category": ["meat", "soup"],
+  "cuisine": "sk",
   "yield": 4,
   "times": {
     "prep": 20,
@@ -14,13 +15,13 @@
       "id": "pork_knuckle_smoked",
       "amount": 500,
       "unit": "g",
-      "notes": "údené bravčové koleno"
+      "notes": null
     },
     {
       "id": "lentils",
       "amount": 100,
       "unit": "g",
-      "notes": "suchá šošovica"
+      "notes": "suchá"
     },
     {
       "id": "potato",
@@ -54,15 +55,15 @@
     },
     {
       "id": "garlic",
-      "amount": 5,
-      "unit": "g",
-      "notes": "pretlačený"
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "strúčik, pretlačený"
     },
     {
       "id": "paprika_sweet",
       "amount": 1,
       "unit": "tsp",
-      "notes": "mletá červená paprika"
+      "notes": null
     },
     {
       "id": "salt",
@@ -74,28 +75,34 @@
       "id": "black_pepper_whole",
       "amount": null,
       "unit": null,
-      "notes": "celé korenie na varenie kolena"
+      "notes": "na varenie kolena"
     },
     {
       "id": "black_pepper",
       "amount": null,
       "unit": null,
-      "notes": "mleté korenie na dochutenie"
+      "notes": "mleté, na dochutenie"
     },
     {
       "id": "bay_leaf",
       "amount": null,
       "unit": null,
       "notes": "na varenie kolena"
+    },
+    {
+      "id": "water",
+      "amount": null,
+      "unit": null,
+      "notes": "na varenie kolena"
     }
   ],
   "steps": [
-    "Koleno: Údené bravčové koleno vložte do hrnca s vodou, pridajte bobkový list a celé čierne korenie. Varte, kým mäso nezmäkne.",
-    "Šošovica: Uvarené koleno vyberte z hrnca. Do vývaru pridajte umytú šošovicu a varte ju do polomäkka.",
-    "Zemiaky: Zemiaky ošúpte, nakrájajte na menšie kocky, pridajte k šošovici a varte, kým nezmäknú.",
-    "Zápražka: Na bravčovej masti opečte nadrobno nakrájanú slaninu. Pridajte cesnak a mletú červenú papriku, krátko premiešajte a dávajte pozor, aby paprika nezhorkla.",
-    "Zahustenie: Zápražku zalejte vlažným mliekom, dobre rozmiešajte a vlejte do polievky. Za občasného miešania ešte chvíľu povarte.",
-    "Dokončenie: Uvarené koleno oberte od kosti, mäso nakrájajte na kúsky a vráťte do polievky. Dochuťte soľou a mletým čiernym korením."
+    "Údené bravčové koleno vložte do hrnca s vodou, pridajte bobkový list a celé čierne korenie. Varte, kým mäso nezmäkne.",
+    "Uvarené koleno vyberte z hrnca. Do vývaru pridajte umytú šošovicu a varte ju do polomäkka.",
+    "Zemiaky ošúpte, nakrájajte na menšie kocky, pridajte k šošovici a varte, kým nezmäknú.",
+    "Na bravčovej masti opečte nadrobno nakrájanú slaninu. Pridajte cesnak a mletú červenú papriku, krátko premiešajte a dávajte pozor, aby paprika nezhorkla.",
+    "Zápražku zalejte vlažným mliekom, dobre rozmiešajte a vlejte do polievky. Za občasného miešania ešte chvíľu povarte.",
+    "Uvarené koleno oberte od kosti, mäso nakrájajte na kúsky a vráťte do polievky. Dochuťte soľou a mletým čiernym korením."
   ],
   "notes": "Recept je upravený bez dubákov. Pri príprave zápražky dávajte pozor, aby sa mletá paprika nepripálila, pretože by polievka zhorkla."
 }

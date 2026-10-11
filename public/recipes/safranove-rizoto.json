@@ -1,7 +1,8 @@
 {
   "id": "safranove-rizoto",
   "name": "Šafranové rizoto",
-  "category": ["rissotto"],
+  "category": ["vegetarian", "risotto"],
+  "cuisine": "it",
   "yield": 4,
   "times": {
     "prep": 5,
@@ -14,7 +15,7 @@
       "id": "rice",
       "amount": 290,
       "unit": "g",
-      "notes": "ryža Arborio alebo Carnaroli"
+      "notes": "Arborio alebo Carnaroli"
     },
     {
       "id": "shallot",
@@ -26,7 +27,7 @@
       "id": "carrot",
       "amount": 1,
       "unit": "pcs",
-      "notes": "možno vynechať"
+      "notes": "najemno nastrúhaná, voliteľné"
     },
     {
       "id": "saffron",
@@ -41,10 +42,10 @@
       "notes": null
     },
     {
-      "id": "chicken_broth",
+      "id": "vegetable_stock",
       "amount": 800,
       "unit": "ml",
-      "notes": "kvalitný, udržiavaný horúci"
+      "notes": "horúci; alebo kurací"
     },
     {
       "id": "parmesan",
@@ -61,25 +62,23 @@
     {
       "id": "salt",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
     },
     {
       "id": "black_pepper",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
     }
   ],
   "steps": [
     "Vývar zohrejte v samostatnom hrnci a udržiavajte ho horúci.",
-    "Vo väčšej panvici zohrejte olivový olej na miernom až stredne miernom ohni. Pridajte šalotku a restujte, kým nezmäkne a nezosklovatie.",
-    "Pridajte najemno nastrúhanú mrkvu a krátko ju restujte, aby zmäkla.",
-    "Prisypte ryžu a premiešajte, aby sa zrnká obalili olejom. Prilejte biele víno a nechajte približne 2 minúty prebublávať.",
-    "Pridajte jednu naberačku horúceho vývaru a za stáleho miešania varte, kým ryža tekutinu takmer nevstrebe. Postupne pridávajte ďalší vývar a opakujte, kým ryža nebude krémová a mäkká, ale stále mierne pevná na skus.",
-    "Keď zostávajú približne dve naberačky vývaru, pridajte šafran a pokračujte vo varení s postupným prilievaním vývaru.",
-    "Vmiešajte nastrúhaný parmezán, osoľte a okoreňte podľa chuti.",
-    "Podávajte ihneď, kým je rizoto krémové."
+    "Vo väčšej panvici zohrejte olivový olej na miernom ohni. Pridajte šalotku a restujte, kým nezosklovatie. Pridajte mrkvu a krátko ju podusťe.",
+    "Prisypte ryžu a premiešajte, aby sa zrnká obalili olejom. Prilejte víno a nechajte približne 2 minúty prebublávať.",
+    "Pridajte naberačku horúceho vývaru a za stáleho miešania varte, kým ho ryža takmer nevstrebe. Takto postupne pridávajte ďalší vývar, kým ryža nie je krémová, ale stále mierne pevná na skus.",
+    "Keď zostávajú približne dve naberačky vývaru, pridajte šafran a rizoto dovarte.",
+    "Vmiešajte parmezán, osoľte, okoreňte a ihneď podávajte."
   ],
   "notes": null
 }

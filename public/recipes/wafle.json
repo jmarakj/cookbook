@@ -1,26 +1,27 @@
 {
   "id": "wafle",
   "name": "Wafle",
-  "category": ["baking", "desserts"],
-  "yield": 8,
+  "category": ["sweet"],
+  "cuisine": "be",
+  "yield": 4,
   "times": {
     "prep": 10,
-    "cook": 3,
+    "cook": 25,
     "rest": 0,
-    "total": 13
+    "total": 35
   },
   "ingredients": [
     {
       "id": "flour_semi_coarse",
       "amount": 300,
       "unit": "g",
-      "notes": "polohrubá múka; približne 2 poháre po 250 ml"
+      "notes": "približne 2 poháre po 250 ml"
     },
     {
       "id": "milk",
       "amount": 500,
       "unit": "ml",
-      "notes": "približne 2 poháre po 250 ml; podľa potreby na zriedenie cesta"
+      "notes": "podľa potreby viac na zriedenie"
     },
     {
       "id": "sugar_vanilla",
@@ -44,7 +45,7 @@
       "id": "oil_cooking",
       "amount": 3,
       "unit": "tbsp",
-      "notes": "do cesta; navyše trochu na vymastenie vafľovača"
+      "notes": "do cesta, navyše na vafľovač"
     },
     {
       "id": "egg",
@@ -62,46 +63,46 @@
       "id": "nutella",
       "amount": null,
       "unit": null,
-      "notes": "na plnenie, podľa chuti"
+      "notes": "na plnenie, voliteľné"
     },
     {
       "id": "banana",
       "amount": null,
       "unit": null,
-      "notes": "na plnenie, podľa chuti"
+      "notes": "na plnenie, voliteľné"
     },
     {
       "id": "strawberries",
       "amount": null,
       "unit": null,
-      "notes": "na plnenie, podľa chuti"
+      "notes": "na plnenie, voliteľné"
     },
     {
       "id": "peach",
       "amount": null,
       "unit": null,
-      "notes": "na plnenie, podľa chuti"
+      "notes": "na plnenie, voliteľné"
     },
     {
       "id": "whipping_cream",
       "amount": null,
       "unit": null,
-      "notes": "na ozdobenie, podľa chuti"
+      "notes": "na ozdobenie, voliteľné"
     },
     {
       "id": "chocolate_glaze",
       "amount": null,
       "unit": null,
-      "notes": "na ozdobenie, podľa chuti"
+      "notes": "na ozdobenie, voliteľné"
     }
   ],
   "steps": [
-    "Zmiešajte polohrubú múku, prášok do pečiva, kryštálový cukor a vanilkový cukor.",
-    "Prilejte mlieko, pridajte vajcia a vymiešajte hladké cesto. Primiešajte štipku soli a olej. Ak je cesto príliš husté, podľa potreby ho zrieďte mliekom.",
-    "Rozohrejte vafľovač a potrite jeho platne olejom, aby sa vafle neprilepili.",
-    "Do stredu vafľovača nalejte približne 3 lyžice cesta a pečte asi 3 minúty, prípadne podľa pokynov výrobcu.",
-    "Hotové vafle neukladajte na seba. Ak ich chcete nechať vychladnúť, ukladajte ich na mriežku, aby zostali chrumkavé.",
-    "Podávajte s Nutellou, banánom, jahodami alebo broskyňami. Podľa chuti ozdobte šľahačkou a čokoládovou polevou."
+    "Zmiešajte múku, prášok do pečiva, kryštálový cukor a vanilkový cukor.",
+    "Prilejte mlieko, pridajte vajcia a vymiešajte hladké cesto. Primiešajte soľ a olej. Príliš husté cesto zrieďte mliekom.",
+    "Rozohrejte vafľovač a jeho platne potrite olejom.",
+    "Do stredu vafľovača nalejte približne 3 lyžice cesta a pečte asi 3 minúty alebo podľa pokynov výrobcu.",
+    "Hotové vafle neukladajte na seba, ale na mriežku, aby zostali chrumkavé.",
+    "Podávajte s Nutellou, banánom, jahodami alebo broskyňami, prípadne so šľahačkou a čokoládovou polevou."
   ],
-  "notes": "Každý vafľovač pečie trochu inak, preto pri prvej vafli overte vhodné množstvo cesta a čas pečenia. Zvyšné cesto možno uchovať v uzatvorenej nádobe v chladničke niekoľko dní."
+  "notes": "Pri prvej vafli overte vhodné množstvo cesta a čas pečenia – každý vafľovač pečie inak. Zvyšné cesto vydrží v uzavretej nádobe v chladničke niekoľko dní."
 }

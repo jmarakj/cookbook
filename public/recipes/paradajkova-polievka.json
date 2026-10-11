@@ -1,38 +1,39 @@
 {
   "id": "paradajkova-polievka",
   "name": "Paradajková polievka",
-  "category": ["soup"],
+  "category": ["vegetarian", "soup"],
+  "cuisine": "it",
   "yield": 3,
   "times": {
     "prep": 10,
     "cook": 15,
-    "rest": 0,
-    "total": 25
+    "rest": 10,
+    "total": 35
   },
   "ingredients": [
     {
       "id": "tomato",
       "amount": 350,
       "unit": "g",
-      "notes": "čerstvé paradajky, nakrájané"
+      "notes": "čerstvé, nakrájané"
     },
     {
       "id": "tomatoes_diced",
       "amount": 400,
       "unit": "g",
-      "notes": "1 konzerva krájaných paradajok"
+      "notes": "konzerva"
     },
     {
       "id": "tomato_paste",
       "amount": 250,
       "unit": "g",
-      "notes": "paradajkový pretlak"
+      "notes": null
     },
     {
       "id": "sugar_brown",
       "amount": 3,
       "unit": "tbsp",
-      "notes": "trstinový cukor"
+      "notes": null
     },
     {
       "id": "onion",
@@ -54,54 +55,53 @@
     },
     {
       "id": "butter",
-      "amount": 1,
-      "unit": "pcs",
-      "notes": "plátok; možno nahradiť ghí"
+      "amount": 20,
+      "unit": "g",
+      "notes": "alebo ghí"
     },
     {
       "id": "black_pepper",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
     },
     {
       "id": "salt",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
     },
     {
       "id": "herb_mix",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": "bazalka, petržlenová vňať a rozmarín"
     },
     {
       "id": "parmesan",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "nastrúhaný syr na podávanie, voliteľné"
+      "unit": null,
+      "notes": "nastrúhaný, voliteľné"
     },
     {
       "id": "basil",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "čerstvé lístky na podávanie, voliteľné"
+      "unit": null,
+      "notes": "čerstvé lístky, voliteľné"
     },
     {
       "id": "croutons",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "na podávanie, voliteľné"
+      "unit": null,
+      "notes": "voliteľné"
     }
   ],
   "steps": [
-    "Čerstvé paradajky, cibuľu, cesnak, trstinový cukor a krájané paradajky z konzervy rozmixujte dohladka.",
-    "V hrnci rozpustite maslo s olivovým olejom.",
-    "Pridajte rozmixovanú zmes a paradajkový pretlak. Priveďte do varu.",
-    "Keď polievka začne bublať, osoľte ju a okoreňte čiernym korením podľa chuti.",
-    "Vypnite sporák a pridajte bazalku, petržlenovú vňať a rozmarín. Nechajte bylinky lúhovať približne 10 minút; potom ich môžete vybrať alebo ponechať v polievke.",
-    "Podávajte podľa chuti s nastrúhaným syrom, čerstvou bazalkou alebo krutónmi."
+    "Čerstvé paradajky, cibuľu, cesnak, trstinový cukor a paradajky z konzervy rozmixujte dohladka.",
+    "V hrnci rozpustite maslo s olivovým olejom. Pridajte rozmixovanú zmes a paradajkový pretlak a priveďte do varu.",
+    "Keď polievka začne bublať, osoľte ju a okoreňte.",
+    "Vypnite sporák, pridajte bazalku, petržlenovú vňať a rozmarín a nechajte približne 10 minút lúhovať. Potom ich vyberte alebo ponechajte v polievke.",
+    "Podávajte s nastrúhaným parmezánom, čerstvou bazalkou alebo krutónmi."
   ],
   "notes": null
 }

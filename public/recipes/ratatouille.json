@@ -1,11 +1,12 @@
 {
   "id": "ratatouille",
   "name": "Ratatouille",
-  "category": ["traditional"],
+  "category": ["vegetarian", "baking"],
+  "cuisine": "fr",
   "yield": 6,
   "times": {
-    "prep": 60,
-    "cook": 45,
+    "prep": 30,
+    "cook": 75,
     "rest": 0,
     "total": 105
   },
@@ -14,13 +15,13 @@
       "id": "eggplant",
       "amount": 1,
       "unit": "pcs",
-      "notes": "baklažán"
+      "notes": null
     },
     {
       "id": "zucchini",
       "amount": 1,
       "unit": "pcs",
-      "notes": "cuketa"
+      "notes": null
     },
     {
       "id": "tomato",
@@ -32,7 +33,7 @@
       "id": "bell_pepper",
       "amount": 1,
       "unit": "pcs",
-      "notes": "paprika"
+      "notes": null
     },
     {
       "id": "onion",
@@ -44,25 +45,25 @@
       "id": "olive_oil",
       "amount": null,
       "unit": null,
-      "notes": "na omáčku a pokvapkanie zeleniny"
+      "notes": "na omáčku a pokvapkanie"
     },
     {
       "id": "tomatoes_diced",
       "amount": 400,
       "unit": "g",
-      "notes": "lúpané paradajky vo vlastnej šťave; približne jedna konzerva"
+      "notes": "lúpané, konzerva"
     },
     {
       "id": "tomato_paste",
       "amount": null,
       "unit": null,
-      "notes": "paradajkový pretlak"
+      "notes": null
     },
     {
       "id": "garlic",
       "amount": 2,
       "unit": "pcs",
-      "notes": "strúčiky; časť do omáčky, prípadne časť medzi zeleninu"
+      "notes": "strúčiky"
     },
     {
       "id": "sugar_white",
@@ -80,7 +81,7 @@
       "id": "herbes_de_provence",
       "amount": null,
       "unit": null,
-      "notes": "provensalské korenie"
+      "notes": null
     },
     {
       "id": "oregano_dried",
@@ -91,24 +92,22 @@
     {
       "id": "black_pepper",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": "mleté"
     },
     {
       "id": "salt",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": "na omáčku aj zeleninu"
     }
   ],
   "steps": [
-    "Na troche oleja opečte nadrobno nakrájanú cibuľu určenú do omáčky.",
-    "Pridajte lúpané paradajky, paradajkový pretlak, pretlačený cesnak, bazalku, provensalské korenie, oregano a cukor. Osoľte, okoreňte a za občasného miešania duste približne 30 minút.",
-    "Zeleninu dôkladne umyte. Baklažán, cuketu, paradajky a druhú cibuľu nakrájajte na tenké kolieska. Papriku nakrájajte na pásiky. Ak je baklažán starší, kolieska osoľte, nechajte vypotiť a potom opláchnite.",
-    "Hotovú paradajkovú omáčku rozotrite na dno zapekacej misy.",
-    "Zeleninu ukladajte na omáčku tesne vedľa seba, striedajte jednotlivé druhy a vytvorte pravidelný farebný vzor. Podľa chuti vložte medzi zeleninu tenké plátky cesnaku.",
-    "Zeleninu pokvapkajte olejom, osoľte a okoreňte.",
-    "Pečte v rúre vyhriatej na 200 °C približne 45 minút, kým zelenina nezmäkne."
+    "Na troche olivového oleja opečte nadrobno nakrájanú cibuľu.",
+    "Pridajte lúpané paradajky, pretlak, pretlačený cesnak, bazalku, provensalské korenie, oregano a cukor. Osoľte, okoreňte a za občasného miešania duste približne 30 minút.",
+    "Medzitým zeleninu umyte. Baklažán, cuketu, paradajky a druhú cibuľu nakrájajte na tenké kolieska, papriku na pásiky. Starší baklažán osoľte, nechajte vypotiť a opláchnite.",
+    "Rúru predhrejte na 200 °C. Omáčku rozotrite na dno zapekacej misy a zeleninu na ňu ukladajte tesne vedľa seba, striedavo podľa druhu. Podľa chuti medzi ňu vložte tenké plátky cesnaku.",
+    "Zeleninu pokvapkajte olejom, osoľte, okoreňte a pečte približne 45 minút, kým nezmäkne."
   ],
   "notes": "Podávajte s chlebom, bagetou, cestovinami alebo kuskusom, prípadne ako prílohu k mäsu."
 }

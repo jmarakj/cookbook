@@ -1,8 +1,9 @@
 {
   "id": "lievance",
   "name": "Ľahunké lievance",
-  "category": ["baking", "quick"],
-  "yield": 15,
+  "category": ["sweet"],
+  "cuisine": "sk",
+  "yield": 4,
   "times": {
     "prep": 15,
     "cook": 30,
@@ -20,7 +21,7 @@
       "id": "sugar_white",
       "amount": 50,
       "unit": "g",
-      "notes": "hnedý trstinový alebo biely cukor"
+      "notes": "alebo trstinový"
     },
     {
       "id": "baking_powder",
@@ -38,7 +39,7 @@
       "id": "egg",
       "amount": 2,
       "unit": "pcs",
-      "notes": "žĺtky a bielky oddeliť"
+      "notes": "oddelené žĺtky a bielky"
     },
     {
       "id": "milk",
@@ -48,9 +49,9 @@
     },
     {
       "id": "oil_cooking",
-      "amount": null,
-      "unit": null,
-      "notes": "2 pl do cesta a trochu na potretie panvice"
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": "do cesta, navyše na potretie panvice"
     },
     {
       "id": "salt",
@@ -61,11 +62,11 @@
   ],
   "steps": [
     "Zmiešajte múku, polovicu cukru, vanilkový cukor a prášok do pečiva.",
-    "Pridajte žĺtky, 2 lyžice oleja, mlieko a štipku soli. Všetko dôkladne vymiešajte na hladké cesto.",
-    "Z bielkov a zvyšnej polovice cukru vyšľahajte tuhý sneh a varechou ho jemne vmiešajte do cesta.",
-    "Panvicu pred prvým lievancom zľahka potrite olejom pomocou papierovej utierky.",
-    "Lievance opekajte na veľmi miernom ohni, aby sa nepripálili. Keď sa na povrchu začnú tvoriť bublinky, otočte ich a dopečte z druhej strany.",
-    "Podávajte s džemom, čokoládovou nátierkou, jogurtom alebo javorovým sirupom podľa chuti."
+    "Pridajte žĺtky, olej, mlieko a soľ a vymiešajte hladké cesto.",
+    "Z bielkov a zvyšného cukru vyšľahajte tuhý sneh a varechou ho jemne vmiešajte do cesta.",
+    "Panvicu zľahka potrite olejom pomocou papierovej utierky.",
+    "Lievance pečte na veľmi miernom ohni. Keď sa na povrchu začnú tvoriť bublinky, otočte ich a dopečte z druhej strany.",
+    "Podávajte s džemom, čokoládovou nátierkou, jogurtom alebo javorovým sirupom."
   ],
-  "notes": "Pre nadýchané lievance vyšľahajte z bielkov tuhý sneh a opatrne ho vmiešajte do cesta. Opekajte ich na veľmi miernom ohni."
+  "notes": "Z tohto množstva vznikne približne 15 lievancov. Sneh vmiešajte opatrne, aby lievance zostali nadýchané."
 }

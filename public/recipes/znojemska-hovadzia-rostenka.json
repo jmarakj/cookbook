@@ -1,7 +1,8 @@
 {
   "id": "znojemska-hovadzia-rostenka",
   "name": "Znojemská hovädzia roštenka",
-  "category": ["traditional"],
+  "category": ["meat"],
+  "cuisine": "cz",
   "yield": 4,
   "times": {
     "prep": 20,
@@ -14,7 +15,7 @@
       "id": "beef_roast",
       "amount": 700,
       "unit": "g",
-      "notes": "hovädzia roštenka nakrájaná na plátky"
+      "notes": "nakrájaná na plátky"
     },
     {
       "id": "onion",
@@ -38,18 +39,18 @@
       "id": "pickles",
       "amount": 5,
       "unit": "pcs",
-      "notes": "veľké kyslé uhorky"
+      "notes": "veľké"
     },
     {
       "id": "pickle_brine",
       "amount": 100,
       "unit": "ml",
-      "notes": "nálev z kyslých uhoriek"
+      "notes": null
     },
     {
       "id": "beef_broth",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": "na podlievanie"
     },
     {
@@ -61,31 +62,30 @@
     {
       "id": "pork_lard",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "na opekanie; možno nahradiť olejom"
+      "unit": null,
+      "notes": "na opekanie, alebo olej"
     },
     {
       "id": "salt",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
     },
     {
       "id": "black_pepper",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": "mleté"
     }
   ],
   "steps": [
     "Plátky roštenky jemne naklepte, okraje narežte, osoľte a okoreňte. Z jednej strany ich potrite tenkou vrstvou horčice.",
-    "V hrnci rozohrejte masť a opečte na nej slaninu. Pridajte mäso a prudko ho opečte z oboch strán. Potom ho vyberte na tanier.",
-    "Vo výpeku orestujte cibuľu dozlatista. Pridajte zvyšnú horčicu, krátko ju opečte a podlejte trochou hovädzieho vývaru.",
-    "Vráťte mäso aj so šťavou do hrnca. Prilejte približne polovicu uhorkového nálevu a dostatok vývaru, aby bolo mäso takmer ponorené.",
-    "Prikryte a duste na miernom ohni približne 1,5 až 2 hodiny, kým mäso nezmäkne. Podľa potreby dolievajte vývar.",
-    "Mäkké mäso vyberte. Hladkú múku rozmiešajte v studenej vode, vlejte do omáčky a za občasného miešania varte ďalších 10–15 minút.",
-    "Kyslé uhorky nakrájajte na kocky alebo tenké prúžky a pridajte ich do omáčky. Podľa chuti prilejte zvyšný nálev.",
-    "Vráťte mäso do omáčky a nechajte ešte 2–3 minúty prehriať. Ochutnajte a podľa potreby dolaďte soľ a korenie."
+    "V hrnci rozohrejte masť a opečte na nej slaninu. Pridajte mäso, prudko ho opečte z oboch strán a vyberte na tanier.",
+    "Vo výpeku orestujte cibuľu dozlatista. Pridajte zvyšnú horčicu, krátko ju opečte a podlejte trochou vývaru.",
+    "Vráťte mäso aj so šťavou do hrnca. Prilejte polovicu uhorkového nálevu a toľko vývaru, aby bolo mäso takmer ponorené. Prikryté duste na miernom ohni 1,5–2 hodiny, kým mäso nezmäkne. Podľa potreby dolievajte vývar.",
+    "Mäso vyberte. Múku rozmiešajte v studenej vode, vlejte do omáčky a za občasného miešania varte 10–15 minút.",
+    "Uhorky nakrájajte na kocky alebo tenké prúžky a pridajte do omáčky. Podľa chuti prilejte zvyšný nálev.",
+    "Vráťte mäso do omáčky a 2–3 minúty prehrejte. Dochuťte soľou a korením."
   ],
   "notes": "Čas dusenia závisí od druhu a hrúbky mäsa."
 }

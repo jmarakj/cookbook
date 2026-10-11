@@ -1,36 +1,36 @@
 {
     "categories": [
         {
-            "id": "traditional",
-            "label": "Tradičné jedlá"
+            "id": "meat",
+            "label": "Mäsité"
         },
         {
-            "id": "baking",
-            "label": "Pečenie"
+            "id": "vegetarian",
+            "label": "Bezmäsité"
         },
         {
-            "id": "quick",
-            "label": "Rýchle"
-        },
-        {
-            "id": "desserts",
-            "label": "Dezerty"
-        },
-        {
-            "id": "fried",
-            "label": "Vyprážané"
+            "id": "sweet",
+            "label": "Sladké jedlá"
         },
         {
             "id": "soup",
             "label": "Polievky"
         },
         {
-            "id": "rissotto",
+            "id": "pasta",
+            "label": "Cestoviny"
+        },
+        {
+            "id": "risotto",
             "label": "Rizoto"
         },
         {
-            "id": "pasta",
-            "label": "Cestoviny"
+            "id": "baking",
+            "label": "Pečenie"
+        },
+        {
+            "id": "fried",
+            "label": "Vyprážané"
         }
     ],
     "units": [
@@ -69,10 +69,6 @@
         {
             "id": "to_taste",
             "label": "podľa chuti"
-        },
-        {
-            "id": "cup",
-            "label": "šálka"
         }
     ],
     "ingredients": [
@@ -110,7 +106,7 @@
         },
         {
             "id": "oil_cooking",
-            "label": "olej na vyprážanie"
+            "label": "olej"
         },
         {
             "id": "rice",
@@ -159,14 +155,6 @@
         {
             "id": "thyme_dried",
             "label": "sušený tymian"
-        },
-        {
-            "id": "garlic_powder",
-            "label": "cesnakový prášok"
-        },
-        {
-            "id": "onion_powder",
-            "label": "cibuľový prášok"
         },
         {
             "id": "cayenne_pepper",
@@ -413,10 +401,6 @@
             "label": "tavený syr"
         },
         {
-            "id": "bell_pepper_yellow",
-            "label": "žltá paprika"
-        },
-        {
             "id": "chicken_breast",
             "label": "kuracie mäso"
         },
@@ -454,7 +438,7 @@
         },
         {
             "id": "tvaroh",
-            "label": "plnotučný hrudkovitý tvaroh"
+            "label": "tvaroh"
         },
         {
             "id": "spaghetti",
@@ -478,7 +462,7 @@
         },
         {
             "id": "mustard",
-            "label": "plnotučná horčica"
+            "label": "horčica"
         },
         {
             "id": "pickles",
@@ -491,6 +475,10 @@
         {
             "id": "beef_broth",
             "label": "hovädzí vývar"
+        },
+        {
+            "id": "vegetable_seasoning",
+            "label": "zeleninové korenie (Vegeta)"
         }
     ]
 }

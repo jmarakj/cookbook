@@ -1,7 +1,8 @@
 {
   "id": "hermelin-v-listkovom-ceste",
   "name": "Pečený hermelín v lístkovom ceste so špenátovým šalátom",
-  "category": ["baking"],
+  "category": ["vegetarian", "baking"],
+  "cuisine": "cz",
   "yield": 2,
   "times": {
     "prep": 15,
@@ -14,13 +15,13 @@
       "id": "puff_pastry",
       "amount": 1,
       "unit": "pcs",
-      "notes": "1 balenie lístkového cesta"
+      "notes": "balenie"
     },
     {
       "id": "hermelin_cheese",
       "amount": 2,
       "unit": "pcs",
-      "notes": "Hermelín alebo Encián"
+      "notes": "alebo Encián"
     },
     {
       "id": "spring_onion",
@@ -37,49 +38,48 @@
     {
       "id": "spinach_baby",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "baby špenát na šalát"
+      "unit": null,
+      "notes": null
     },
     {
       "id": "olive_oil",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "na šalátový dresing"
+      "unit": null,
+      "notes": "na dresing"
     },
     {
       "id": "lemon_juice",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "alternatívne možno použiť balzamikový ocot"
+      "unit": null,
+      "notes": "alebo balzamikový ocot"
     },
     {
       "id": "salt",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
     },
     {
       "id": "black_pepper",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": "mleté"
     },
     {
       "id": "walnuts",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "voliteľné, nasekané"
+      "unit": null,
+      "notes": "nasekané, voliteľné"
     }
   ],
   "steps": [
     "Rúru predhrejte na 200 °C a plech vyložte papierom na pečenie.",
-    "Hermelíny vodorovne rozrežte na polovice, vnútro posypte nakrájanou jarnou cibuľkou a polovice opäť spojte.",
-    "Lístkové cesto rozvaľkajte a rozrežte na dostatočne veľké štvorce.",
-    "Do stredu každého štvorca položte naplnený hermelín, zabaľte ho do cesta a spoje pevne pritlačte.",
-    "Balíčky potrite rozšľahaným vajcom a pečte približne 15-20 minút dozlatista.",
-    "Baby špenát vložte do misy, pokvapkajte olivovým olejom a citrónovou šťavou alebo balzamikovým octom.",
-    "Šalát dochuťte soľou a čiernym korením a podľa chuti pridajte nasekané vlašské orechy.",
-    "Pečený hermelín podávajte teplý so špenátovým šalátom."
+    "Hermelíny vodorovne prerežte na polovice, posypte nakrájanou jarnou cibuľkou a polovice opäť spojte.",
+    "Lístkové cesto rozvaľkajte a nakrájajte na štvorce dostatočne veľké na zabalenie syra.",
+    "Do stredu každého štvorca položte hermelín, zabaľte ho a spoje pevne pritlačte.",
+    "Balíčky potrite rozšľahaným vajcom a pečte približne 15–20 minút dozlatista.",
+    "Baby špenát pokvapkajte olivovým olejom a citrónovou šťavou alebo balzamikovým octom, osoľte, okoreňte a podľa chuti pridajte orechy.",
+    "Hermelín podávajte teplý so špenátovým šalátom."
   ],
   "notes": "Dresing možno podľa chuti doplniť medom a horčicou."
 }

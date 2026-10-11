@@ -1,80 +1,78 @@
 {
-    "id": "langose-001",
-    "name": "Langoše",
-    "category": [
-        "traditional",
-        "fried"
-    ],
-    "yield": 4,
-    "times": {
-        "prep": 30,
-        "cook": 30,
-        "rest": 120,
-        "total": 180
+  "id": "langose",
+  "name": "Langoše",
+  "category": ["vegetarian", "fried"],
+  "cuisine": "hu",
+  "yield": 4,
+  "times": {
+    "prep": 30,
+    "cook": 30,
+    "rest": 120,
+    "total": 180
+  },
+  "ingredients": [
+    {
+      "id": "flour_plain",
+      "amount": 500,
+      "unit": "g",
+      "notes": "špeciál na kysnuté cesto / T650"
     },
-    "ingredients": [
-        {
-            "id": "flour_plain",
-            "amount": 500,
-            "unit": "g",
-            "notes": "špeciál na kysnuté cesto / T650"
-        },
-        {
-            "id": "sour_cream",
-            "amount": 200,
-            "unit": "g",
-            "notes": null
-        },
-        {
-            "id": "milk",
-            "amount": 250,
-            "unit": "ml",
-            "notes": "vlažné"
-        },
-        {
-            "id": "yeast_fresh",
-            "amount": 21,
-            "unit": "g",
-            "notes": "1/2 kocky"
-        },
-        {
-            "id": "sugar_white",
-            "amount": 0.5,
-            "unit": "tsp",
-            "notes": null
-        },
-        {
-            "id": "vinegar_white",
-            "amount": 1,
-            "unit": "tbsp",
-            "notes": null
-        },
-        {
-            "id": "salt",
-            "amount": 2,
-            "unit": "tsp",
-            "notes": null
-        },
-        {
-            "id": "baking_soda",
-            "amount": 0.5,
-            "unit": "tsp",
-            "notes": null
-        },
-        {
-            "id": "oil_cooking",
-            "amount": null,
-            "unit": null,
-            "notes": null
-        }
-    ],
-    "steps": [
-        "Kvások: Vo vlažnom mlieku rozmiešajte cukor a rozdrobené droždie. Nechajte 15 minút napeniť.",
-        "Cesto: Zmiešajte múku, soľ a sódu. Prilejte kvások, smotanu a ocot. Mixujte rucným mixérom 8-10 minút. Nepridávajte múku.",
-        "Kysnutie: Nechajte kysnúť cez noc v chladničke, alebo 1 hodinu na teplom mieste a 30 minút v chladničke.",
-        "Guličky: Naolejovanými rukami rozdeľte cesto na 8-9 guličiek na naolejovanú dosku. Nechajte 15-20 minút podkysnúť pod fóliou.",
-        "Tvarovanie: Guličku roztiahnite prstami od stredu do kruhu bez valkania. Urobte v strede malú dieru.",
-        "Vyprážanie: Vyprážajte v hlbokom horúcom oleji (170-180°C) cca 2 minúty z jednej strany, otočte a dopražte 50-60 sekúnd."
-    ],
-    "notes": "Nikdy nepoužívajte múku na podsypávanie počas tvarovania, iba olej."
+    {
+      "id": "sour_cream",
+      "amount": 200,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "milk",
+      "amount": 250,
+      "unit": "ml",
+      "notes": "vlažné"
+    },
+    {
+      "id": "yeast_fresh",
+      "amount": 21,
+      "unit": "g",
+      "notes": "1/2 kocky"
+    },
+    {
+      "id": "sugar_white",
+      "amount": 0.5,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "vinegar_white",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "baking_soda",
+      "amount": 0.5,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "oil_cooking",
+      "amount": null,
+      "unit": null,
+      "notes": "na vyprážanie"
+    }
+  ],
+  "steps": [
+    "Vo vlažnom mlieku rozmiešajte cukor a rozdrobené droždie. Nechajte 15 minút napeniť.",
+    "Zmiešajte múku, soľ a sódu. Prilejte kvások, smotanu a ocot. Miešajte ručným mixérom 8–10 minút. Nepridávajte múku.",
+    "Nechajte kysnúť cez noc v chladničke, alebo 1 hodinu na teplom mieste a 30 minút v chladničke.",
+    "Naolejovanými rukami rozdeľte cesto na 8–9 guličiek na naolejovanú dosku. Nechajte 15–20 minút podkysnúť pod fóliou.",
+    "Guličku roztiahnite prstami od stredu do kruhu bez vaľkania. Urobte v strede malú dieru.",
+    "Vyprážajte v hlbokom horúcom oleji (170–180 °C) približne 2 minúty z jednej strany, otočte a dopražte 50–60 sekúnd."
+  ],
+  "notes": "Nikdy nepoužívajte múku na podsypávanie počas tvarovania, iba olej."
 }

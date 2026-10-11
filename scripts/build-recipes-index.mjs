@@ -10,6 +10,9 @@ const recipesDir = join(publicDir, 'recipes')
 const readJson = (file) => JSON.parse(readFileSync(file, 'utf8'))
 const enums = readJson(join(publicDir, 'enums.json'))
 const label = (items, id) => items.find((item) => item.id === id)?.label ?? id
+// cuisine is a country code – "it" -> "Taliansko"
+const regionNames = new Intl.DisplayNames(['sk'], { type: 'region' })
+const countryName = (code) => (code ? regionNames.of(code.toUpperCase()) : '')
 
 // lowercase, without diacritics, unique words – so "Langoše" matches "langose"
 const normalize = (texts) => [
@@ -33,9 +36,11 @@ const index = readdirSync(recipesDir)
       // file name, because detail page loads recipes/<id>.json
       id: basename(file, '.json'),
       name: recipe.name,
+      category: recipe.category,
       search: normalize([
         recipe.name,
         ...recipe.category.map((c) => label(enums.categories, c)),
+        countryName(recipe.cuisine),
         ...recipe.ingredients.map((i) => label(enums.ingredients, i.id)),
       ]),
     }

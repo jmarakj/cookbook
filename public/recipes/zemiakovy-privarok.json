@@ -1,7 +1,8 @@
 {
   "id": "zemiakovy-privarok",
   "name": "Zemiakový prívarok",
-  "category": ["traditional"],
+  "category": ["vegetarian"],
+  "cuisine": "sk",
   "yield": 4,
   "times": {
     "prep": 15,
@@ -21,6 +22,12 @@
       "amount": 1,
       "unit": "pcs",
       "notes": null
+    },
+    {
+      "id": "vegetable_seasoning",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
     },
     {
       "id": "vinegar_white",
@@ -50,22 +57,27 @@
       "id": "paprika_sweet",
       "amount": 1,
       "unit": "tsp",
-      "notes": "mletá sladká paprika"
+      "notes": null
     },
     {
       "id": "salt",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
+    },
+    {
+      "id": "water",
+      "amount": null,
+      "unit": null,
+      "notes": "na zaliatie"
     }
   ],
   "steps": [
     "Zemiaky ošúpte, nakrájajte na kocky a vložte do hrnca.",
-    "Zalejte ich vodou tak, aby boli ponorené, pridajte bobkový list a Vegetu a varte, kým zemiaky nezmäknú.",
-    "V miske rozmiešajte hladkú múku so smotanou a trochou mlieka, aby vznikla hladká zmes bez hrudiek.",
-    "Zmes za stáleho miešania vlejte k zemiakom a nechajte niekoľko minút prevariť, kým prívarok zhustne.",
-    "Pridajte mletú sladkú papriku a podľa potreby zrieďte mliekom.",
-    "Dochuťte soľou a octom podľa chuti. Pred podávaním vyberte bobkový list."
+    "Zalejte ich vodou tak, aby boli ponorené, pridajte bobkový list a Vegetu a varte, kým nezmäknú.",
+    "V miske rozmiešajte múku so smotanou a trochou mlieka na hladkú zmes bez hrudiek.",
+    "Zátrepku za stáleho miešania vlejte k zemiakom a niekoľko minút povarte, kým prívarok nezhustne.",
+    "Pridajte sladkú papriku, podľa potreby zrieďte mliekom a dochuťte soľou a octom. Pred podávaním vyberte bobkový list."
   ],
   "notes": "Množstvá zahusťovadla a dochucovadiel sú orientačné."
 }

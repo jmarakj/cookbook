@@ -1,7 +1,8 @@
 {
   "id": "gyros-s-kuracim-masom-v-tortille",
   "name": "Gyros s kuracím mäsom v tortille",
-  "category": ["quick"],
+  "category": ["meat"],
+  "cuisine": "gr",
   "yield": 4,
   "times": {
     "prep": 20,
@@ -14,13 +15,13 @@
       "id": "chicken_breast",
       "amount": 500,
       "unit": "g",
-      "notes": "kuracie mäso"
+      "notes": null
     },
     {
       "id": "tomato",
       "amount": 2,
       "unit": "pcs",
-      "notes": "paradajky"
+      "notes": null
     },
     {
       "id": "bell_pepper",
@@ -32,7 +33,7 @@
       "id": "corn",
       "amount": 1,
       "unit": "pcs",
-      "notes": "1 konzerva"
+      "notes": "konzerva"
     },
     {
       "id": "tortilla",
@@ -44,19 +45,19 @@
       "id": "onion",
       "amount": 1,
       "unit": "pcs",
-      "notes": "cibuľa"
+      "notes": null
     },
     {
       "id": "lettuce_mix",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "šalátová zmes podľa výberu"
+      "unit": null,
+      "notes": "podľa výberu"
     },
     {
       "id": "yogurt_plain",
-      "amount": 1,
-      "unit": "pcs",
-      "notes": "1 téglik bieleho jogurtu"
+      "amount": 150,
+      "unit": "g",
+      "notes": "kelímok"
     },
     {
       "id": "tartar_sauce",
@@ -67,55 +68,54 @@
     {
       "id": "lime_zest",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "nastrúhaná kôra z limetky alebo citróna"
+      "unit": null,
+      "notes": "alebo citrónová"
     },
     {
       "id": "gyros_spice",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
     },
     {
       "id": "salt",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
     },
     {
       "id": "black_pepper",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": "mleté"
     },
     {
       "id": "grill_seasoning",
       "amount": null,
-      "unit": "to_taste",
+      "unit": null,
       "notes": null
     },
     {
       "id": "paprika_sweet",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "sladká mletá paprika"
+      "unit": null,
+      "notes": null
     },
     {
       "id": "oil_cooking",
       "amount": null,
-      "unit": "to_taste",
-      "notes": "na opekanie mäsa a zeleniny"
+      "unit": null,
+      "notes": "na opekanie"
     }
   ],
   "steps": [
     "Cibuľu nakrájajte nadrobno a na rozpálenom oleji ju opečte dozlatista.",
     "Kuracie mäso nakrájajte na malé kocky, pridajte k cibuli a opečte.",
-    "Mäso osoľte, okoreňte čiernym korením, gyros korením, grilovacím korením a sladkou mletou paprikou. Za občasného miešania opekajte, kým nebude mäkké a dôkladne prepečené.",
-    "Paradajky a papriky nakrájajte na kocky. Kukuricu sceďte a podľa potreby prepláchnite. Zeleninu zmiešajte so šalátovou zmesou, osoľte a pokvapkajte trochou oleja.",
-    "V miske zmiešajte biely jogurt s tatárskou omáčkou, pridajte soľ, čierne korenie a trochu nastrúhanej limetkovej alebo citrónovej kôry. Podľa chuti môžete použiť aj citrónovú šťavu.",
-    "Tortilly krátko opečte na suchej rozohriatej panvici, približne 5 sekúnd z každej strany.",
-    "Na každú tortillu rozložte šalát so zeleninou, kuracie mäso a jogurtový dressing.",
-    "Tortillu preložte napoly a podľa potreby zaistite špáradlom. Podávajte ihneď."
+    "Mäso osoľte a okoreňte čiernym korením, gyros korením, grilovacím korením a sladkou paprikou. Za občasného miešania opekajte, kým nie je mäkké a prepečené.",
+    "Paradajky a papriky nakrájajte na kocky, kukuricu sceďte. Zeleninu zmiešajte so šalátovou zmesou, osoľte a pokvapkajte trochou oleja.",
+    "V miske zmiešajte jogurt s tatárskou omáčkou, soľou, čiernym korením a trochou nastrúhanej limetkovej alebo citrónovej kôry.",
+    "Tortilly krátko zohrejte na suchej rozpálenej panvici, približne 5 sekúnd z každej strany.",
+    "Na každú tortillu rozložte šalát, kuracie mäso a dresing. Preložte napoly, podľa potreby zaistite špáradlom a ihneď podávajte."
   ],
   "notes": null
 }

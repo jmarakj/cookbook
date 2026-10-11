@@ -19,6 +19,7 @@ Don't add anything else besides one short line listing any assumptions you made.
   "id": "<slug>",
   "name": "Name of the dish, in Slovak",
   "category": ["<category id>"],
+  "cuisine": "<country code>",
   "yield": 4,
   "times": { "prep": 30, "cook": 30, "rest": 120, "total": 180 },
   "ingredients": [
@@ -33,17 +34,20 @@ Rules:
 
 - **Language:** all text (name, notes, steps, new labels) is in **Slovak** with correct diacritics. Translate if the source is in another language.
 - **id:** the same as the file-name slug.
-- **category:** 1–3 ids. Use the existing categories whenever one fits; add a new one only when none fits.
+- **category:** all ids that fit, in the order of the categories list below. Use the existing categories whenever one fits; add a new one only when none fits.
+  - Always add exactly one of `sweet` (any sweet dish, including sweet main dishes, desserts and cakes), `vegetarian` (savory, no meat, fish or meat broth) or `meat`.
+- **cuisine:** the lowercase ISO 3166 country code of the country the dish comes from (e.g. `sk`, `it`, `fr`), not where the source website is from. It is shown as a flag and is not in the enums.
 - **yield:** the number of servings, as an integer. If the source gives pieces instead (e.g. "8 langoše"), estimate servings and mention it in your assumptions line.
 - **times:** whole minutes. `prep` is hands-on work, `cook` is baking, frying or cooking, `rest` is rising, cooling or marinating. `total` = prep + cook + rest. If the source doesn't give a time, estimate it.
 - **ingredients:**
   - `id`: **reuse an existing ingredient id if it's the same ingredient**, even when the source names it differently. Otherwise create a new id: English, snake_case, general before specific (e.g. `flour_plain`, `yeast_fresh`, `oil_cooking`). Its `label` is the Slovak name in lowercase.
   - `amount`: a number (`0.5`, not `"1/2"`), or `null` when the source gives no amount (e.g. "oil for frying").
   - `unit`: one of the unit ids, or `null` when `amount` is null. For countable items use `pcs`. Convert cups, ounces, pounds and °F to metric (`g` / `ml`, °C). Keep `tsp` and `tbsp`.
-  - `notes`: a short Slovak note such as type, temperature or "1/2 kocky", or `null`.
+  - `notes`: a short lowercase Slovak note such as type, temperature or "1/2 kocky", or `null`. Don't repeat the ingredient label (not "cibuľa" for `onion`). Put "podľa chuti" here instead of a unit when there's no amount.
   - Keep the source's order. Include optional and garnish ingredients, marked in `notes` (e.g. "voliteľné").
   - Each ingredient id appears only once. If the source lists one twice (e.g. sugar for the dough and for the topping), add up the amounts and explain the split in `notes`.
-- **steps:** 4–10 steps. Start each with a 1–2 word label and a colon (e.g. "Cesto: ..."). Write them in the imperative, short but complete, and keep all temperatures and times. Leave out stories, ads and serving fluff.
+- **steps:** 4–10 steps. Write them in the imperative, short but complete, and keep all temperatures and times. Leave out stories, ads and serving fluff.
+- **numbers in text:** ranges with an en dash (`15–20 minút`), a space before `°C` (`180 °C`), "približne" instead of "cca".
 - **notes:** important tips or warnings from the author in 1–2 sentences, otherwise `null`.
 - The JSON must be valid: double quotes, no comments, no trailing commas, `null` instead of empty strings.
 
@@ -53,7 +57,8 @@ Rules:
 {
   "id": "langose",
   "name": "Langoše",
-  "category": ["traditional", "fried"],
+  "category": ["vegetarian", "fried"],
+  "cuisine": "hu",
   "yield": 4,
   "times": { "prep": 30, "cook": 30, "rest": 120, "total": 180 },
   "ingredients": [
@@ -61,11 +66,11 @@ Rules:
     { "id": "milk", "amount": 250, "unit": "ml", "notes": "vlažné" },
     { "id": "yeast_fresh", "amount": 21, "unit": "g", "notes": "1/2 kocky" },
     { "id": "salt", "amount": 2, "unit": "tsp", "notes": null },
-    { "id": "oil_cooking", "amount": null, "unit": null, "notes": null }
+    { "id": "oil_cooking", "amount": null, "unit": null, "notes": "na vyprážanie" }
   ],
   "steps": [
-    "Kvások: Vo vlažnom mlieku rozmiešajte cukor a rozdrobené droždie. Nechajte 15 minút napeniť.",
-    "Vyprážanie: Vyprážajte v hlbokom horúcom oleji (170-180°C) cca 2 minúty z jednej strany, otočte a dopražte 50-60 sekúnd."
+    "Vo vlažnom mlieku rozmiešajte cukor a rozdrobené droždie. Nechajte 15 minút napeniť.",
+    "Vyprážajte v hlbokom horúcom oleji (170–180 °C) približne 2 minúty z jednej strany, otočte a dopražte 50–60 sekúnd."
   ],
   "notes": "Nikdy nepoužívajte múku na podsypávanie počas tvarovania, iba olej."
 }
@@ -79,20 +84,32 @@ These are the ids you can use. Reuse them before creating new ones.
 {
     "categories": [
         {
-            "id": "traditional",
-            "label": "Tradičné jedlá"
+            "id": "meat",
+            "label": "Mäsité"
+        },
+        {
+            "id": "vegetarian",
+            "label": "Bezmäsité"
+        },
+        {
+            "id": "sweet",
+            "label": "Sladké jedlá"
+        },
+        {
+            "id": "soup",
+            "label": "Polievky"
+        },
+        {
+            "id": "pasta",
+            "label": "Cestoviny"
+        },
+        {
+            "id": "risotto",
+            "label": "Rizoto"
         },
         {
             "id": "baking",
             "label": "Pečenie"
-        },
-        {
-            "id": "quick_dinner",
-            "label": "Rýchla večera"
-        },
-        {
-            "id": "desserts",
-            "label": "Dezerty"
         },
         {
             "id": "fried",
@@ -172,7 +189,7 @@ These are the ids you can use. Reuse them before creating new ones.
         },
         {
             "id": "oil_cooking",
-            "label": "olej na vyprážanie"
+            "label": "olej"
         }
     ]
 }

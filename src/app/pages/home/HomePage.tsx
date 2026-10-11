@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import { Link } from 'react-router'
-import { fetchRecipes } from '../../api/recipes'
+import { fetchEnums, fetchRecipes } from '../../api/recipes'
 import RecipeImage from '../../components/RecipeImage'
-import type { RecipeSummary } from '../../types/recipe'
+import type { EnumItem, RecipeSummary } from '../../types/recipe'
 import './HomePage.css'
 
 // tiles rendered per infinite-scroll page
@@ -28,6 +28,8 @@ function tokenize(text: string) {
 function HomePage() {
   const [recipes, setRecipes] = useState<RecipeSummary[] | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [categories, setCategories] = useState<EnumItem[]>([])
+  const [selected, setSelected] = useState<string[]>([])
   const [query, setQuery] = useState('')
   const [pages, setPages] = useState(1)
   const isDesktop = useSyncExternalStore(
@@ -39,11 +41,23 @@ function HomePage() {
     fetchRecipes()
       .then(setRecipes)
       .catch((err: Error) => setError(err.message))
+    // chips are optional – the list still works without them
+    fetchEnums()
+      .then((enums) => setCategories(enums.categories))
+      .catch(() => {})
   }, [])
 
+  const toggleCategory = (id: string) => {
+    setSelected((s) => (s.includes(id) ? s.filter((c) => c !== id) : [...s, id]))
+    setPages(1)
+  }
+
+  // no category selected = all; otherwise the recipe must be in any selected one
   const tokens = tokenize(query)
-  const matches = (recipes ?? []).filter((r) =>
-    tokens.every((t) => r.search.includes(t)),
+  const matches = (recipes ?? []).filter(
+    (r) =>
+      (selected.length === 0 || r.category.some((c) => selected.includes(c))) &&
+      tokens.every((t) => r.search.includes(t)),
   )
   const results = matches.slice(
     0,
@@ -67,6 +81,22 @@ function HomePage() {
 
   return (
     <main className="home">
+      {categories.length > 0 && (
+        <div className="categories">
+          {categories.map((c) => (
+            <button
+              key={c.id}
+              type="button"
+              className="chip"
+              aria-pressed={selected.includes(c.id)}
+              onClick={() => toggleCategory(c.id)}
+            >
+              {c.label}
+            </button>
+          ))}
+        </div>
+      )}
+
       <input
         className="search"
         type="search"
