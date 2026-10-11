@@ -1,0 +1,79 @@
+{
+  "id": "ryzovy-nakyp",
+  "name": "Ryžový nákyp",
+  "category": ["traditional", "baking"],
+  "yield": 6,
+  "times": {
+    "prep": 30,
+    "cook": 40,
+    "rest": 0,
+    "total": 70
+  },
+  "ingredients": [
+    {
+      "id": "rice",
+      "amount": 350,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "milk",
+      "amount": 1000,
+      "unit": "ml",
+      "notes": "1 l"
+    },
+    {
+      "id": "sugar_powdered",
+      "amount": 90,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "butter",
+      "amount": 25,
+      "unit": "g",
+      "notes": "časť aj na vymastenie pekáča"
+    },
+    {
+      "id": "sugar_vanilla",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "1 balíček"
+    },
+    {
+      "id": "egg",
+      "amount": 3,
+      "unit": "pcs",
+      "notes": "oddeliť žĺtky od bielkov"
+    },
+    {
+      "id": "peach_compote",
+      "amount": 700,
+      "unit": "ml",
+      "notes": "7 dcl; broskyne nakrájať na kocky, šťavu odložiť"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "trochu na ochutenie ryže"
+    },
+    {
+      "id": "breadcrumbs",
+      "amount": null,
+      "unit": null,
+      "notes": "na vysypanie vymasteného pekáča"
+    }
+  ],
+  "steps": [
+    "Ryža: Ryžu umyte, vložte do hrnca a zalejte polovicou mlieka. Trochu osoľte, počas varenia pravidelne miešajte a postupne prilievajte zvyšné mlieko. Varte, kým vznikne hustá kaša a ryža zostane mierne pevná. Odstavte a nechajte trochu vychladnúť.",
+    "Rúra: Predhrejte rúru na 180 °C.",
+    "Zmes: Do ešte teplej ryžovej kaše vmiešajte maslo, žĺtky, práškový cukor a vanilkový cukor. Dobre premiešajte.",
+    "Sneh: Z bielkov vyšľahajte tuhý sneh a opatrne ho vmiešajte do ryžovej zmesi.",
+    "Ovocie: Broskyne z kompótu nakrájajte na kocky, pridajte ich do zmesi a premiešajte.",
+    "Pekáč: Pekáč vymažte maslom a vysypte strúhankou. Rovnomerne doň rozotrite pripravenú zmes.",
+    "Pečenie: Pečte v predhriatej rúre pri 180 °C približne 40 minút.",
+    "Podávanie: Nákyp nakrájajte na porcie a podľa chuti polejte šťavou z broskyňového kompótu."
+  ],
+  "notes": "Ryžu uvarte iba tesne pred dovarením, aby sa pri pečení nerozvarila. Ovocie môžete nahradiť iným kompótom; snehovú čiapku môžete pripraviť navyše."
+}

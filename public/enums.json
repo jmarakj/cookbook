@@ -1,0 +1,128 @@
+{
+    "categories": [
+        {
+            "id": "traditional",
+            "label": "Tradičné jedlá"
+        },
+        {
+            "id": "baking",
+            "label": "Pečenie"
+        },
+        {
+            "id": "quick_dinner",
+            "label": "Rýchla večera"
+        },
+        {
+            "id": "desserts",
+            "label": "Dezerty"
+        },
+        {
+            "id": "fried",
+            "label": "Vyprážané"
+        }
+    ],
+    "units": [
+        {
+            "id": "g",
+            "label": "g"
+        },
+        {
+            "id": "kg",
+            "label": "kg"
+        },
+        {
+            "id": "ml",
+            "label": "ml"
+        },
+        {
+            "id": "l",
+            "label": "l"
+        },
+        {
+            "id": "tsp",
+            "label": "čl"
+        },
+        {
+            "id": "tbsp",
+            "label": "pl"
+        },
+        {
+            "id": "pcs",
+            "label": "ks"
+        },
+        {
+            "id": "pinch",
+            "label": "štipka"
+        },
+        {
+            "id": "to_taste",
+            "label": "podľa chuti"
+        }
+    ],
+    "ingredients": [
+        {
+            "id": "flour_plain",
+            "label": "hladká múka"
+        },
+        {
+            "id": "sour_cream",
+            "label": "kyslá smotana"
+        },
+        {
+            "id": "milk",
+            "label": "mlieko"
+        },
+        {
+            "id": "yeast_fresh",
+            "label": "čerstvé droždie"
+        },
+        {
+            "id": "sugar_white",
+            "label": "kryštálový cukor"
+        },
+        {
+            "id": "vinegar_white",
+            "label": "biely ocot"
+        },
+        {
+            "id": "salt",
+            "label": "soľ"
+        },
+        {
+            "id": "baking_soda",
+            "label": "sóda bikarbóna"
+        },
+        {
+            "id": "oil_cooking",
+            "label": "olej na vyprážanie"
+        },
+        {
+            "id": "rice",
+            "label": "ryža"
+        },
+        {
+            "id": "sugar_powdered",
+            "label": "práškový cukor"
+        },
+        {
+            "id": "butter",
+            "label": "maslo"
+        },
+        {
+            "id": "sugar_vanilla",
+            "label": "vanilkový cukor"
+        },
+        {
+            "id": "egg",
+            "label": "vajce"
+        },
+        {
+            "id": "peach_compote",
+            "label": "broskyňový kompót"
+        },
+        {
+            "id": "breadcrumbs",
+            "label": "strúhanka"
+        }
+    ]
+}
