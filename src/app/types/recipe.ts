@@ -9,7 +9,7 @@ export type Recipe = {
   id: string
   name: string
   category: string[]
-  yield: number
+  yield: number | null
   times: { prep: number; cook: number; rest: number; total: number }
   ingredients: Ingredient[]
   steps: string[]

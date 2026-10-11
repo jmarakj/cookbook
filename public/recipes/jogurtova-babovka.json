@@ -2,7 +2,7 @@
   "id": "jogurtova-babovka",
   "name": "Jogurtová bábovka",
   "category": ["baking", "desserts"],
-  "yield": 12,
+  "yield": null,
   "times": {
     "prep": 10,
     "cook": 40,

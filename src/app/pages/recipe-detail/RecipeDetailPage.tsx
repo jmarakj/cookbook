@@ -54,8 +54,11 @@ function RecipeView({ id }: { id: string }) {
     return <main>Načítavam…</main>
   }
 
+  const baseYield = recipe.yield
   const currentServings =
-    servings ?? Math.min(MAX_SERVINGS, Math.max(MIN_SERVINGS, recipe.yield))
+    baseYield == null
+      ? null
+      : (servings ?? Math.min(MAX_SERVINGS, Math.max(MIN_SERVINGS, baseYield)))
 
   return (
     <main className="recipe">
@@ -89,23 +92,25 @@ function RecipeView({ id }: { id: string }) {
       </dl>
 
       <h2>Ingrediencie</h2>
-      <label className="servings">
-        Porcie: <strong>{currentServings}</strong>
-        <input
-          type="range"
-          min={MIN_SERVINGS}
-          max={MAX_SERVINGS}
-          value={currentServings}
-          onChange={(e) => setServings(Number(e.target.value))}
-        />
-      </label>
+      {currentServings != null && (
+        <label className="servings">
+          Porcie: <strong>{currentServings}</strong>
+          <input
+            type="range"
+            min={MIN_SERVINGS}
+            max={MAX_SERVINGS}
+            value={currentServings}
+            onChange={(e) => setServings(Number(e.target.value))}
+          />
+        </label>
+      )}
       <table className="ingredients">
         <tbody>
           {recipe.ingredients.map((ing) => (
             <tr key={ing.id}>
               <td>
                 {ing.amount != null &&
-                  `${scaleAmount(ing.amount, recipe.yield, currentServings)} ${ing.unit ? labelOf(enums?.units, ing.unit) : ''}`}
+                  `${baseYield != null && currentServings != null ? scaleAmount(ing.amount, baseYield, currentServings) : ing.amount} ${ing.unit ? labelOf(enums?.units, ing.unit) : ''}`}
               </td>
               <td>
                 {labelOf(enums?.ingredients, ing.id)}
