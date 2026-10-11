@@ -1,0 +1,85 @@
+{
+  "id": "madarsky-gulas",
+  "name": "Maďarský guláš",
+  "category": ["traditional"],
+  "yield": 4,
+  "times": {
+    "prep": 30,
+    "cook": 150,
+    "rest": 0,
+    "total": 180
+  },
+  "ingredients": [
+    {
+      "id": "beef_shank",
+      "amount": 600,
+      "unit": "g",
+      "notes": "hovädzia nožina alebo glejovka, nakrájaná na väčšie kocky"
+    },
+    {
+      "id": "onion",
+      "amount": 600,
+      "unit": "g",
+      "notes": "nadrobno nakrájaná"
+    },
+    {
+      "id": "paprika_sweet",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": "sladká mletá červená paprika"
+    },
+    {
+      "id": "paprika_hot",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": "štipľavá mletá červená paprika"
+    },
+    {
+      "id": "chili_pepper_dried",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "1–2 sušené feferónky, podľa chuti"
+    },
+    {
+      "id": "bell_pepper",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "zelená paprika"
+    },
+    {
+      "id": "tomato",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "pork_lard",
+      "amount": 3,
+      "unit": "tbsp",
+      "notes": "možno nahradiť olejom"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "water",
+      "amount": null,
+      "unit": null,
+      "notes": "horúca, na postupné podlievanie"
+    }
+  ],
+  "steps": [
+    "Cibuľu nakrájajte nadrobno a hovädzie mäso osušte a nakrájajte na väčšie kocky približne 4 × 5 cm.",
+    "V hrnci rozpustite a rozohrejte masť. Pridajte cibuľu a za stáleho miešania ju opečte do zlatožlta až svetlohneda, ale nespáľte ju.",
+    "Hrniec na chvíľu odstavte z ohňa, vmiešajte sladkú a štipľavú mletú papriku a nechajte ju rozpustiť v horúcom tuku. Prilejte trochu vody a nechajte zmes 2–3-krát vydusiť na tuk.",
+    "Pridajte mäso a za stáleho miešania ho opekajte približne 7–8 minút, aby sa zatiahlo a nasiaklo chuťou cibule a papriky. Zatiaľ ho nesoľte.",
+    "Mäso osoľte, podlejte malým množstvom horúcej vody a prikryté duste na strednom ohni. Priebežne kontrolujte a vždy podlievajte iba malým množstvom vody.",
+    "Keď je mäso polomäkké, pridajte nasekanú sušenú feferónku, zelenú papriku nakrájanú na kolieska a paradajky nakrájané na plátky.",
+    "Pokračujte v pomalom dusení približne 120–180 minút celkovo, kým mäso nezmäkne, ale nerozvarí sa. Podľa potreby podlievajte horúcou vodou; hotový guláš má mať hustú šťavu a nemá byť príliš vodnatý.",
+    "Podávajte s domácou knedľou, haluškami, varenými zemiakmi alebo čerstvým chlebom."
+  ],
+  "notes": "Guláš sa nezahusťuje múkou; hustotu mu dodáva rozvarená cibuľa a kolagén z hovädzej nožiny. Autorka odporúča neponáhľať sa s varením a nechať hotový guláš ideálne odstáť do nasledujúceho dňa, aby sa chute prepojili."
+}

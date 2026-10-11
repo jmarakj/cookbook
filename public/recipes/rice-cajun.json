@@ -1,0 +1,108 @@
+{
+  "id": "rice-cajun",
+  "name": "Rice Cajun na jednej panvici",
+  "category": ["quick"],
+  "yield": 4,
+  "times": {
+    "prep": 15,
+    "cook": 30,
+    "rest": 5,
+    "total": 50
+  },
+  "ingredients": [
+    {
+      "id": "sausage_smoked",
+      "amount": 500,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "oil_cooking",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "bell_pepper",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "paprika_smoked",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": "údená mletá paprika"
+    },
+    {
+      "id": "oregano_dried",
+      "amount": 0.5,
+      "unit": "tsp",
+      "notes": "sušené"
+    },
+    {
+      "id": "thyme_dried",
+      "amount": 0.5,
+      "unit": "tsp",
+      "notes": "sušený"
+    },
+    {
+      "id": "garlic_powder",
+      "amount": 0.25,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "onion_powder",
+      "amount": 0.25,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "cayenne_pepper",
+      "amount": 0.125,
+      "unit": "tsp",
+      "notes": "kajenské korenie"
+    },
+    {
+      "id": "black_pepper",
+      "amount": 0.125,
+      "unit": "tsp",
+      "notes": "čerstvo namleté"
+    },
+    {
+      "id": "tomatoes_diced",
+      "amount": 425,
+      "unit": "g",
+      "notes": "1 konzerva"
+    },
+    {
+      "id": "rice",
+      "amount": 200,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "chicken_broth",
+      "amount": 400,
+      "unit": "ml",
+      "notes": null
+    },
+    {
+      "id": "spring_onion",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "na ozdobenie"
+    }
+  ],
+  "steps": [
+    "Klobásu nakrájajte na kolieska. Vo veľkej hlbokej panvici alebo hrnci ju na strednom ohni opečte na oleji dozlatista.",
+    "Papriku nakrájajte na kocky, pridajte ku klobáse a opekajte približne 1 minútu.",
+    "Pridajte údenú papriku, oregano, tymian, cesnakový a cibuľový prášok, kajenské korenie a čierne korenie. Za stáleho miešania opekajte ďalšiu 1 minútu.",
+    "Pridajte paradajky aj so šťavou, suchú ryžu a kurací vývar. Premiešajte a zo dna panvice uvoľnite všetky opečené kúsky.",
+    "Panvicu prikryte pokrievkou, zvýšte teplotu na stredne vysokú a priveďte do varu. Potom znížte teplotu na minimum a pod pokrievkou varte 20 minút.",
+    "Panvicu odstavte a nechajte prikrytú odpočívať ďalších 5 minút.",
+    "Obsah premiešajte, aby sa klobása a ryža rovnomerne rozložili. Posypte nakrájanou jarnou cibuľkou a podávajte."
+  ],
+  "notes": null
+}

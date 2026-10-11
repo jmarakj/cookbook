@@ -1,0 +1,95 @@
+{
+  "id": "sisky",
+  "name": "Šišky s džemom",
+  "category": ["traditional", "fried"],
+  "yield": 12,
+  "times": {
+    "prep": 20,
+    "cook": 15,
+    "rest": 45,
+    "total": 80
+  },
+  "ingredients": [
+    {
+      "id": "flour_plain",
+      "amount": 500,
+      "unit": "g",
+      "notes": "hladká múka, navyše na podsypanie"
+    },
+    {
+      "id": "egg",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "egg_yolk",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "milk",
+      "amount": 300,
+      "unit": "ml",
+      "notes": "približne 100 ml na kvások, zvyšok do cesta"
+    },
+    {
+      "id": "yeast_fresh",
+      "amount": 21,
+      "unit": "g",
+      "notes": "1/2 kocky"
+    },
+    {
+      "id": "sugar_white",
+      "amount": 4,
+      "unit": "tbsp",
+      "notes": "1 lyžička do kvásku, zvyšok do cesta"
+    },
+    {
+      "id": "rum",
+      "amount": 3,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "pinch",
+      "notes": null
+    },
+    {
+      "id": "butter",
+      "amount": 50,
+      "unit": "g",
+      "notes": "zmäknuté"
+    },
+    {
+      "id": "jam",
+      "amount": null,
+      "unit": null,
+      "notes": "na ozdobenie alebo plnenie, podľa chuti"
+    },
+    {
+      "id": "oil_cooking",
+      "amount": null,
+      "unit": null,
+      "notes": "na vyprážanie"
+    },
+    {
+      "id": "sugar_powdered",
+      "amount": null,
+      "unit": null,
+      "notes": "na posypanie, voliteľné"
+    }
+  ],
+  "steps": [
+    "Kvások: Do hrnčeka rozdrobte droždie, pridajte približne 100 ml vlažného mlieka, lyžičku cukru a lyžicu múky. Premiešajte a nechajte vykysnúť.",
+    "Cesto: Do misy dajte zvyšnú múku, vajce, žĺtky, zvyšné mlieko, cukor, rum, soľ a maslo. Pridajte kvások a vypracujte hladké cesto. Prikryte a nechajte kysnúť približne 30 minút.",
+    "Tvarovanie: Cesto rozvaľkajte na pomúčenej doske na hrúbku 1,5–2 cm. Vykrajujte kolieska a v strede každého vytvorte jamku.",
+    "Odpočinok: Vykrojené šišky nechajte odpočívať aspoň 15 minút.",
+    "Vyprážanie: V hrnci rozohrejte dostatočné množstvo oleja. Šišky vyprážajte z oboch strán dozlatista.",
+    "Dokončenie: Hotové šišky položte na papierovú utierku, aby sa odsial prebytočný olej. Do stredu každej dajte trochu džemu a podľa chuti posypte práškovým cukrom."
+  ],
+  "notes": "Olej udržiavajte dostatočne horúci, ale nie príliš, aby sa šišky prepiekli aj vo vnútri bez spálenia povrchu."
+}

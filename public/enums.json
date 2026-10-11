@@ -9,8 +9,8 @@
             "label": "Pečenie"
         },
         {
-            "id": "quick_dinner",
-            "label": "Rýchla večera"
+            "id": "quick",
+            "label": "Rýchle"
         },
         {
             "id": "desserts",
@@ -123,6 +123,174 @@
         {
             "id": "breadcrumbs",
             "label": "strúhanka"
+        },
+        {
+            "id": "sausage_smoked",
+            "label": "údená klobása"
+        },
+        {
+            "id": "bell_pepper",
+            "label": "paprika"
+        },
+        {
+            "id": "paprika_smoked",
+            "label": "údená mletá paprika"
+        },
+        {
+            "id": "oregano_dried",
+            "label": "sušené oregano"
+        },
+        {
+            "id": "thyme_dried",
+            "label": "sušený tymian"
+        },
+        {
+            "id": "garlic_powder",
+            "label": "cesnakový prášok"
+        },
+        {
+            "id": "onion_powder",
+            "label": "cibuľový prášok"
+        },
+        {
+            "id": "cayenne_pepper",
+            "label": "kajenské korenie"
+        },
+        {
+            "id": "black_pepper",
+            "label": "čierne korenie"
+        },
+        {
+            "id": "tomatoes_diced",
+            "label": "krájané paradajky"
+        },
+        {
+            "id": "chicken_broth",
+            "label": "kurací vývar"
+        },
+        {
+            "id": "spring_onion",
+            "label": "jarná cibuľka"
+        },
+        {
+            "id": "yogurt_plain",
+            "label": "biely jogurt"
+        },
+        {
+            "id": "baking_powder",
+            "label": "prášok do pečiva"
+        },
+        {
+            "id": "cocoa_powder",
+            "label": "kakao"
+        },
+        {
+            "id": "baking_powder",
+            "label": "prášok do pečiva"
+        },
+        {
+            "id": "flour_semi_coarse",
+            "label": "polohrubá múka"
+        },
+        {
+            "id": "nutella",
+            "label": "Nutella"
+        },
+        {
+            "id": "banana",
+            "label": "banán"
+        },
+        {
+            "id": "strawberries",
+            "label": "jahody"
+        },
+        {
+            "id": "peach",
+            "label": "broskyňa"
+        },
+        {
+            "id": "whipping_cream",
+            "label": "smotana na šľahanie"
+        },
+        {
+            "id": "chocolate_glaze",
+            "label": "čokoládová poleva"
+        },
+        {
+            "id": "beef_shank",
+            "label": "hovädzia nožina"
+        },
+        {
+            "id": "onion",
+            "label": "cibuľa"
+        },
+        {
+            "id": "paprika_sweet",
+            "label": "sladká mletá paprika"
+        },
+        {
+            "id": "paprika_hot",
+            "label": "štipľavá mletá paprika"
+        },
+        {
+            "id": "chili_pepper_dried",
+            "label": "sušená feferónka"
+        },
+        {
+            "id": "tomato",
+            "label": "paradajka"
+        },
+        {
+            "id": "pork_lard",
+            "label": "bravčová masť"
+        },
+        {
+            "id": "water",
+            "label": "voda"
+        },
+        {
+            "id": "egg_yolk",
+            "label": "vaječný žĺtok"
+        },
+        {
+            "id": "rum",
+            "label": "rum"
+        },
+        {
+            "id": "jam",
+            "label": "džem"
+        },
+        {
+            "id": "pork_knuckle_smoked",
+            "label": "údené bravčové koleno"
+        },
+        {
+            "id": "lentils",
+            "label": "šošovica"
+        },
+        {
+            "id": "potato",
+            "label": "zemiak"
+        },
+        {
+            "id": "pork_lard",
+            "label": "bravčová masť"
+        },
+        {
+            "id": "bacon",
+            "label": "slanina"
+        },
+        {
+            "id": "garlic",
+            "label": "cesnak"
+        },
+        {
+            "id": "black_pepper_whole",
+            "label": "celé čierne korenie"
+        },
+        {
+            "id": "bay_leaf",
+            "label": "bobkový list"
         }
     ]
 }

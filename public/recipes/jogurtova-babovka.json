@@ -1,0 +1,89 @@
+{
+  "id": "jogurtova-babovka",
+  "name": "Jogurtová bábovka",
+  "category": ["baking", "desserts"],
+  "yield": 12,
+  "times": {
+    "prep": 10,
+    "cook": 40,
+    "rest": 0,
+    "total": 50
+  },
+  "ingredients": [
+    {
+      "id": "yogurt_plain",
+      "amount": 200,
+      "unit": "g",
+      "notes": "biely"
+    },
+    {
+      "id": "flour_plain",
+      "amount": 200,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "sugar_white",
+      "amount": 200,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "egg",
+      "amount": 3,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "sugar_vanilla",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "1 balíček"
+    },
+    {
+      "id": "baking_powder",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "1 balíček"
+    },
+    {
+      "id": "oil_cooking",
+      "amount": 100,
+      "unit": "g",
+      "notes": "olej do cesta"
+    },
+    {
+      "id": "cocoa_powder",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": "na tmavú časť cesta"
+    },
+    {
+      "id": "butter",
+      "amount": null,
+      "unit": null,
+      "notes": "na vymastenie formy"
+    },
+    {
+      "id": "breadcrumbs",
+      "amount": null,
+      "unit": null,
+      "notes": "na vysypanie formy"
+    },
+    {
+      "id": "sugar_powdered",
+      "amount": null,
+      "unit": null,
+      "notes": "na posypanie po upečení, podľa chuti"
+    }
+  ],
+  "steps": [
+    "Zmiešajte biely jogurt, hladkú múku, kryštálový cukor, vajcia, vanilkový cukor, prášok do pečiva a olej na hladké cesto.",
+    "Formu na bábovku vymastite tukom a vysypte strúhankou.",
+    "Do formy nalejte polovicu cesta. Do zvyšnej polovice vmiešajte kakao a tmavé cesto nalejte na svetlé.",
+    "Vidličkou zľahka premiešajte obe vrstvy, aby po rozkrojení vznikol mramorovaný vzor.",
+    "Pečte v rúre predhriatej na 170 °C približne 40 minút.",
+    "Bábovku nechajte čiastočne vychladnúť, vyklopte ju z formy a podľa chuti posypte práškovým cukrom."
+  ],
+  "notes": "Autor používa 100 g oleja, nie 100 ml. Bábovku môžete podávať aj poliatú čokoládovou polevou."
+}
