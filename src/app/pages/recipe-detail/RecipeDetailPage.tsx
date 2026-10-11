@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
+import { Link, useLocation, useNavigate, useParams } from 'react-router'
 import { fetchEnums, fetchRecipe, labelOf } from '../../api/recipes'
 import RecipeImage from '../../components/RecipeImage'
 import type { Enums, Recipe } from '../../types/recipe'
@@ -16,6 +16,28 @@ function RecipeDetailPage() {
   const { id = '' } = useParams()
   // key resets all state when navigating between recipes
   return <RecipeView key={id} id={id} />
+}
+
+function BackButton() {
+  const location = useLocation()
+  const navigate = useNavigate()
+  // 'default' key means the page was opened directly, with no in-app history
+  const hasHistory = location.key !== 'default'
+
+  return (
+    <Link
+      to="/"
+      className="back"
+      onClick={(e) => {
+        if (hasHistory) {
+          e.preventDefault()
+          navigate(-1)
+        }
+      }}
+    >
+      ← Späť
+    </Link>
+  )
 }
 
 function RecipeView({ id }: { id: string }) {
@@ -62,6 +84,7 @@ function RecipeView({ id }: { id: string }) {
 
   return (
     <main className="recipe">
+      <BackButton />
       <RecipeImage id={id} alt={recipe.name} />
 
       <h1>{recipe.name}</h1>

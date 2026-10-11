@@ -76,7 +76,6 @@ function HomePage() {
           setQuery(e.target.value)
           setPages(1)
         }}
-        autoFocus
       />
 
       {error ? (

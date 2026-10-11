@@ -1,3 +1,8 @@
+.back {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
 .recipe img {
   width: 100%;
   border-radius: 8px;
