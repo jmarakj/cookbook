@@ -9,12 +9,36 @@ const MIN_SERVINGS = 2
 const MAX_SERVINGS = 8
 const SERVINGS_STEP = 2
 
-function scaleAmount(amount: number, baseYield: number, servings: number) {
+// Kitchen-measurable step for a scaled amount, e.g. 233.25 ml -> 250 ml
+function roundingStep(amount: number, unit: string | null) {
+  switch (unit) {
+    case 'g':
+    case 'ml':
+      if (amount < 10) return 1
+      if (amount < 50) return 5
+      if (amount < 200) return 10
+      if (amount < 1000) return 50
+      return 100
+    case 'kg':
+    case 'l':
+    case 'tsp':
+      return 0.25
+    case 'tbsp':
+    case 'pcs':
+      return 0.5
+    case 'pinch':
+      return 1
+    default:
+      return 0.25
+  }
+}
+
+function scaleAmount(amount: number, unit: string | null, baseYield: number, servings: number) {
   if (servings === baseYield) return amount
   const scaled = (amount * servings) / baseYield
-  // Round to the nearest quarter; keep tiny amounts (e.g. a pinch) from collapsing to 0
-  const quarters = Math.round(scaled * 4) / 4
-  return quarters > 0 ? quarters : Math.round(scaled * 100) / 100
+  const step = roundingStep(scaled, unit)
+  // Never round a non-zero amount down to 0 – fall back to the smallest step
+  return Math.max(step, Math.round(scaled / step) * step)
 }
 
 // mobile only (hidden by CSS) – installed PWAs on iOS have no browser back button
@@ -158,7 +182,7 @@ function RecipeView({ id }: { id: string }) {
                 <tr key={ing.id}>
                   <td>
                     {ing.amount != null &&
-                      `${baseYield != null && currentServings != null ? scaleAmount(ing.amount, baseYield, currentServings) : ing.amount} ${ing.unit ? labelOf(enums?.units, ing.unit) : ''}`}
+                      `${baseYield != null && currentServings != null ? scaleAmount(ing.amount, ing.unit, baseYield, currentServings) : ing.amount} ${ing.unit ? labelOf(enums?.units, ing.unit) : ''}`}
                   </td>
                   <td>
                     {labelOf(enums?.ingredients, ing.id)}
