@@ -48,21 +48,13 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // precache only the app shell, so the app itself starts offline
+        // precache the app shell and all data (index, enums, every recipe), so
+        // the whole cookbook works offline; entries are revisioned, so edited
+        // recipes are re-downloaded on the next deploy
         // (icons are added by includeAssets / manifest.icons)
-        globPatterns: ['**/*.{js,css,html}'],
-        // data and images are cached only once actually loaded
+        globPatterns: ['**/*.{js,css,html,json}'],
+        // images are cached only once actually loaded
         runtimeCaching: [
-          {
-            // index, enums and recipes – served from cache, refreshed in the
-            // background so edited recipes show up on the next visit
-            urlPattern: ({ url }) => url.pathname.endsWith('.json'),
-            handler: 'StaleWhileRevalidate',
-            options: {
-              cacheName: 'recipe-data',
-              cacheableResponse: { statuses: [200] },
-            },
-          },
           {
             urlPattern: ({ url }) => url.pathname.includes('/images/'),
             handler: 'CacheFirst',
