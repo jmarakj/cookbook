@@ -17,32 +17,32 @@ function scaleAmount(amount: number, baseYield: number, servings: number) {
   return quarters > 0 ? quarters : Math.round(scaled * 100) / 100
 }
 
-function RecipeDetailPage() {
-  const { id = '' } = useParams()
-  // key resets all state when navigating between recipes
-  return <RecipeView key={id} id={id} />
-}
-
-function BackButton() {
+// mobile only (hidden by CSS) – installed PWAs on iOS have no browser back button
+function BackLink() {
   const location = useLocation()
   const navigate = useNavigate()
-  // 'default' key means the page was opened directly, with no in-app history
+  // 'default' = first entry in this tab (shared link, relaunch) – nothing to go back to
   const hasHistory = location.key !== 'default'
-
   return (
     <Link
       to="/"
       className="back"
       onClick={(e) => {
-        if (hasHistory) {
-          e.preventDefault()
-          navigate(-1)
-        }
+        if (!hasHistory) return
+        // real back, so the home page restores its filters from the URL
+        e.preventDefault()
+        navigate(-1)
       }}
     >
       ← Späť
     </Link>
   )
+}
+
+function RecipeDetailPage() {
+  const { id = '' } = useParams()
+  // key resets all state when navigating between recipes
+  return <RecipeView key={id} id={id} />
 }
 
 function RecipeView({ id }: { id: string }) {
@@ -72,13 +72,19 @@ function RecipeView({ id }: { id: string }) {
   if (error) {
     return (
       <main>
+        <BackLink />
         <p>{error}</p>
       </main>
     )
   }
 
   if (!recipe) {
-    return <main>Načítavam…</main>
+    return (
+      <main>
+        <BackLink />
+        Načítavam…
+      </main>
+    )
   }
 
   const baseYield = recipe.yield
@@ -93,10 +99,7 @@ function RecipeView({ id }: { id: string }) {
 
   return (
     <main className="recipe">
-      <div className="top">
-        <BackButton />
-      </div>
-
+      <BackLink />
       <div className="columns">
         <section>
           <RecipeImage id={id} alt={recipe.name} />

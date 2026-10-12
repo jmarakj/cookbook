@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
-import { Link } from 'react-router'
+import { Link, useSearchParams } from 'react-router'
 import { fetchEnums, fetchRecipes } from '../../api/recipes'
 import RecipeImage from '../../components/RecipeImage'
 import type { EnumItem, RecipeSummary } from '../../types/recipe'
@@ -29,8 +29,10 @@ function HomePage() {
   const [recipes, setRecipes] = useState<RecipeSummary[] | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [categories, setCategories] = useState<EnumItem[]>([])
-  const [selected, setSelected] = useState<string[]>([])
-  const [query, setQuery] = useState('')
+  // filter criteria live in the URL so going back from a detail restores them
+  const [searchParams, setSearchParams] = useSearchParams()
+  const query = searchParams.get('q') ?? ''
+  const selected = searchParams.get('cat')?.split(',').filter(Boolean) ?? []
   const [pages, setPages] = useState(1)
   const isDesktop = useSyncExternalStore(
     subscribeDesktop,
@@ -47,10 +49,27 @@ function HomePage() {
       .catch(() => {})
   }, [])
 
-  const toggleCategory = (id: string) => {
-    setSelected((s) => (s.includes(id) ? s.filter((c) => c !== id) : [...s, id]))
+  // replace, not push – filter tweaks shouldn't pile up history entries
+  const updateParam = (key: string, value: string) => {
+    setSearchParams(
+      (params) => {
+        if (value) params.set(key, value)
+        else params.delete(key)
+        return params
+      },
+      { replace: true },
+    )
     setPages(1)
   }
+
+  const toggleCategory = (id: string) =>
+    updateParam(
+      'cat',
+      (selected.includes(id)
+        ? selected.filter((c) => c !== id)
+        : [...selected, id]
+      ).join(','),
+    )
 
   // no category selected = all; otherwise the recipe must be in any selected one
   const tokens = tokenize(query)
@@ -102,10 +121,7 @@ function HomePage() {
         type="search"
         placeholder="Hľadať recept alebo surovinu…"
         value={query}
-        onChange={(e) => {
-          setQuery(e.target.value)
-          setPages(1)
-        }}
+        onChange={(e) => updateParam('q', e.target.value)}
       />
 
       {error ? (

@@ -1,10 +1,3 @@
-.top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-}
-
 .recipe img {
   width: 100%;
   max-width: 680px;
@@ -116,4 +109,17 @@
 .steps li::before {
   content: counter(step) '.';
   font-weight: 600;
+}
+
+.back {
+  display: inline-block;
+  padding: 8px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .back {
+    display: none;
+  }
 }
