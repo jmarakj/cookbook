@@ -1,11 +1,32 @@
 import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { defineConfig, type Plugin } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
+
+// Minifies the JSON copied from public/ into the build output; the sources stay
+// pretty-printed for editing. Runs in writeBundle, before the PWA plugin hashes
+// the files for its precache manifest in closeBundle.
+function minifyJson(): Plugin {
+  return {
+    name: 'minify-json',
+    apply: 'build',
+    writeBundle({ dir }) {
+      if (!dir) return
+      for (const file of readdirSync(dir, { recursive: true, encoding: 'utf8' })) {
+        if (!file.endsWith('.json')) continue
+        const path = join(dir, file)
+        writeFileSync(path, JSON.stringify(JSON.parse(readFileSync(path, 'utf8'))))
+      }
+    },
+  }
+}
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
+    minifyJson(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon-180x180.png'],

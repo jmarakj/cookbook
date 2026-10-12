@@ -9,7 +9,7 @@ export type Recipe = {
   id: string
   name: string
   category: string[]
-  // ISO 3166 country code, shown as a flag
+  // ISO 3166 country code – not displayed, only used for search
   cuisine: string
   yield: number | null
   times: { prep: number; cook: number; rest: number; total: number }

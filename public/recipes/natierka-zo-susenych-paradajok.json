@@ -1,0 +1,64 @@
+{
+  "id": "natierka-zo-susenych-paradajok",
+  "name": "Nátierka zo sušených paradajok",
+  "category": ["vegetarian", "spread"],
+  "cuisine": "it",
+  "yield": 4,
+  "times": {
+    "prep": 0,
+    "cook": 0,
+    "rest": 0,
+    "total": 0
+  },
+  "ingredients": [
+    {
+      "id": "sun_dried_tomatoes",
+      "amount": 9,
+      "unit": "pcs",
+      "notes": "8–10 ks"
+    },
+    {
+      "id": "ricotta",
+      "amount": 250,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "parmesan",
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": "strúhaný"
+    },
+    {
+      "id": "olive_oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "basil_dried",
+      "amount": 0.5,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "mleté, podľa chuti"
+    }
+  ],
+  "steps": [
+    "Do mixéra dajte ricottu, sušené paradajky, parmezán, bazalku a olivový olej.",
+    "Mixujte do hladka.",
+    "Dochuťte soľou a korením.",
+    "Podávajte ihneď s čerstvým chlebom alebo uložte do chladničky."
+  ],
+  "notes": "Najlepšie chutí s čerstvým celozrnným chlebom."
+}

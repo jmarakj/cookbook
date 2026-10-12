@@ -58,7 +58,7 @@ function BackLink() {
         navigate(-1)
       }}
     >
-      ← Späť
+      Späť
     </Link>
   )
 }
@@ -123,40 +123,44 @@ function RecipeView({ id }: { id: string }) {
 
   return (
     <main className="recipe">
+      <title>{`${recipe.name}`}</title>
       <BackLink />
       <div className="columns">
         <section>
           <RecipeImage id={id} alt={recipe.name} />
         </section>
 
-        <section>
-          <h1>
-            {recipe.name}
-          </h1>
-
-          <ul className="tags">
-            {recipe.category.map((c) => (
-              <li key={c}>{labelOf(enums?.categories, c)}</li>
-            ))}
-          </ul>
-
-          <dl className="times">
-            {(
-              [
-                ['Príprava', recipe.times.prep],
-                ['Varenie', recipe.times.cook],
-                ['Čakanie', recipe.times.rest],
-                ['Spolu', recipe.times.total],
-              ] as const
-            )
-              .filter(([, minutes]) => minutes)
-              .map(([label, minutes]) => (
-                <div key={label}>
-                  <dt>{label}</dt>
-                  <dd>{minutes} min</dd>
-                </div>
+        <section className="title">
+          {/* wrapper keeps normal block flow so the items' margins collapse as usual */}
+          <div>
+            <h1>
+              {recipe.name}
+            </h1>
+  
+            <ul className="tags">
+              {recipe.category.map((c) => (
+                <li key={c}>{labelOf(enums?.categories, c)}</li>
               ))}
-          </dl>
+            </ul>
+  
+            <dl className="times">
+              {(
+                [
+                  ['Príprava', recipe.times.prep],
+                  ['Varenie', recipe.times.cook],
+                  ['Čakanie', recipe.times.rest],
+                  ['Spolu', recipe.times.total],
+                ] as const
+              )
+                .filter(([, minutes]) => minutes)
+                .map(([label, minutes]) => (
+                  <div key={label}>
+                    <dt>{label}</dt>
+                    <dd>{minutes} min</dd>
+                  </div>
+                ))}
+            </dl>
+          </div>
         </section>
       </div>
 

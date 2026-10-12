@@ -15,6 +15,23 @@ function subscribeDesktop(onChange: () => void) {
   return () => desktopQuery.removeEventListener('change', onChange)
 }
 
+// random sort key per recipe, kept for the page load so the order survives
+// filtering, infinite scroll and coming back from a detail
+const randomRank = new Map<string, number>()
+
+function rankOf(id: string) {
+  let rank = randomRank.get(id)
+  if (rank === undefined) {
+    rank = Math.random()
+    randomRank.set(id, rank)
+  }
+  return rank
+}
+
+function shuffle(recipes: RecipeSummary[]) {
+  return [...recipes].sort((a, b) => rankOf(a.id) - rankOf(b.id))
+}
+
 // same normalization as scripts/build-recipes-index.mjs
 function tokenize(text: string) {
   return text
@@ -41,7 +58,7 @@ function HomePage() {
 
   useEffect(() => {
     fetchRecipes()
-      .then(setRecipes)
+      .then((list) => setRecipes(shuffle(list)))
       .catch((err: Error) => setError(err.message))
     // chips are optional – the list still works without them
     fetchEnums()
@@ -100,6 +117,7 @@ function HomePage() {
 
   return (
     <main className="home">
+      <title>Recepty</title>
       {categories.length > 0 && (
         <div className="categories">
           {categories.map((c) => (

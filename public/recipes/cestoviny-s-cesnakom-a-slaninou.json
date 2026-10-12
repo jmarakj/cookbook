@@ -1,0 +1,73 @@
+{
+  "id": "cestoviny-s-cesnakom-a-slaninou",
+  "name": "Cestoviny s cesnakom a slaninou",
+  "category": ["meat", "pasta"],
+  "cuisine": "it",
+  "yield": 2,
+  "times": {
+    "prep": 5,
+    "cook": 15,
+    "rest": 0,
+    "total": 20
+  },
+  "ingredients": [
+    {
+      "id": "spaghetti",
+      "amount": 125,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "bacon",
+      "amount": 150,
+      "unit": "g",
+      "notes": "nahrubo nakrájaná"
+    },
+    {
+      "id": "parmesan",
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": "nastrúhaný"
+    },
+    {
+      "id": "chili_pepper_dried",
+      "amount": 0.5,
+      "unit": "tsp",
+      "notes": "drvená"
+    },
+    {
+      "id": "garlic",
+      "amount": 3,
+      "unit": "pcs",
+      "notes": "strúčiky"
+    },
+    {
+      "id": "black_pepper",
+      "amount": 0.25,
+      "unit": "tsp",
+      "notes": "mleté"
+    },
+    {
+      "id": "parsley_fresh",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": "nasekaná, voliteľné"
+    },
+    {
+      "id": "pasta_water",
+      "amount": 60,
+      "unit": "ml",
+      "notes": "odložená"
+    }
+  ],
+  "steps": [
+    "Špagety uvarte podľa návodu na obale.",
+    "Medzitým rozohrejte panvicu na strednom ohni a opečte slaninu dozlatista a dochrumkava.",
+    "Pridajte olúpaný a nasekaný cesnak a drvenú feferónku a opekajte ešte 30 sekúnd.",
+    "Z uvarených cestovín odoberte približne 60 ml vody z varenia a zvyšok sceďte.",
+    "Špagety pridajte k slanine a dôkladne premiešajte.",
+    "Prilejte odloženú vodu z cestovín a znova premiešajte.",
+    "Posypte parmezánom, okoreňte čiernym korením a ozdobte nasekanou petržlenovou vňaťou."
+  ],
+  "notes": null
+}

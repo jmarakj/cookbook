@@ -36,7 +36,7 @@ Rules:
 - **id:** the same as the file-name slug.
 - **category:** all ids that fit, in the order of the categories list below. Use the existing categories whenever one fits; add a new one only when none fits.
   - Always add exactly one of `sweet` (any sweet dish, including sweet main dishes, desserts and cakes), `vegetarian` (savory, no meat, fish or meat broth) or `meat`.
-- **cuisine:** the lowercase ISO 3166 country code of the country the dish comes from (e.g. `sk`, `it`, `fr`), not where the source website is from. It is shown as a flag and is not in the enums.
+- **cuisine:** the lowercase ISO 3166 country code of the country the dish comes from (e.g. `sk`, `it`, `fr`), not where the source website is from. It is used for search and is not in the enums.
 - **yield:** the number of servings, as an integer. If the source gives pieces instead (e.g. "8 langoše"), estimate servings and mention it in your assumptions line.
 - **times:** whole minutes. `prep` is hands-on work, `cook` is baking, frying or cooking, `rest` is rising, cooling or marinating. `total` = prep + cook + rest. If the source doesn't give a time, do not fill it.
 - **ingredients:**

@@ -31,6 +31,14 @@
         {
             "id": "fried",
             "label": "Vyprážané"
+        },
+        {
+            "id": "spread",
+            "label": "Nátierky"
+        },
+        {
+            "id": "salad",
+            "label": "Šaláty"
         }
     ],
     "units": [
@@ -349,7 +357,11 @@
             "label": "biele víno"
         },
         {
-            "id": "vegetable_stock",
+            "id": "red_wine",
+            "label": "červené víno"
+        },
+        {
+            "id": "vegetable_broth",
             "label": "zeleninový vývar"
         },
         {
@@ -521,10 +533,6 @@
             "label": "cestoviny"
         },
         {
-            "id": "sausage",
-            "label": "klobása"
-        },
-        {
             "id": "beef_ground",
             "label": "mleté hovädzie mäso"
         },
@@ -563,6 +571,46 @@
         {
             "id": "ketchup",
             "label": "kečup"
+        },
+        {
+            "id": "pork_cracklings",
+            "label": "oškvarky"
+        },
+        {
+            "id": "radish",
+            "label": "reďkovka"
+        },
+        {
+            "id": "worcestershire_sauce",
+            "label": "worčestrová omáčka"
+        },
+        {
+            "id": "sun_dried_tomatoes",
+            "label": "sušené paradajky"
+        },
+        {
+            "id": "ricotta",
+            "label": "ricotta"
+        },
+        {
+            "id": "basil_dried",
+            "label": "sušená bazalka"
+        },
+        {
+            "id": "couscous",
+            "label": "kuskus"
+        },
+        {
+            "id": "cucumber",
+            "label": "šalátová uhorka"
+        },
+        {
+            "id": "feta",
+            "label": "syr feta"
+        },
+        {
+            "id": "mint_fresh",
+            "label": "čerstvá mäta"
         }
     ]
 }
