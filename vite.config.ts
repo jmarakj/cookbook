@@ -5,8 +5,7 @@ import { defineConfig, type Plugin } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // Minifies the JSON copied from public/ into the build output; the sources stay
-// pretty-printed for editing. Runs in writeBundle, before the PWA plugin hashes
-// the files for its precache manifest in closeBundle.
+// pretty-printed for editing.
 function minifyJson(): Plugin {
   return {
     name: 'minify-json',
@@ -49,11 +48,21 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // recipe data is small – precache all of it so every recipe opens offline
+        // precache only the app shell, so the app itself starts offline
         // (icons are added by includeAssets / manifest.icons)
-        globPatterns: ['**/*.{js,css,html,json}'],
-        // images are large – cache only those actually viewed
+        globPatterns: ['**/*.{js,css,html}'],
+        // data and images are cached only once actually loaded
         runtimeCaching: [
+          {
+            // index, enums and recipes – served from cache, refreshed in the
+            // background so edited recipes show up on the next visit
+            urlPattern: ({ url }) => url.pathname.endsWith('.json'),
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'recipe-data',
+              cacheableResponse: { statuses: [200] },
+            },
+          },
           {
             urlPattern: ({ url }) => url.pathname.includes('/images/'),
             handler: 'CacheFirst',
