@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { recipeImageUrls } from '../api/recipes'
+import { recipeImageUrls } from '../../api'
 
 type Props = { id: string; alt: string; loading?: 'lazy' | 'eager' }
 

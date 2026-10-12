@@ -3,7 +3,7 @@
   "name": "Chilli con carne",
   "category": ["meat"],
   "cuisine": "us",
-  "yield": 6,
+  "yield": 8,
   "times": {
     "prep": 30,
     "cook": 60,

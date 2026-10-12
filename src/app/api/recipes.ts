@@ -1,4 +1,4 @@
-import type { EnumItem, Enums, Recipe, RecipeSummary } from '../types/recipe'
+import type { Recipe, RecipeSummary } from '../types'
 
 const base = import.meta.env.BASE_URL
 
@@ -14,12 +14,6 @@ export async function fetchRecipes(): Promise<RecipeSummary[]> {
   return res.json()
 }
 
-export async function fetchEnums(): Promise<Enums> {
-  const res = await fetch(`${base}enums.json`)
-  if (!res.ok) throw new Error('Nepodarilo sa načítať číselníky')
-  return res.json()
-}
-
 const IMAGE_EXTENSIONS = ['png', 'jpg', 'webp']
 
 // candidates in order of preference – the image component tries them one by one
@@ -27,8 +21,4 @@ export function recipeImageUrls(id: string) {
   return IMAGE_EXTENSIONS.map(
     (ext) => `${base}images/${encodeURIComponent(id)}.${ext}`,
   )
-}
-
-export function labelOf(items: EnumItem[] | undefined, id: string) {
-  return items?.find((item) => item.id === id)?.label ?? id
 }

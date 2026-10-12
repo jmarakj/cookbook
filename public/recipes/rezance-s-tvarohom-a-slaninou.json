@@ -13,7 +13,7 @@
   "ingredients": [
     {
       "id": "pasta_wide",
-      "amount": 400,
+      "amount": 300,
       "unit": "g",
       "notes": null
     },
@@ -25,15 +25,9 @@
     },
     {
       "id": "tvaroh",
-      "amount": 250,
+      "amount": 150,
       "unit": "g",
       "notes": "plnotučný hrudkovitý"
-    },
-    {
-      "id": "sour_cream",
-      "amount": 100,
-      "unit": "g",
-      "notes": null
     },
     {
       "id": "salt",
@@ -46,14 +40,20 @@
       "amount": null,
       "unit": null,
       "notes": "mleté"
+    },
+    {
+      "id": "sugar_powdered",
+      "amount": null,
+      "unit": null,
+      "notes": "na posypanie"
     }
   ],
   "steps": [
-    "Dajte variť vodu na cestoviny. Slaninu nakrájajte na malé kúsky a tvaroh premiešajte s kyslou smotanou.",
+    "Dajte variť vodu na cestoviny. Slaninu nakrájajte na malé kúsky a tvaroh premiešajte.",
     "Slaninu opečte na panvici, kým nepustí masť a nezačne byť chrumkavá.",
     "Vodu osoľte a rezance uvarte podľa návodu na obale.",
     "Uvarené rezance sceďte, prelejte výpekom zo slaniny a premiešajte s tvarohovou zmesou. Navrch pridajte opečenú slaninu.",
-    "Podľa potreby dochuťte soľou a čiernym korením."
+    "Podľa potreby dochuťte soľou a čiernym korením. Posypte práškovým cukrom."
   ],
   "notes": null
 }

@@ -1,14 +1,20 @@
-import { useEffect, useState } from 'react'
-import { Link, useLocation, useNavigate, useParams } from 'react-router'
-import { fetchEnums, fetchRecipe, labelOf } from '../../api/recipes'
-import RecipeImage from '../../components/RecipeImage'
+import { useState } from 'react'
+import { useParams } from 'react-router'
+import BackLink from '../../components/back-link/BackLink'
+import RecipeImage from '../../components/recipe-image/RecipeImage'
+import useCodelists from '../../hooks/useCodelists'
+import useRecipe from '../../hooks/useRecipe'
 import useWakeLock from '../../hooks/useWakeLock'
-import type { Enums, Recipe } from '../../types/recipe'
+import type { Recipe } from '../../types'
 import './RecipeDetailPage.css'
 
-const MIN_SERVINGS = 2
-const MAX_SERVINGS = 8
-const SERVINGS_STEP = 2
+// the slider snaps to these values, so its positions map to indexes here
+const SERVINGS_OPTIONS = [2, 3, 4, 6, 8, 10, 12]
+
+// smallest option that feeds the whole recipe, or the largest one
+function defaultServings(baseYield: number) {
+  return SERVINGS_OPTIONS.find((o) => o >= baseYield) ?? SERVINGS_OPTIONS.at(-1)!
+}
 
 // Kitchen-measurable step for a scaled amount, e.g. 233.25 ml -> 250 ml
 function roundingStep(amount: number, unit: string | null) {
@@ -42,87 +48,46 @@ function scaleAmount(amount: number, unit: string | null, baseYield: number, ser
   return Math.max(step, Math.round(scaled / step) * step)
 }
 
-// mobile only (hidden by CSS) – installed PWAs on iOS have no browser back button
-function BackLink() {
-  const location = useLocation()
-  const navigate = useNavigate()
-  // 'default' = first entry in this tab (shared link, relaunch) – nothing to go back to
-  const hasHistory = location.key !== 'default'
+function RecipeDetailPage() {
+  // keep the screen on while cooking
+  useWakeLock();
+
+  const { id = '' } = useParams()
+  const { recipe, error } = useRecipe(id)
+
+  if (error) return <RecipeError message={error} />
+  if (!recipe) return <RecipeLoading />
+
+  return <RecipeView key={recipe.id} recipe={recipe} />
+}
+
+function RecipeError({ message }: { message: string }) {
   return (
-    <Link
-      to="/"
-      className="back"
-      onClick={(e) => {
-        if (!hasHistory) return
-        // real back, so the home page restores its filters from the URL
-        e.preventDefault()
-        navigate(-1)
-      }}
-    >
-      Späť
-    </Link>
+    <main>
+      <BackLink />
+      <p>{message}</p>
+    </main>
   )
 }
 
-function RecipeDetailPage() {
-  const { id = '' } = useParams()
-  // keep the screen on while cooking
-  useWakeLock()
-  // key resets all state when navigating between recipes
-  return <RecipeView key={id} id={id} />
+function RecipeLoading() {
+  return (
+    <main>
+      <BackLink />
+      Načítavam…
+    </main>
+  )
 }
 
-function RecipeView({ id }: { id: string }) {
-  const [recipe, setRecipe] = useState<Recipe | null>(null)
-  const [enums, setEnums] = useState<Enums | null>(null)
-  const [error, setError] = useState<string | null>(null)
+function RecipeView({ recipe }: { recipe: Recipe }) {
+  const codelists = useCodelists()
   const [servings, setServings] = useState<number | null>(null)
-
-  useEffect(() => {
-    let ignore = false
-
-    fetchRecipe(id)
-      .then((data) => !ignore && setRecipe(data))
-      .catch((err: Error) => !ignore && setError(err.message))
-
-    return () => {
-      ignore = true
-    }
-  }, [id])
-
-  useEffect(() => {
-    fetchEnums()
-      .then(setEnums)
-      .catch(() => setEnums(null))
-  }, [])
-
-  if (error) {
-    return (
-      <main>
-        <BackLink />
-        <p>{error}</p>
-      </main>
-    )
-  }
-
-  if (!recipe) {
-    return (
-      <main>
-        <BackLink />
-        Načítavam…
-      </main>
-    )
-  }
 
   const baseYield = recipe.yield
   const currentServings =
     baseYield == null
       ? null
-      : (servings ??
-        Math.min(
-          MAX_SERVINGS,
-          Math.max(MIN_SERVINGS, Math.ceil(baseYield / SERVINGS_STEP) * SERVINGS_STEP),
-        ))
+      : (servings ?? defaultServings(baseYield))
 
   return (
     <main className="recipe">
@@ -130,7 +95,7 @@ function RecipeView({ id }: { id: string }) {
       <BackLink />
       <div className="columns">
         <section>
-          <RecipeImage id={id} alt={recipe.name} />
+          <RecipeImage id={recipe.id} alt={recipe.name} />
         </section>
 
         <section className="title">
@@ -139,13 +104,13 @@ function RecipeView({ id }: { id: string }) {
             <h1>
               {recipe.name}
             </h1>
-  
+
             <ul className="tags">
               {recipe.category.map((c) => (
-                <li key={c}>{labelOf(enums?.categories, c)}</li>
+                <li key={c}>{codelists?.categories.label(c) ?? c}</li>
               ))}
             </ul>
-  
+
             <dl className="times">
               {(
                 [
@@ -175,11 +140,11 @@ function RecipeView({ id }: { id: string }) {
               Porcie: <strong>{currentServings}</strong>
               <input
                 type="range"
-                min={MIN_SERVINGS}
-                max={MAX_SERVINGS}
-                step={SERVINGS_STEP}
-                value={currentServings}
-                onChange={(e) => setServings(Number(e.target.value))}
+                min={0}
+                max={SERVINGS_OPTIONS.length - 1}
+                step={1}
+                value={SERVINGS_OPTIONS.indexOf(currentServings)}
+                onChange={(e) => setServings(SERVINGS_OPTIONS[Number(e.target.value)])}
               />
             </label>
           )}
@@ -189,10 +154,10 @@ function RecipeView({ id }: { id: string }) {
                 <tr key={ing.id}>
                   <td>
                     {ing.amount != null &&
-                      `${baseYield != null && currentServings != null ? scaleAmount(ing.amount, ing.unit, baseYield, currentServings) : ing.amount} ${ing.unit ? labelOf(enums?.units, ing.unit) : ''}`}
+                      `${baseYield != null && currentServings != null ? scaleAmount(ing.amount, ing.unit, baseYield, currentServings) : ing.amount} ${ing.unit ? (codelists?.units.label(ing.unit) ?? ing.unit) : ''}`}
                   </td>
                   <td>
-                    {labelOf(enums?.ingredients, ing.id)}
+                    {codelists?.ingredients.label(ing.id) ?? ing.id}
                     {ing.notes && <em> ({ing.notes})</em>}
                   </td>
                 </tr>

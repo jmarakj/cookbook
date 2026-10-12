@@ -18,10 +18,6 @@ export type Recipe = {
   notes: string | null
 }
 
-export type EnumItem = { id: string; label: string }
-
-export type Enums = Record<'categories' | 'units' | 'ingredients', EnumItem[]>
-
 // entry of public/recipes.json, see scripts/build-recipes-index.mjs
 export type RecipeSummary = {
   id: string

@@ -1,0 +1,12 @@
+.back {
+  display: inline-block;
+  padding: 8px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .back {
+    display: none;
+  }
+}
