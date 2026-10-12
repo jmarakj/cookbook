@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate, useParams } from 'react-router'
 import { fetchEnums, fetchRecipe, labelOf } from '../../api/recipes'
 import RecipeImage from '../../components/RecipeImage'
+import useWakeLock from '../../hooks/useWakeLock'
 import type { Enums, Recipe } from '../../types/recipe'
 import './RecipeDetailPage.css'
 
@@ -65,6 +66,8 @@ function BackLink() {
 
 function RecipeDetailPage() {
   const { id = '' } = useParams()
+  // keep the screen on while cooking
+  useWakeLock()
   // key resets all state when navigating between recipes
   return <RecipeView key={id} id={id} />
 }
