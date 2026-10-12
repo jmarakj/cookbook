@@ -1,0 +1,113 @@
+{
+  "id": "boeuf-bourguignon",
+  "name": "Hovädzie po burgundsky",
+  "category": ["meat"],
+  "cuisine": "fr",
+  "yield": 6,
+  "times": {
+    "cook": 210
+  },
+  "ingredients": [
+    {
+      "id": "beef_roast",
+      "amount": 1,
+      "unit": "kg",
+      "notes": "hovädzie zadné"
+    },
+    {
+      "id": "bacon",
+      "amount": 150,
+      "unit": "g"
+    },
+    {
+      "id": "parsley_root",
+      "amount": 1,
+      "unit": "pcs"
+    },
+    {
+      "id": "carrot",
+      "amount": 2,
+      "unit": "pcs"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs"
+    },
+    {
+      "id": "red_wine",
+      "amount": 250,
+      "unit": "ml"
+    },
+    {
+      "id": "beef_broth",
+      "amount": 500,
+      "unit": "ml"
+    },
+    {
+      "id": "shallot",
+      "amount": 500,
+      "unit": "g"
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": "pcs"
+    },
+    {
+      "id": "tomato_paste",
+      "amount": 1,
+      "unit": "tbsp"
+    },
+    {
+      "id": "flour_plain",
+      "amount": 2,
+      "unit": "tbsp"
+    },
+    {
+      "id": "thyme_dried",
+      "amount": null,
+      "unit": null
+    },
+    {
+      "id": "rosemary",
+      "amount": null,
+      "unit": null
+    },
+    {
+      "id": "bay_leaf",
+      "amount": null,
+      "unit": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": "to_taste"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": "to_taste"
+    },
+    {
+      "id": "olive_oil",
+      "amount": null,
+      "unit": null
+    },
+    {
+      "id": "parsley_fresh",
+      "amount": null,
+      "unit": null
+    }
+  ],
+  "steps": [
+    "Slaninu nakrájajte na pásiky a opečte ju na troche oleja a odložte bokom.",
+    "Hovädzie mäso nakrájajte na približne 5 cm kúsky a postupne opečte na výpeku zo slaniny.",
+    "Pridajte nakrájanú mrkvu, petržlen, cibuľu a slaninu. Všetko spoločne restujte 5 minút.",
+    "Pridajte cesnak, soľ, korenie, tymian, rozmarín a bobkový list. Poprášte múkou a premiešajte.",
+    "Prilejte červené víno a hovädzí vývar, pridajte paradajkový pretlak, prikryte a duste približne 3 hodiny, kým mäso nezmäkne.",
+    "Šalotky orestujte na oleji a pridajte k mäsu.",
+    "Ak je omáčka príliš riedka, nechajte ju zredukovať. Podľa potreby dochuťte."
+  ],
+  "notes": null
+}

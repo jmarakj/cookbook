@@ -2,7 +2,7 @@
   "id": "rice-cajun",
   "name": "Rice Cajun",
   "category": ["meat", "risotto"],
-  "cuisine": "mx",
+  "cuisine": "us",
   "yield": 4,
   "times": {
     "prep": 15,

@@ -1,0 +1,77 @@
+{
+  "id": "kremove-cestoviny-s-klobaskou",
+  "name": "Krémové cestoviny s klobásou",
+  "category": [
+    "meat",
+    "pasta"
+  ],
+  "cuisine": "it",
+  "yield": 4,
+  "times": {},
+  "ingredients": [
+    {
+      "id": "pasta",
+      "amount": 400,
+      "unit": "g"
+    },
+    {
+      "id": "sausage_smoked",
+      "amount": 200,
+      "unit": "g"
+    },
+    {
+      "id": "whipping_cream",
+      "amount": 250,
+      "unit": "ml"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs"
+    },
+    {
+      "id": "garlic",
+      "amount": 3,
+      "unit": "pcs"
+    },
+    {
+      "id": "olive_oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": "alebo masť"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "mleté, podľa chuti"
+    },
+    {
+      "id": "parmesan",
+      "amount": null,
+      "unit": null,
+      "notes": "alebo iný tvrdý syr, na posypanie"
+    },
+    {
+      "id": "pasta_water",
+      "amount": null,
+      "unit": null,
+      "notes": "1 naberačka"
+    }
+  ],
+  "steps": [
+    "Cestoviny uvarte v osolenej vode al dente podľa návodu na obale. Odložte si približne 1 naberačku vody z varenia.",
+    "Klobásu nakrájajte na kolieska alebo drobné kocky. Na hlbokej panvici rozohrejte olej a klobásu opekajte 3–4 minúty, kým nepustí tuk a nechytí chrumkavú kôrku.",
+    "Pridajte cibuľu (a podľa chuti huby či sušené paradajky), po chvíli aj cesnak. Restujte na miernom ohni, kým cibuľa nezmäkne a cesnak sa nerozvonia.",
+    "Prilejte smotanu, stíšte oheň a nechajte jemne prebublávať 3–5 minút, kým mierne nezhustne. Dochuťte korením a štipkou soli.",
+    "Scedené cestoviny vsypte do panvice a dobre premiešajte. Ak je omáčka príliš hustá, prilejte trochu odloženej vody z cestovín. Spolu prehrejte ešte 1 minútu.",
+    "Podávajte posypané parmezánom."
+  ],
+  "notes": "Klobása býva dosť slaná, preto solte opatrne."
+}

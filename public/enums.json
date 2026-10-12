@@ -479,6 +479,90 @@
         {
             "id": "vegetable_seasoning",
             "label": "zeleninové korenie (Vegeta)"
+        },
+        {
+            "id": "celery",
+            "label": "zeler"
+        },
+        {
+            "id": "parsley_root",
+            "label": "petržlen"
+        },
+        {
+            "id": "rosemary",
+            "label": "rozmarín"
+        },
+        {
+            "id": "eidam",
+            "label": "syr Eidam"
+        },
+        {
+            "id": "pork_tenderloin",
+            "label": "bravčová panenka"
+        },
+        {
+            "id": "honey",
+            "label": "med"
+        },
+        {
+            "id": "soy_sauce",
+            "label": "sójová omáčka"
+        },
+        {
+            "id": "vinegar_apple",
+            "label": "jablkový ocot"
+        },
+        {
+            "id": "cornstarch",
+            "label": "kukuričný škrob"
+        },
+        {
+            "id": "pasta",
+            "label": "cestoviny"
+        },
+        {
+            "id": "sausage",
+            "label": "klobása"
+        },
+        {
+            "id": "beef_ground",
+            "label": "mleté hovädzie mäso"
+        },
+        {
+            "id": "nutmeg",
+            "label": "muškátový oriešok"
+        },
+        {
+            "id": "cumin_ground",
+            "label": "mletá rímska rasca"
+        },
+        {
+            "id": "kidney_beans",
+            "label": "červená fazuľa"
+        },
+        {
+            "id": "chocolate_dark",
+            "label": "horká čokoláda"
+        },
+        {
+            "id": "chili_pepper_fresh",
+            "label": "čerstvá chilli paprička"
+        },
+        {
+            "id": "coriander_fresh",
+            "label": "čerstvý koriander"
+        },
+        {
+            "id": "lime",
+            "label": "limetka"
+        },
+        {
+            "id": "vegetable_trio",
+            "label": "zeleninové trio (hrášok, kukurica, mrkva)"
+        },
+        {
+            "id": "ketchup",
+            "label": "kečup"
         }
     ]
 }

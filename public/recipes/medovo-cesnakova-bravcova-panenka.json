@@ -1,0 +1,93 @@
+{
+  "id": "medovo-cesnakova-bravcova-panenka",
+  "name": "Opekaná bravčová panenka s medovo-cesnakovou omáčkou",
+  "category": ["meat", "baking"],
+  "cuisine": "us",
+  "yield": 4,
+  "times": {
+    "prep": 15,
+    "cook": 30,
+    "rest": 10,
+    "total": 55
+  },
+  "ingredients": [
+    {
+      "id": "pork_tenderloin",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "paprika_sweet",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "thyme_dried",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": 0.5,
+      "unit": "tsp",
+      "notes": "mleté"
+    },
+    {
+      "id": "olive_oil",
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": "extra panenský"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "malá, nadrobno nakrájaná"
+    },
+    {
+      "id": "garlic",
+      "amount": 6,
+      "unit": "pcs",
+      "notes": "strúčiky, nadrobno nastrúhané"
+    },
+    {
+      "id": "honey",
+      "amount": 4,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "soy_sauce",
+      "amount": 60,
+      "unit": "ml",
+      "notes": null
+    },
+    {
+      "id": "cornstarch",
+      "amount": null,
+      "unit": null,
+      "notes": "voliteľné, na zahustenie"
+    }
+  ],
+  "steps": [
+    "Rúru predhrejte na 190 °C.",
+    "V miske zmiešajte papriku, tymian, soľ a čierne korenie. Panenky touto zmesou natrite zo všetkých strán.",
+    "V panvici vhodnej do rúry rozohrejte na strednom ohni olej a panenky opečte zo všetkých strán dozlatista, približne 4 minúty. Vyberte ich na tanier.",
+    "Vo výpeku krátko orestujte cibuľu dosklovita, pridajte cesnak a opekajte ešte 30 sekúnd.",
+    "Med, sójovú omáčku a jablkový ocot rozmiešajte do hladka a vlejte do panvice.",
+    "Vráťte panenky do panvice, obráťte ich v omáčke a opekajte 25-30 minút.",
+    "Mäso preložte na tanier, prikryte alobalom a nechajte 5-10 minút odpočívať.",
+    "Omáčku v panvici povarte kým zhustne. Pre hustejšiu omáčku vmiešajte trochu kukuričného škrobu rozmiešaného vo vode.",
+    "Mäso nakrájajte na plátky hrubé približne 0,5 cm a polejte omáčkou."
+  ],
+  "notes": "Pre pikantnejšiu chuť pridajte do omáčky trochu čili."
+}

@@ -23,9 +23,9 @@ Don't add anything else besides one short line listing any assumptions you made.
   "yield": 4,
   "times": { "prep": 30, "cook": 30, "rest": 120, "total": 180 },
   "ingredients": [
-    { "id": "<ingredient id>", "amount": 500, "unit": "g", "notes": "short note, or null" }
+    { "id": "<ingredient id>", "amount": 500, "unit": "g", "notes": "short not if needed, preferably null" }
   ],
-  "steps": ["Label: what to do."],
+  "steps": ["what to do."],
   "notes": "tips from the author, or null"
 }
 ```
@@ -38,7 +38,7 @@ Rules:
   - Always add exactly one of `sweet` (any sweet dish, including sweet main dishes, desserts and cakes), `vegetarian` (savory, no meat, fish or meat broth) or `meat`.
 - **cuisine:** the lowercase ISO 3166 country code of the country the dish comes from (e.g. `sk`, `it`, `fr`), not where the source website is from. It is shown as a flag and is not in the enums.
 - **yield:** the number of servings, as an integer. If the source gives pieces instead (e.g. "8 langoše"), estimate servings and mention it in your assumptions line.
-- **times:** whole minutes. `prep` is hands-on work, `cook` is baking, frying or cooking, `rest` is rising, cooling or marinating. `total` = prep + cook + rest. If the source doesn't give a time, estimate it.
+- **times:** whole minutes. `prep` is hands-on work, `cook` is baking, frying or cooking, `rest` is rising, cooling or marinating. `total` = prep + cook + rest. If the source doesn't give a time, do not fill it.
 - **ingredients:**
   - `id`: **reuse an existing ingredient id if it's the same ingredient**, even when the source names it differently. Otherwise create a new id: English, snake_case, general before specific (e.g. `flour_plain`, `yeast_fresh`, `oil_cooking`). Its `label` is the Slovak name in lowercase.
   - `amount`: a number (`0.5`, not `"1/2"`), or `null` when the source gives no amount (e.g. "oil for frying").
@@ -78,119 +78,4 @@ Rules:
 
 ## Existing enums
 
-These are the ids you can use. Reuse them before creating new ones.
-
-```json
-{
-    "categories": [
-        {
-            "id": "meat",
-            "label": "Mäsité"
-        },
-        {
-            "id": "vegetarian",
-            "label": "Bezmäsité"
-        },
-        {
-            "id": "sweet",
-            "label": "Sladké jedlá"
-        },
-        {
-            "id": "soup",
-            "label": "Polievky"
-        },
-        {
-            "id": "pasta",
-            "label": "Cestoviny"
-        },
-        {
-            "id": "risotto",
-            "label": "Rizoto"
-        },
-        {
-            "id": "baking",
-            "label": "Pečenie"
-        },
-        {
-            "id": "fried",
-            "label": "Vyprážané"
-        }
-    ],
-    "units": [
-        {
-            "id": "g",
-            "label": "g"
-        },
-        {
-            "id": "kg",
-            "label": "kg"
-        },
-        {
-            "id": "ml",
-            "label": "ml"
-        },
-        {
-            "id": "l",
-            "label": "l"
-        },
-        {
-            "id": "tsp",
-            "label": "čl"
-        },
-        {
-            "id": "tbsp",
-            "label": "pl"
-        },
-        {
-            "id": "pcs",
-            "label": "ks"
-        },
-        {
-            "id": "pinch",
-            "label": "štipka"
-        },
-        {
-            "id": "to_taste",
-            "label": "podľa chuti"
-        }
-    ],
-    "ingredients": [
-        {
-            "id": "flour_plain",
-            "label": "hladká múka"
-        },
-        {
-            "id": "sour_cream",
-            "label": "kyslá smotana"
-        },
-        {
-            "id": "milk",
-            "label": "mlieko"
-        },
-        {
-            "id": "yeast_fresh",
-            "label": "čerstvé droždie"
-        },
-        {
-            "id": "sugar_white",
-            "label": "kryštálový cukor"
-        },
-        {
-            "id": "vinegar_white",
-            "label": "biely ocot"
-        },
-        {
-            "id": "salt",
-            "label": "soľ"
-        },
-        {
-            "id": "baking_soda",
-            "label": "sóda bikarbóna"
-        },
-        {
-            "id": "oil_cooking",
-            "label": "olej"
-        }
-    ]
-}
-`
+These are the ids you can use. Reuse them before creating new ones. https://github.com/jmarakj/cookbook/blob/main/public/enums.json

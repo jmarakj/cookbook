@@ -10,7 +10,11 @@ const MAX_SERVINGS = 8
 const SERVINGS_STEP = 2
 
 function scaleAmount(amount: number, baseYield: number, servings: number) {
-  return Math.round((amount * servings * 100) / baseYield) / 100
+  if (servings === baseYield) return amount
+  const scaled = (amount * servings) / baseYield
+  // Round to the nearest quarter; keep tiny amounts (e.g. a pinch) from collapsing to 0
+  const quarters = Math.round(scaled * 4) / 4
+  return quarters > 0 ? quarters : Math.round(scaled * 100) / 100
 }
 
 function RecipeDetailPage() {
