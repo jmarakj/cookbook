@@ -39,6 +39,10 @@
         {
             "id": "salad",
             "label": "Šaláty"
+        },
+        {
+            "id": "miscellaneous",
+            "label": "Ostatné"
         }
     ],
     "units": [
@@ -611,6 +615,22 @@
         {
             "id": "mint_fresh",
             "label": "čerstvá mäta"
+        },
+        {
+            "id": "sausage_paris",
+            "label": "parížska saláma"
+        },
+        {
+            "id": "peas",
+            "label": "sterilizovaný hrášok"
+        },
+        {
+            "id": "mayonnaise",
+            "label": "majonéza"
+        },
+        {
+            "id": "yogurt_greek",
+            "label": "grécky jogurt"
         }
     ]
 }
