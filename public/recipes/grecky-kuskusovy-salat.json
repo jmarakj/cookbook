@@ -1,6 +1,7 @@
 {
   "id": "grecky-kuskusovy-salat",
   "name": "Grécky kuskusový šalát",
+  "image": "images/grecky-kuskusovy-salat.jpg",
   "category": ["vegetarian", "salad"],
   "cuisine": "gr",
   "yield": 4,

@@ -1,6 +1,7 @@
 {
   "id": "boeuf-bourguignon",
   "name": "Hovädzie po burgundsky",
+  "image": "images/boeuf-bourguignon.jpg",
   "category": ["meat"],
   "cuisine": "fr",
   "yield": 8,

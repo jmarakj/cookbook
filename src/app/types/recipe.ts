@@ -8,6 +8,8 @@ export type Ingredient = {
 export type Recipe = {
   id: string
   name: string
+  // path relative to public/, e.g. "images/langose.jpg"
+  image: string | null
   category: string[]
   // ISO 3166 country code – not displayed, only used for search
   cuisine: string
@@ -22,6 +24,7 @@ export type Recipe = {
 export type RecipeSummary = {
   id: string
   name: string
+  image: string | null
   category: string[]
   search: string
 }

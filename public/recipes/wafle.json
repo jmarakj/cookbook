@@ -1,6 +1,7 @@
 {
   "id": "wafle",
   "name": "Wafle",
+  "image": "images/wafle.jpg",
   "category": ["sweet"],
   "cuisine": "be",
   "yield": 4,

@@ -1,6 +1,7 @@
 {
   "id": "cviklove-rizoto",
   "name": "Krémové cviklové rizoto",
+  "image": "images/cviklove-rizoto.jpg",
   "category": ["vegetarian", "risotto"],
   "cuisine": "it",
   "yield": 4,

@@ -1,6 +1,7 @@
 {
   "id": "zemiakovy-privarok",
   "name": "Zemiakový prívarok",
+  "image": "images/zemiakovy-privarok.jpg",
   "category": ["vegetarian"],
   "cuisine": "sk",
   "yield": 4,

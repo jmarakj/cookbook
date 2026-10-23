@@ -1,6 +1,7 @@
 {
   "id": "pasta-aglio-olio",
   "name": "Pasta aglio e olio",
+  "image": "images/pasta-aglio-olio.jpg",
   "category": ["vegetarian", "pasta"],
   "cuisine": "it",
   "yield": 4,

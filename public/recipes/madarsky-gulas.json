@@ -1,6 +1,7 @@
 {
   "id": "madarsky-gulas",
   "name": "Maďarský guláš",
+  "image": "images/madarsky-gulas.jpg",
   "category": ["meat"],
   "cuisine": "hu",
   "yield": 4,

@@ -1,6 +1,7 @@
 {
   "id": "hermelin-v-listkovom-ceste",
   "name": "Pečený hermelín v lístkovom ceste so špenátovým šalátom",
+  "image": "images/hermelin-v-listkovom-ceste.jpg",
   "category": ["vegetarian", "baking"],
   "cuisine": "cz",
   "yield": 2,

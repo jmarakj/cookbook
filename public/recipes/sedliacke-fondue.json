@@ -1,6 +1,7 @@
 {
   "id": "sedliacke-fondue",
   "name": "Sedliacke fondue Stana Dančiaka",
+  "image": "images/sedliacke-fondue.jpg",
   "category": ["meat", "baking"],
   "cuisine": "sk",
   "yield": 6,

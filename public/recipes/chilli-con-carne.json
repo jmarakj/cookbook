@@ -1,6 +1,7 @@
 {
   "id": "chilli-con-carne",
   "name": "Chilli con carne",
+  "image": "images/chilli-con-carne.jpg",
   "category": ["meat"],
   "cuisine": "us",
   "yield": 8,

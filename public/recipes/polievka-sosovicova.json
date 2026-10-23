@@ -1,6 +1,7 @@
 {
   "id": "polievka-sosovicova",
   "name": "Vianočná šošovicová polievka z Horehronia",
+  "image": "images/polievka-sosovicova.jpg",
   "category": ["meat", "soup"],
   "cuisine": "sk",
   "yield": 4,

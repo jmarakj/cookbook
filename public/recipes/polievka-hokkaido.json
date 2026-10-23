@@ -1,6 +1,7 @@
 {
   "id": "polievka-hokkaido",
   "name": "Polievka Hokkaido",
+  "image": "images/polievka-hokkaido.jpg",
   "category": ["vegetarian", "soup"],
   "cuisine": "sk",
   "yield": 4,

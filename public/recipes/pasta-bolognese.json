@@ -1,6 +1,7 @@
 {
   "id": "pasta-bolognese",
   "name": "Cestoviny bolonese",
+  "image": "images/pasta-bolognese.jpg",
   "category": ["meat", "pasta"],
   "cuisine": "it",
   "yield": 8,

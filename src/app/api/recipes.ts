@@ -13,12 +13,3 @@ export async function fetchRecipes(): Promise<RecipeSummary[]> {
   if (!res.ok) throw new Error('Nepodarilo sa načítať recepty')
   return res.json()
 }
-
-const IMAGE_EXTENSIONS = ['png', 'jpg', 'webp']
-
-// candidates in order of preference – the image component tries them one by one
-export function recipeImageUrls(id: string) {
-  return IMAGE_EXTENSIONS.map(
-    (ext) => `${base}images/${encodeURIComponent(id)}.${ext}`,
-  )
-}

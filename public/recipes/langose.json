@@ -1,6 +1,7 @@
 {
   "id": "langose",
   "name": "Langoše",
+  "image": "images/langose.jpg",
   "category": ["vegetarian", "fried"],
   "cuisine": "hu",
   "yield": 4,

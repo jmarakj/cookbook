@@ -1,6 +1,7 @@
 {
   "id": "lievance",
   "name": "Ľahunké lievance",
+  "image": "images/lievance.jpg",
   "category": ["sweet"],
   "cuisine": "sk",
   "yield": 4,

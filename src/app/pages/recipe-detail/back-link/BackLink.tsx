@@ -1,4 +1,6 @@
+import { ChevronLeft } from 'lucide-react'
 import { Link, useLocation, useNavigate } from 'react-router'
+import { routes } from '../../../services'
 import './BackLink.css'
 
 // mobile only (hidden by CSS) – installed PWAs on iOS have no browser back button
@@ -9,16 +11,18 @@ function BackLink() {
   const hasHistory = location.key !== 'default'
   return (
     <Link
-      to="/"
+      to={routes.recipes.url()}
       className="back"
+      aria-label="Späť"
+      title="Späť"
       onClick={(e) => {
         if (!hasHistory) return
-        // real back, so the home page restores its filters from the URL
+        // real back, so the recipe list restores its filters from the URL
         e.preventDefault()
         navigate(-1)
       }}
     >
-      Späť
+      <ChevronLeft aria-hidden="true" />
     </Link>
   )
 }

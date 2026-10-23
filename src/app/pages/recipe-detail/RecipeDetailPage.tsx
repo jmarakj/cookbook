@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useParams } from 'react-router'
-import BackLink from '../../components/back-link/BackLink'
-import RecipeImage from '../../components/recipe-image/RecipeImage'
+import BackLink from './back-link/BackLink'
+import Image from '../../components/image/Image'
 import useCodelists from '../../hooks/useCodelists'
 import useRecipe from '../../hooks/useRecipe'
 import useWakeLock from '../../hooks/useWakeLock'
@@ -95,7 +95,7 @@ function RecipeView({ recipe }: { recipe: Recipe }) {
       <BackLink />
       <div className="columns">
         <section>
-          <RecipeImage id={recipe.id} alt={recipe.name} />
+          <Image src={recipe.image} alt={recipe.name} />
         </section>
 
         <section className="title">

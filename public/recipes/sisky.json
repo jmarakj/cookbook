@@ -1,6 +1,7 @@
 {
   "id": "sisky",
   "name": "Šišky s džemom",
+  "image": "images/sisky.jpg",
   "category": ["sweet", "fried"],
   "cuisine": "sk",
   "yield": 6,

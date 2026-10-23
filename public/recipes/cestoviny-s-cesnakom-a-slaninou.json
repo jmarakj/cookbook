@@ -1,6 +1,7 @@
 {
   "id": "cestoviny-s-cesnakom-a-slaninou",
   "name": "Cestoviny s cesnakom a slaninou",
+  "image": "images/cestoviny-s-cesnakom-a-slaninou.jpg",
   "category": ["meat", "pasta"],
   "cuisine": "it",
   "yield": 2,

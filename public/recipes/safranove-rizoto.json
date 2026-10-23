@@ -1,6 +1,7 @@
 {
   "id": "safranove-rizoto",
   "name": "Šafranové rizoto",
+  "image": "images/safranove-rizoto.jpg",
   "category": ["vegetarian", "risotto"],
   "cuisine": "it",
   "yield": 4,

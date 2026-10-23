@@ -1,6 +1,7 @@
 {
   "id": "jogurtova-babovka",
   "name": "Jogurtová bábovka",
+  "image": "images/jogurtova-babovka.jpg",
   "category": ["sweet", "baking"],
   "cuisine": "sk",
   "yield": null,

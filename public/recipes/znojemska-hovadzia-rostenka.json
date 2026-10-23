@@ -1,6 +1,7 @@
 {
   "id": "znojemska-hovadzia-rostenka",
   "name": "Znojemská hovädzia roštenka",
+  "image": "images/znojemska-hovadzia-rostenka.jpg",
   "category": ["meat"],
   "cuisine": "cz",
   "yield": 4,

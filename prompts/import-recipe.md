@@ -18,6 +18,7 @@ Don't add anything else besides one short line listing any assumptions you made.
 {
   "id": "<slug>",
   "name": "Name of the dish, in Slovak",
+  "image": "images/<slug>.jpg",
   "category": ["<category id>"],
   "cuisine": "<country code>",
   "yield": 4,
@@ -34,6 +35,7 @@ Rules:
 
 - **Language:** all text (name, notes, steps, new labels) is in **Slovak** with correct diacritics. Translate if the source is in another language.
 - **id:** the same as the file-name slug.
+- **image:** always `images/<slug>.jpg`; I save the photo under that name.
 - **category:** all ids that fit, in the order of the categories list below. Use the existing categories whenever one fits; add a new one only when none fits.
   - Always add exactly one of `sweet` (any sweet dish, including sweet main dishes, desserts and cakes), `vegetarian` (savory, no meat, fish or meat broth) or `meat`.
 - **cuisine:** the lowercase ISO 3166 country code of the country the dish comes from (e.g. `sk`, `it`, `fr`), not where the source website is from. It is used for search and is not in the enums.
@@ -57,6 +59,7 @@ Rules:
 {
   "id": "langose",
   "name": "Langoše",
+  "image": "images/langose.jpg",
   "category": ["vegetarian", "fried"],
   "cuisine": "hu",
   "yield": 4,

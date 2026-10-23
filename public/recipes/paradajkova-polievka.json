@@ -1,6 +1,7 @@
 {
   "id": "paradajkova-polievka",
   "name": "Paradajková polievka",
+  "image": "images/paradajkova-polievka.jpg",
   "category": ["vegetarian", "soup"],
   "cuisine": "it",
   "yield": 3,

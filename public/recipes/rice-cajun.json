@@ -1,6 +1,7 @@
 {
   "id": "rice-cajun",
   "name": "Rice Cajun",
+  "image": "images/rice-cajun.jpg",
   "category": ["meat", "risotto"],
   "cuisine": "us",
   "yield": 4,

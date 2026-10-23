@@ -1,6 +1,7 @@
 {
   "id": "ryzovy-nakyp",
   "name": "Ryžový nákyp",
+  "image": "images/ryzovy-nakyp.jpg",
   "category": ["sweet", "baking"],
   "cuisine": "sk",
   "yield": 6,

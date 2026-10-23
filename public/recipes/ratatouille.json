@@ -1,6 +1,7 @@
 {
   "id": "ratatouille",
   "name": "Ratatouille",
+  "image": "images/ratatouille.jpg",
   "category": ["vegetarian", "baking"],
   "cuisine": "fr",
   "yield": 6,

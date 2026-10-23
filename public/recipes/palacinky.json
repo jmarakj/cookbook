@@ -1,6 +1,7 @@
 {
   "id": "palacinky",
   "name": "Palacinky",
+  "image": "images/palacinky.jpg",
   "category": ["sweet"],
   "cuisine": "fr",
   "yield": 4,

@@ -1,6 +1,7 @@
 {
   "id": "rezance-s-tvarohom-a-slaninou",
   "name": "Rezance s tvarohom a slaninou",
+  "image": "images/rezance-s-tvarohom-a-slaninou.jpg",
   "category": ["meat", "pasta"],
   "cuisine": "sk",
   "yield": 3,

@@ -1,7 +1,7 @@
 // Builds public/recipes.json – a minified index of public/recipes/*.json for list & search –
-// and optimizes oversized images in public/images.
+// after optimizing oversized images in public/images.
 import { execFileSync } from 'node:child_process'
-import { readdirSync, readFileSync, renameSync, statSync, unlinkSync, writeFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync, renameSync, statSync, unlinkSync, writeFileSync } from 'node:fs'
 import { basename, extname, join } from 'node:path'
 
 const publicDir = join(import.meta.dirname, '..', 'public')
@@ -27,34 +27,22 @@ const normalize = (texts) => [
   ),
 ].join(' ')
 
-const index = readdirSync(recipesDir)
-  .filter((file) => file.endsWith('.json'))
-  .sort()
-  .map((file) => {
-    const recipe = readJson(join(recipesDir, file))
-    return {
-      // file name, because detail page loads recipes/<id>.json
-      id: basename(file, '.json'),
-      name: recipe.name,
-      category: recipe.category,
-      search: normalize([
-        recipe.name,
-        ...recipe.category.map((c) => label(enums.categories, c)),
-        countryName(recipe.cuisine),
-        ...recipe.ingredients.map((i) => label(enums.ingredients, i.id)),
-      ]),
-    }
-  })
-
-writeFileSync(join(publicDir, 'recipes.json'), JSON.stringify(index))
-console.log(`recipes.json: ${index.length} recipes`)
-
 // Re-encodes images over 100 KB as JPEG (quality 80, max 1200 px) via PowerShell
 // System.Drawing – no image tools are installed. Originals in other formats are
-// replaced by <id>.jpg, which the app tries first.
+// replaced by <id>.jpg and the recipes pointing at them are updated.
 const imagesDir = join(publicDir, 'images')
 const MAX_IMAGE_BYTES = 100 * 1024
 const MAX_IMAGE_SIZE = 1200
+
+// rewrites the "image" value as text, so the hand-written formatting of the file stays
+const replaceRecipeImage = (from, to) => {
+  for (const file of readdirSync(recipesDir)) {
+    const path = join(recipesDir, file)
+    const text = readFileSync(path, 'utf8')
+    const updated = text.replace(`"image": ${JSON.stringify(from)}`, `"image": ${JSON.stringify(to)}`)
+    if (updated !== text) writeFileSync(path, updated)
+  }
+}
 
 const optimizeImage = (src, dest) => {
   const script = `
@@ -100,6 +88,34 @@ if (process.platform !== 'win32') {
     }
     unlinkSync(src)
     renameSync(tmp, dest)
+    replaceRecipeImage(`images/${file}`, `images/${basename(dest)}`)
     console.log(`images: ${file} ${Math.round(before / 1024)} KB -> ${basename(dest)} ${Math.round(after / 1024)} KB`)
   }
 }
+
+// runs after image optimization, which may change the recipes' image paths
+const index = readdirSync(recipesDir)
+  .filter((file) => file.endsWith('.json'))
+  .sort()
+  .map((file) => {
+    const recipe = readJson(join(recipesDir, file))
+    if (recipe.image && !existsSync(join(publicDir, recipe.image))) {
+      console.warn(`${file}: image ${recipe.image} not found`)
+    }
+    return {
+      // file name, because detail page loads recipes/<id>.json
+      id: basename(file, '.json'),
+      name: recipe.name,
+      image: recipe.image ?? null,
+      category: recipe.category,
+      search: normalize([
+        recipe.name,
+        ...recipe.category.map((c) => label(enums.categories, c)),
+        countryName(recipe.cuisine),
+        ...recipe.ingredients.map((i) => label(enums.ingredients, i.id)),
+      ]),
+    }
+  })
+
+writeFileSync(join(publicDir, 'recipes.json'), JSON.stringify(index))
+console.log(`recipes.json: ${index.length} recipes`)
