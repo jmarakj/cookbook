@@ -1,0 +1,144 @@
+{
+  "id": "XV4NZItV8nKkvWw7n11T",
+  "name": "Chilli con carne",
+  "image": "images/XV4NZItV8nKkvWw7n11T.jpg",
+  "category": ["meat"],
+  "cuisine": "us",
+  "yield": 8,
+  "times": {
+    "prep": 30,
+    "cook": 60,
+    "total": 120
+  },
+  "ingredients": [
+    {
+      "id": "beef_ground",
+      "amount": 800,
+      "unit": "g"
+    },
+    {
+      "id": "olive_oil",
+      "amount": 3,
+      "unit": "tbsp"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "stredná červená, ďalšia na ozdobenie"
+    },
+    {
+      "id": "carrot",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "menšia"
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "veľké strúčiky"
+    },
+    {
+      "id": "tomato_paste",
+      "amount": 4,
+      "unit": "tbsp"
+    },
+    {
+      "id": "cayenne_pepper",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "id": "cumin_ground",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "id": "tomatoes_diced",
+      "amount": 800,
+      "unit": "g",
+      "notes": "drvené, konzerva"
+    },
+    {
+      "id": "kidney_beans",
+      "amount": 400,
+      "unit": "g",
+      "notes": "konzerva"
+    },
+    {
+      "id": "tomato",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "menšie"
+    },
+    {
+      "id": "vegetable_broth",
+      "amount": 300,
+      "unit": "ml",
+      "notes": "alebo hovädzí vývar"
+    },
+    {
+      "id": "chocolate_dark",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "veľká kocka, 80 %"
+    },
+    {
+      "id": "chili_pepper_fresh",
+      "amount": 1,
+      "unit": "pcs"
+    },
+    {
+      "id": "sugar_brown",
+      "amount": 2,
+      "unit": "tsp"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "čerstvo mleté, podľa chuti"
+    },
+    {
+      "id": "rice",
+      "amount": null,
+      "unit": null,
+      "notes": "jazmínová, na podávanie"
+    },
+    {
+      "id": "tortilla",
+      "amount": null,
+      "unit": null,
+      "notes": "na podávanie, namiesto ryže"
+    },
+    {
+      "id": "coriander_fresh",
+      "amount": null,
+      "unit": null,
+      "notes": "na podávanie"
+    },
+    {
+      "id": "lime",
+      "amount": 1,
+      "unit": "pcs"
+    }
+  ],
+  "steps": [
+    "Cibuľu aj cesnak nakrájajte nadrobno, mrkvu nastrúhajte, paradajky nakrájajte na menšie kocky a chilli papričku na kolieska.",
+    "Na oleji na miernom ohni orestujte cibuľu s mrkvou domäkka. Pridajte cesnak a po minúte kajenské korenie a rímsku rascu.",
+    "Keď sa korenie rozvonia, vmiešajte paradajkový pretlak a poriadne ho premiešajte so zeleninou.",
+    "Pridajte mäso a varechou ho rozdeľte na čo najdrobnejšie kúsky. Keď sa mäso zatiahne, pridajte nakrájané paradajky, paradajky z konzervy, chilli podľa chuti, soľ, korenie a vývar.",
+    "Prikryté varte približne hodinu a kontrolujte, či sa nepripaľuje. Ak áno, prilejte vodu alebo vývar.",
+    "Približne 10 minút pred koncom pridajte prepláchnutú fazuľu a na úplný záver čokoládu a trstinový cukor.",
+    "Dochuťte soľou, korením, cukrom, prípadne limetkou. Ak chcete omáčku tmavšiu, pridajte ešte čokoládu.",
+    "Podávajte s ryžou alebo tortillou, ozdobené červenou cibuľkou, pokvapkané limetkou a posypané koriandrom."
+  ],
+  "notes": "Pokojne urobte viac – chilli sa dá výborne zamraziť a kedykoľvek znova ohriať."
+}

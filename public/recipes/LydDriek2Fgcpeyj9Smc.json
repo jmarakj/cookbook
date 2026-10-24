@@ -1,0 +1,53 @@
+{
+  "id": "LydDriek2Fgcpeyj9Smc",
+  "name": "Palacinky",
+  "image": "images/LydDriek2Fgcpeyj9Smc.jpg",
+  "category": ["sweet"],
+  "cuisine": "fr",
+  "yield": 4,
+  "times": {},
+  "ingredients": [
+    {
+      "id": "flour_plain",
+      "amount": 400,
+      "unit": "g"
+    },
+    {
+      "id": "sugar_vanilla",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "balíček"
+    },
+    {
+      "id": "baking_powder",
+      "amount": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "pinch"
+    },
+    {
+      "id": "milk",
+      "amount": 1,
+      "unit": "l"
+    },
+    {
+      "id": "oil_cooking",
+      "amount": 200,
+      "unit": "ml",
+      "notes": "slnečnicový"
+    },
+    {
+      "id": "egg",
+      "amount": 4,
+      "unit": "pcs"
+    }
+  ],
+  "steps": [
+    "Vymiešajte hladké riedke cesto bez hrudiek.",
+    "Rozohrejte panvicu na palacinky. Olej je v ceste, takže panvicu stačí potrieť len pred prvou palacinkou."
+  ],
+  "notes": null
+}

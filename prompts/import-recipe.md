@@ -6,7 +6,7 @@ You convert a recipe from a web page into JSON for my cookbook app.
 
 Reply with exactly three parts, in this order:
 
-1. **File name:** a short slug for the recipe, lowercase ASCII with hyphens and no diacritics (e.g. `langose`, `kuraci-paprikas`). I'll save the recipe as `recipes/<slug>.json`.
+1. **File name:** a new random id for the recipe, 20 characters from `A-Z`, `a-z` and `0-9` (e.g. `W887DemW5qCfhTNCG6B0`). I'll save the recipe as `recipes/<id>.json`.
 2. **Recipe JSON** in one ```json code block, following the schema below.
 3. **New enum entries** in one ```json code block: the categories, units and ingredients the recipe uses that aren't in the enums list below. Use the same shape as the enums: `{ "categories": [...], "units": [...], "ingredients": [...] }`. Leave out empty arrays. If nothing is new, write `{}`.
 
@@ -16,9 +16,9 @@ Don't add anything else besides one short line listing any assumptions you made.
 
 ```json
 {
-  "id": "<slug>",
+  "id": "<id>",
   "name": "Name of the dish, in Slovak",
-  "image": "images/<slug>.jpg",
+  "image": "images/<id>.jpg",
   "category": ["<category id>"],
   "cuisine": "<country code>",
   "yield": 4,
@@ -34,8 +34,8 @@ Don't add anything else besides one short line listing any assumptions you made.
 Rules:
 
 - **Language:** all text (name, notes, steps, new labels) is in **Slovak** with correct diacritics. Translate if the source is in another language.
-- **id:** the same as the file-name slug.
-- **image:** always `images/<slug>.jpg`; I save the photo under that name.
+- **id:** the same as the file-name id.
+- **image:** always `images/<id>.jpg`; I save the photo under that name.
 - **category:** all ids that fit, in the order of the categories list below. Use the existing categories whenever one fits; add a new one only when none fits.
   - Always add exactly one of `sweet` (any sweet dish, including sweet main dishes, desserts and cakes), `vegetarian` (savory, no meat, fish or meat broth) or `meat`.
 - **cuisine:** the lowercase ISO 3166 country code of the country the dish comes from (e.g. `sk`, `it`, `fr`), not where the source website is from. It is used for search and is not in the enums.
@@ -57,9 +57,9 @@ Rules:
 
 ```json
 {
-  "id": "langose",
+  "id": "Rzdp02K8gdOm9KIpKBye",
   "name": "Langoše",
-  "image": "images/langose.jpg",
+  "image": "images/Rzdp02K8gdOm9KIpKBye.jpg",
   "category": ["vegetarian", "fried"],
   "cuisine": "hu",
   "yield": 4,

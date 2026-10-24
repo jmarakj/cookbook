@@ -214,6 +214,8 @@ function RecipeView({ recipe }: { recipe: Recipe }) {
                 max={SERVINGS_OPTIONS.length - 1}
                 step={1}
                 value={SERVINGS_OPTIONS.indexOf(currentServings)}
+                disabled={inShoppingList}
+                title={inShoppingList ? 'Recept je v nákupnom zozname' : undefined}
                 onChange={(e) => setServings(SERVINGS_OPTIONS[Number(e.target.value)])}
               />
             </label>

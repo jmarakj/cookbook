@@ -1,0 +1,92 @@
+{
+  "id": "sr0P1ALXtLv1gcrTo6Sn",
+  "name": "Grécky kuskusový šalát",
+  "image": "images/sr0P1ALXtLv1gcrTo6Sn.jpg",
+  "category": ["vegetarian", "salad"],
+  "cuisine": "gr",
+  "yield": 4,
+  "times": {
+    "prep": 15,
+    "cook": 0,
+    "rest": 0,
+    "total": 15
+  },
+  "ingredients": [
+    {
+      "id": "couscous",
+      "amount": 150,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "water",
+      "amount": 200,
+      "unit": "ml",
+      "notes": "horúca, alebo vývar"
+    },
+    {
+      "id": "zucchini",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "menšia"
+    },
+    {
+      "id": "cucumber",
+      "amount": 100,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "tomato",
+      "amount": 8,
+      "unit": "pcs",
+      "notes": "cherry"
+    },
+    {
+      "id": "feta",
+      "amount": 150,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "mint_fresh",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "malá hrsť"
+    },
+    {
+      "id": "olive_oil",
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": "1 čl do kuskusu, zvyšok na cuketu a šalát"
+    },
+    {
+      "id": "lemon_juice",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "mleté, podľa chuti"
+    }
+  ],
+  "steps": [
+    "Kuskus nasypte do misky, pridajte štipku soli a 1 čl olivového oleja. Zalejte horúcou vodou alebo vývarom v pomere 1 : 1,5.",
+    "Prikryte tanierom alebo fóliou a nechajte 5–7 minút napučať. Potom ho načechrajte vidličkou.",
+    "Cuketu nakrájajte na malé kocky. Na panvici rozohrejte časť zvyšného oleja a cuketu prudko opečte do zlatista, aby zostala chrumkavá. Zľahka osoľte a okoreňte.",
+    "Uhorku a paradajky nakrájajte na rovnaké malé kocky, mätu nasekajte nadrobno.",
+    "Vo veľkej mise zmiešajte kuskus, opečenú cuketu, uhorku, paradajky a mätu.",
+    "Pokvapkajte citrónovou šťavou a zvyšným olivovým olejom a jemne premiešajte.",
+    "Navrch alebo do celej zmesi jemne vmiešajte rozdrobenú fetu."
+  ],
+  "notes": null
+}

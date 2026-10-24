@@ -1,0 +1,86 @@
+{
+  "id": "Qf3lFOZQvyJzvvzzspdt",
+  "name": "Pečený hermelín v lístkovom ceste so špenátovým šalátom",
+  "image": "images/Qf3lFOZQvyJzvvzzspdt.jpg",
+  "category": ["vegetarian", "baking"],
+  "cuisine": "cz",
+  "yield": 2,
+  "times": {
+    "prep": 15,
+    "cook": 20,
+    "rest": 0,
+    "total": 35
+  },
+  "ingredients": [
+    {
+      "id": "puff_pastry",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "balenie"
+    },
+    {
+      "id": "hermelin_cheese",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "alebo Encián"
+    },
+    {
+      "id": "spring_onion",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "nakrájaná na kolieska"
+    },
+    {
+      "id": "egg",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "na potretie"
+    },
+    {
+      "id": "spinach_baby",
+      "amount": null,
+      "unit": null,
+      "notes": null
+    },
+    {
+      "id": "olive_oil",
+      "amount": null,
+      "unit": null,
+      "notes": "na dresing"
+    },
+    {
+      "id": "lemon_juice",
+      "amount": null,
+      "unit": null,
+      "notes": "alebo balzamikový ocot"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "mleté"
+    },
+    {
+      "id": "walnuts",
+      "amount": null,
+      "unit": null,
+      "notes": "nasekané, voliteľné"
+    }
+  ],
+  "steps": [
+    "Rúru predhrejte na 200 °C a plech vyložte papierom na pečenie.",
+    "Hermelíny vodorovne prerežte na polovice, posypte nakrájanou jarnou cibuľkou a polovice opäť spojte.",
+    "Lístkové cesto rozvaľkajte a nakrájajte na štvorce dostatočne veľké na zabalenie syra.",
+    "Do stredu každého štvorca položte hermelín, zabaľte ho a spoje pevne pritlačte.",
+    "Balíčky potrite rozšľahaným vajcom a pečte približne 15–20 minút dozlatista.",
+    "Baby špenát pokvapkajte olivovým olejom a citrónovou šťavou alebo balzamikovým octom, osoľte, okoreňte a podľa chuti pridajte orechy.",
+    "Hermelín podávajte teplý so špenátovým šalátom."
+  ],
+  "notes": "Dresing možno podľa chuti doplniť medom a horčicou."
+}

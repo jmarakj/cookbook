@@ -28,7 +28,7 @@ The app is served under `/cookbook/`; `base` in [vite.config.ts](vite.config.ts)
 ### Adding a recipe
 
 1. Use [prompts/import-recipe.md](prompts/import-recipe.md) with an AI assistant to convert a recipe web page to JSON.
-2. Save the result as `public/recipes/<slug>.json` and add any new categories, units or ingredients to the matching file in `public/enums/`.
+2. Save the result as `public/recipes/<id>.json` (`<id>` is a random 20-character alphanumeric id) and add any new categories, units or ingredients to the matching file in `public/enums/`.
 3. Put the image in `public/images/`.
 4. Run `npm run build:index`. It rebuilds the index and re-encodes images over 100 KB as JPEG. Image optimization uses PowerShell `System.Drawing`, so it needs Windows.
 

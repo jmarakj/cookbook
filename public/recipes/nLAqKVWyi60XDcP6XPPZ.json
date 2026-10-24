@@ -1,0 +1,87 @@
+{
+  "id": "nLAqKVWyi60XDcP6XPPZ",
+  "name": "Kuracie soté so zeleninovým triom",
+  "image": "images/nLAqKVWyi60XDcP6XPPZ.jpg",
+  "category": ["meat"],
+  "cuisine": "sk",
+  "yield": 4,
+  "times": {
+    "cook": 15,
+    "total": 30
+  },
+  "ingredients": [
+    {
+      "id": "chicken_breast",
+      "amount": 500,
+      "unit": "g",
+      "notes": "prsia alebo vykostené stehná"
+    },
+    {
+      "id": "vegetable_trio",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "veľká konzerva"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs"
+    },
+    {
+      "id": "oil_cooking",
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": "repkový alebo olivový"
+    },
+    {
+      "id": "soy_sauce",
+      "amount": 1,
+      "unit": "tbsp"
+    },
+    {
+      "id": "ketchup",
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": "alebo 1 čl paradajkového pretlaku"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "mleté, podľa chuti"
+    },
+    {
+      "id": "paprika_sweet",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "water",
+      "amount": 150,
+      "unit": "ml",
+      "notes": "100–150 ml, alebo vývar"
+    },
+    {
+      "id": "cornstarch",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": "voliteľné, na zahustenie"
+    }
+  ],
+  "steps": [
+    "Mäso umyte, osušte a nakrájajte na rezance alebo kocky. Ochuťte soľou, korením a mletou paprikou.",
+    "Na panvici rozohrejte olej a orestujte nadrobno nakrájanú cibuľu dosklovita.",
+    "Pridajte mäso a prudko ho orestujte, kým sa zo všetkých strán nezatiahne.",
+    "Pridajte sójovú omáčku, kečup a scedenú zeleninu.",
+    "Podlejte vodou alebo vývarom a na miernom ohni duste 10–15 minút, kým mäso nezmäkne.",
+    "Ak je omáčka príliš riedka, zahustite ju škrobom rozmiešaným v troche vody."
+  ],
+  "notes": null
+}

@@ -98,7 +98,7 @@ function ShoppingListView({
   const recipeName = (id: string) => recipes?.find((r) => r.id === id)?.name ?? id;
 
   return (
-    <main className="shopping">
+    <main >
       <title>Nákupný zoznam</title>
       <PageHeader
         left={<BackLink to={routes.home.url()} />}
@@ -129,66 +129,68 @@ function ShoppingListView({
         }
       />
 
-      <div className="shopping-add-bar">
-        <form
-          className="shopping-add"
-          onSubmit={(e) => {
-            e.preventDefault();
-            submit();
-          }}
-        >
-          <input
-            type="text"
-            placeholder="Pridať položku…"
-            aria-label="Nová položka"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-          />
-          {text.trim() && (
-            <button type="submit" aria-label="Pridať" title="Pridať">
-              <Check aria-hidden="true" />
-            </button>
-          )}
-        </form>
-      </div>
-
-      {groups.length === 0 && <p className="shopping-empty">Zoznam je prázdny.</p>}
-
-      <ul className="shopping-items">
-        {groups.map((group, index) => {
-          const ids = group.items.map((i) => i.id);
-          const heading = group.bought ? 'Kúpené' : group.aisle;
-          const previous = groups[index - 1];
-          const previousHeading = previous && (previous.bought ? 'Kúpené' : previous.aisle);
-          return [
-            heading && heading !== previousHeading && (
-              <li key={`heading:${heading}`} className="shopping-aisle">
-                {heading}
-              </li>
-            ),
-            <li key={group.key} className={group.bought ? 'bought' : undefined}>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={group.bought}
-                  onChange={() => onSetBought(ids, !group.bought)}
-                />
-                <span>
-                  {group.amount && <strong>{group.amount}</strong>} {group.name}
-                </span>
-              </label>
-              <button
-                type="button"
-                aria-label={`Odstrániť ${group.name}`}
-                title="Odstrániť"
-                onClick={() => (ids.length > 1 ? setRemoving(group) : onRemove(ids))}
-              >
-                <Trash2 aria-hidden="true" />
+      <div className="shopping">
+        <div className="shopping-add-bar">
+          <form
+            className="shopping-add"
+            onSubmit={(e) => {
+              e.preventDefault();
+              submit();
+            }}
+          >
+            <input
+              type="text"
+              placeholder="Pridať položku…"
+              aria-label="Nová položka"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+            />
+            {text.trim() && (
+              <button type="submit" aria-label="Pridať" title="Pridať">
+                <Check aria-hidden="true" />
               </button>
-            </li>,
-          ];
-        })}
-      </ul>
+            )}
+          </form>
+        </div>
+
+        {groups.length === 0 && <p className="shopping-empty">Zoznam je prázdny.</p>}
+
+        <ul className="shopping-items">
+          {groups.map((group, index) => {
+            const ids = group.items.map((i) => i.id);
+            const heading = group.bought ? 'Kúpené' : group.aisle;
+            const previous = groups[index - 1];
+            const previousHeading = previous && (previous.bought ? 'Kúpené' : previous.aisle);
+            return [
+              heading && heading !== previousHeading && (
+                <li key={`heading:${heading}`} className="shopping-aisle">
+                  {heading}
+                </li>
+              ),
+              <li key={group.key} className={group.bought ? 'bought' : undefined}>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={group.bought}
+                    onChange={() => onSetBought(ids, !group.bought)}
+                  />
+                  <span>
+                    {group.amount && <strong>{group.amount}</strong>} {group.name}
+                  </span>
+                </label>
+                <button
+                  type="button"
+                  aria-label={`Odstrániť ${group.name}`}
+                  title="Odstrániť"
+                  onClick={() => (ids.length > 1 ? setRemoving(group) : onRemove(ids))}
+                >
+                  <Trash2 aria-hidden="true" />
+                </button>
+              </li>,
+            ];
+          })}
+        </ul>
+      </div>
 
       {removing && (
         <RemoveGroupDialog group={removing} onRemove={onRemove} onClose={() => setRemoving(null)} />

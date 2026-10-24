@@ -1,0 +1,85 @@
+{
+  "id": "cjeYUVUqtvpK8mP7eFLM",
+  "name": "Polievka Hokkaido",
+  "image": "images/cjeYUVUqtvpK8mP7eFLM.jpg",
+  "category": ["vegetarian", "soup"],
+  "cuisine": "sk",
+  "yield": 4,
+  "times": {
+    "prep": 20,
+    "cook": 30,
+    "rest": 0,
+    "total": 50
+  },
+  "ingredients": [
+    {
+      "id": "pumpkin_hokkaido",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "carrot",
+      "amount": 4,
+      "unit": "pcs",
+      "notes": "3–4 kusy"
+    },
+    {
+      "id": "potato",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "1–2 kusy"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "mleté"
+    },
+    {
+      "id": "pumpkin_seed_oil",
+      "amount": null,
+      "unit": null,
+      "notes": "na pokvapkanie pri podávaní"
+    },
+    {
+      "id": "oil_cooking",
+      "amount": null,
+      "unit": null,
+      "notes": "na opečenie"
+    },
+    {
+      "id": "bread",
+      "amount": null,
+      "unit": null,
+      "notes": "starší, na krutóny"
+    },
+    {
+      "id": "water",
+      "amount": null,
+      "unit": null,
+      "notes": "na zaliatie"
+    }
+  ],
+  "steps": [
+    "Cibuľu nakrájajte nadrobno a v hrnci ju na troche oleja nechajte zosklovatieť. Pridajte očistené a nakrájané zemiaky a mrkvu.",
+    "Tekvicu umyte, rozpoľte, odstráňte semienka a nakrájajte na kocky. Nepoškodenú šupku netreba šúpať.",
+    "Tekvicu pridajte do hrnca, zalejte vodou, osoľte a varte približne 20 minút, kým zelenina nezmäkne.",
+    "Polievku rozmixujte dohladka, podľa potreby zrieďte vodou a dochuťte korením.",
+    "Chlieb nakrájajte na kocky a na troche oleja ich na veľmi miernom ohni opečte dochrumkava.",
+    "Podávajte s krutónmi, pokvapkané tekvicovým olejom."
+  ],
+  "notes": null
+}

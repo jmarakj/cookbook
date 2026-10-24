@@ -1,0 +1,72 @@
+{
+  "id": "0kowo7F2t3oi7tlfEKq9",
+  "name": "Bryndzová nátierka",
+  "image": "images/0kowo7F2t3oi7tlfEKq9.jpg",
+  "category": ["spread"],
+  "cuisine": "sk",
+  "yield": 4,
+  "times": {
+    "prep": 10,
+    "cook": 0,
+    "rest": 0,
+    "total": 10
+  },
+  "ingredients": [
+    {
+      "id": "bryndza",
+      "amount": 125,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "butter",
+      "amount": 50,
+      "unit": "g",
+      "notes": "zmäknuté"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "paprika_sweet",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "mleté, podľa chuti"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "pinch",
+      "notes": null
+    },
+    {
+      "id": "chives",
+      "amount": null,
+      "unit": null,
+      "notes": "na dozdobenie"
+    },
+    {
+      "id": "bread",
+      "amount": null,
+      "unit": null,
+      "notes": "celozrnný, na podávanie"
+    }
+  ],
+  "steps": [
+    "Maslo nechajte zmäknúť.",
+    "Cibuľu nasekajte nadrobno.",
+    "Maslo zmiešajte s bryndzou, pridajte cibuľu a dochuťte mletou paprikou, korením a soľou.",
+    "Všetko poriadne vymiešajte.",
+    "Natrite na chlieb a dozdobte pažítkou."
+  ],
+  "notes": null
+}

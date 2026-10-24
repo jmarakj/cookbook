@@ -1,0 +1,60 @@
+{
+  "id": "XJYy2ld8Br6fsksOQwBu",
+  "name": "Vajíčková nátierka",
+  "image": "images/XJYy2ld8Br6fsksOQwBu.jpg",
+  "category": ["spread"],
+  "cuisine": "sk",
+  "yield": 4,
+  "times": {
+    "prep": 0,
+    "cook": 0,
+    "rest": 0,
+    "total": 0
+  },
+  "ingredients": [
+    {
+      "id": "egg",
+      "amount": 6,
+      "unit": "pcs",
+      "notes": "uvarené natvrdo"
+    },
+    {
+      "id": "butter",
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": "zmäknuté"
+    },
+    {
+      "id": "mustard",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": "plnotučná"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "čerstvo mleté, podľa chuti"
+    },
+    {
+      "id": "chives",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "hrsť, čerstvá"
+    }
+  ],
+  "steps": [
+    "Vajcia uvarte natvrdo a nechajte ich úplne vychladnúť.",
+    "Vajcia olúpte a oddeľte žĺtky od bielkov.",
+    "Žĺtky vymiešajte v miske so zmäknutým maslom a horčicou do hladkej peny.",
+    "Bielky nastrúhajte najemno a zľahka ich vmiešajte do žĺtkovej zmesi.",
+    "Dochuťte soľou, korením a nasekanou pažítkou."
+  ],
+  "notes": "Vajcia pred miešaním nechajte úplne vychladnúť, inak nátierka zriedne. V uzavretej nádobe v chladničke vydrží 2–3 dni."
+}

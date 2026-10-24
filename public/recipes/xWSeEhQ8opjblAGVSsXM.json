@@ -1,0 +1,66 @@
+{
+  "id": "xWSeEhQ8opjblAGVSsXM",
+  "name": "Tvarohová nátierka s reďkovkou a jarnou cibuľkou",
+  "image": "images/xWSeEhQ8opjblAGVSsXM.jpg",
+  "category": ["spread"],
+  "cuisine": "sk",
+  "yield": 4,
+  "times": {
+    "prep": 10,
+    "cook": 0,
+    "rest": 0,
+    "total": 10
+  },
+  "ingredients": [
+    {
+      "id": "radish",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "zväzok"
+    },
+    {
+      "id": "spring_onion",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "tvaroh",
+      "amount": 200,
+      "unit": "g",
+      "notes": "hrudkový"
+    },
+    {
+      "id": "butter",
+      "amount": 50,
+      "unit": "g",
+      "notes": "zmäknuté"
+    },
+    {
+      "id": "worcestershire_sauce",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "mleté, podľa chuti"
+    }
+  ],
+  "steps": [
+    "Reďkovky umyte a nakrájajte na malé kocky.",
+    "Jarnú cibuľku opláchnite a nakrájajte na tenké kolieska.",
+    "V miske vymiešajte tvaroh so zmäknutým maslom.",
+    "Pridajte zeleninu, zľahka osoľte, okoreňte a dochuťte worčestrovou omáčkou.",
+    "Všetko spolu premiešajte a podávajte na celozrnných hriankach."
+  ],
+  "notes": null
+}

@@ -1,0 +1,79 @@
+{
+    "id": "sHwNDoLOOM3BBNYaK9a0",
+    "name": "Krémová zeleninová polievka",
+    "image": "images/sHwNDoLOOM3BBNYaK9a0.jpg",
+    "category": [
+        "vegetarian",
+        "soup"
+    ],
+    "cuisine": "sk",
+    "yield": 4,
+    "times": {
+        "cook": 40
+    },
+    "ingredients": [
+        {
+            "id": "onion",
+            "amount": 1,
+            "unit": "pcs",
+            "notes": "nakrájaná nadrobno"
+        },
+        {
+            "id": "potato",
+            "amount": 3,
+            "unit": "pcs",
+            "notes": "vačší"
+        },
+        {
+            "id": "carrot",
+            "amount": 1,
+            "unit": "pcs",
+            "notes": null
+        },
+        {
+            "id": "parsley_root",
+            "amount": 1,
+            "unit": "pcs",
+            "notes": null
+        },
+        {
+            "id": "celery",
+            "amount": 1,
+            "unit": "pcs",
+            "notes": null
+        },
+        {
+            "id": "vegetable_broth",
+            "amount": 1000,
+            "unit": "ml",
+            "notes": null
+        },
+        {
+            "id": "salt",
+            "amount": null,
+            "unit": null,
+            "notes": "podľa chuti"
+        },
+        {
+            "id": "black_pepper",
+            "amount": null,
+            "unit": null,
+            "notes": "podľa chuti"
+        },
+        {
+            "id": "butter",
+            "amount": null,
+            "unit": null,
+            "notes": "na zjemnenie"
+        }
+    ],
+    "steps": [
+        "V hrnci na strednom plameni orestujte nadrobno nakrájanú cibuľu do sklovita.",
+        "Pridajte očistenú a na kocky nakrájanú mrkvu, petržlen, zeler a zemiaky. Spoločne restujte približne 5 minút.",
+        "Zeleninu zalejte horúcim vývarom alebo vodou, osoľte a okoreňte. Prikryte pokrievkou a varte približne 20 až 25 minút, kým zelenina a zemiaky úplne nezmäknú.",
+        "Hrniec odstavte zo sporáka a polievku ponorným mixérom rozmixujte dohladka.",
+        "Podľa chuti vmiešajte trochu masla. Krátko prevarte.",
+        "Podávajte s opečenými krutónmi alebo čerstvými bylinkami."
+    ],
+    "notes": "Množstvo vývaru prispôsobte požadovanej hustote polievky."
+}

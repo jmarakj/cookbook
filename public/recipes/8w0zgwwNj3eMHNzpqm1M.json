@@ -1,0 +1,98 @@
+{
+    "id": "8w0zgwwNj3eMHNzpqm1M",
+    "name": "Parížsky šalát",
+    "image": "images/8w0zgwwNj3eMHNzpqm1M.jpg",
+    "category": [
+        "miscellaneous"
+    ],
+    "cuisine": "cz",
+    "yield": 4,
+    "times": {
+        "prep": 20,
+        "cook": 0,
+        "rest": 0,
+        "total": 20
+    },
+    "ingredients": [
+        {
+            "id": "sausage_paris",
+            "amount": 400,
+            "unit": "g",
+            "notes": null
+        },
+        {
+            "id": "pickles",
+            "amount": 6,
+            "unit": "pcs",
+            "notes": null
+        },
+        {
+            "id": "peas",
+            "amount": 90,
+            "unit": "g",
+            "notes": null
+        },
+        {
+            "id": "onion",
+            "amount": 1,
+            "unit": "pcs",
+            "notes": "malá"
+        },
+        {
+            "id": "mayonnaise",
+            "amount": 150,
+            "unit": "g",
+            "notes": null
+        },
+        {
+            "id": "yogurt_greek",
+            "amount": 150,
+            "unit": "g",
+            "notes": null
+        },
+        {
+            "id": "mustard",
+            "amount": 1,
+            "unit": "tbsp",
+            "notes": null
+        },
+        {
+            "id": "worcestershire_sauce",
+            "amount": 1,
+            "unit": "tsp",
+            "notes": null
+        },
+        {
+            "id": "pickle_brine",
+            "amount": 1,
+            "unit": "tsp",
+            "notes": null
+        },
+        {
+            "id": "black_pepper",
+            "amount": null,
+            "unit": null,
+            "notes": "podľa chuti"
+        },
+        {
+            "id": "sugar_white",
+            "amount": null,
+            "unit": null,
+            "notes": "štipka"
+        },
+        {
+            "id": "salt",
+            "amount": null,
+            "unit": null,
+            "notes": null
+        }
+    ],
+    "steps": [
+        "V miske zmiešajte majonézu, grécky jogurt, horčicu, worčestrovú omáčku a nálev z uhoriek. Pridajte cukor, soľ, čierne korenie. Dobre premiešajte a dochuťte.",
+        "Parížsku salámu a kyslé uhorky nakrájajte na tenké rezančeky. Cibuľu nakrájajte nadrobno.",
+        "Sceďte sterilizovaný hrášok a pridajte ho k saláme a uhorkám.",
+        "Dresing spojte so salámovou zmesou a dôkladne premiešajte.",
+        "Šalát zakryte a nechajte v chladničke odležať minimálne 1 hodinu, ideálne do nasledujúceho dňa."
+    ],
+    "notes": "Vychádza to na cca 1000g šalátu."
+}

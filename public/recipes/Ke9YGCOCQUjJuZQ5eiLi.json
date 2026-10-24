@@ -1,0 +1,108 @@
+{
+  "id": "Ke9YGCOCQUjJuZQ5eiLi",
+  "name": "Paradajková polievka",
+  "image": "images/Ke9YGCOCQUjJuZQ5eiLi.jpg",
+  "category": ["vegetarian", "soup"],
+  "cuisine": "it",
+  "yield": 3,
+  "times": {
+    "prep": 10,
+    "cook": 15,
+    "rest": 10,
+    "total": 35
+  },
+  "ingredients": [
+    {
+      "id": "tomato",
+      "amount": 350,
+      "unit": "g",
+      "notes": "čerstvé, nakrájané"
+    },
+    {
+      "id": "tomatoes_diced",
+      "amount": 400,
+      "unit": "g",
+      "notes": "konzerva"
+    },
+    {
+      "id": "tomato_paste",
+      "amount": 250,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "sugar_brown",
+      "amount": 3,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "strúčiky"
+    },
+    {
+      "id": "olive_oil",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "butter",
+      "amount": 20,
+      "unit": "g",
+      "notes": "alebo ghí"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": null
+    },
+    {
+      "id": "herb_mix",
+      "amount": null,
+      "unit": null,
+      "notes": "bazalka, petržlenová vňať a rozmarín"
+    },
+    {
+      "id": "parmesan",
+      "amount": null,
+      "unit": null,
+      "notes": "nastrúhaný, voliteľné"
+    },
+    {
+      "id": "basil",
+      "amount": null,
+      "unit": null,
+      "notes": "čerstvé lístky, voliteľné"
+    },
+    {
+      "id": "croutons",
+      "amount": null,
+      "unit": null,
+      "notes": "voliteľné"
+    }
+  ],
+  "steps": [
+    "Čerstvé paradajky, cibuľu, cesnak, trstinový cukor a paradajky z konzervy rozmixujte dohladka.",
+    "V hrnci rozpustite maslo s olivovým olejom. Pridajte rozmixovanú zmes a paradajkový pretlak a priveďte do varu.",
+    "Keď polievka začne bublať, osoľte ju a okoreňte.",
+    "Vypnite sporák, pridajte bazalku, petržlenovú vňať a rozmarín a nechajte približne 10 minút lúhovať. Potom ich vyberte alebo ponechajte v polievke.",
+    "Podávajte s nastrúhaným parmezánom, čerstvou bazalkou alebo krutónmi."
+  ],
+  "notes": null
+}

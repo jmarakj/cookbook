@@ -1,0 +1,66 @@
+{
+  "id": "GEf0GkQ2Lclp6CziIbNw",
+  "name": "Pasta aglio e olio",
+  "image": "images/GEf0GkQ2Lclp6CziIbNw.jpg",
+  "category": ["vegetarian", "pasta"],
+  "cuisine": "it",
+  "yield": 4,
+  "times": {
+    "prep": 10,
+    "cook": 15,
+    "rest": 0,
+    "total": 25
+  },
+  "ingredients": [
+    {
+      "id": "spaghetti",
+      "amount": 450,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "olive_oil",
+      "amount": 120,
+      "unit": "ml",
+      "notes": "extra panenský"
+    },
+    {
+      "id": "garlic",
+      "amount": 6,
+      "unit": "pcs",
+      "notes": "strúčiky, nakrájané na tenké plátky"
+    },
+    {
+      "id": "pasta_water",
+      "amount": 120,
+      "unit": "ml",
+      "notes": "odložená"
+    },
+    {
+      "id": "parsley_fresh",
+      "amount": 15,
+      "unit": "g",
+      "notes": "nasekaná"
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "do vody na cestoviny"
+    },
+    {
+      "id": "parmesan",
+      "amount": null,
+      "unit": null,
+      "notes": "nastrúhaný, voliteľné"
+    }
+  ],
+  "steps": [
+    "Vo veľkom hrnci priveďte do varu osolenú vodu a špagety uvarte al dente podľa návodu na obale. Pred scedením odoberte približne 120 ml vody z varenia.",
+    "Medzitým zohrejte olivový olej na veľkej panvici na miernom ohni. Pridajte cesnak a pomaly ho opekajte, kým nezmäkne a jemne nezozlátne. Nesmie zhnednúť, inak zhorkne.",
+    "Do panvice pridajte scedené špagety a časť odloženej vody. Premiešavajte a podľa potreby prilievajte ďalšiu vodu, kým olej a škrobová voda nevytvoria jemnú omáčku.",
+    "Vmiešajte petržlenovú vňať a podľa chuti dosoľte.",
+    "Podávajte ihneď, podľa chuti posypané parmezánom."
+  ],
+  "notes": null
+}

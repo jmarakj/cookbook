@@ -1,0 +1,101 @@
+{
+  "id": "7W4IoRtgJ5F6ODymATdu",
+  "name": "Cestoviny bolonese",
+  "image": "images/7W4IoRtgJ5F6ODymATdu.jpg",
+  "category": ["meat", "pasta"],
+  "cuisine": "it",
+  "yield": 8,
+  "times": {
+    "prep": 10,
+    "cook": 35,
+    "total": 45
+  },
+  "ingredients": [
+    {
+      "id": "olive_oil",
+      "amount": 1,
+      "unit": "tbsp"
+    },
+    {
+      "id": "onion",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "nakrájaná na kocky"
+    },
+    {
+      "id": "celery",
+      "amount": 3,
+      "unit": "pcs",
+      "notes": "stonkový, menšie stonky, nakrájaný na drobné kocky"
+    },
+    {
+      "id": "carrot",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "nastrúhaná"
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "strúčiky, nasekané"
+    },
+    {
+      "id": "beef_ground",
+      "amount": 450,
+      "unit": "g",
+      "notes": "chudé"
+    },
+    {
+      "id": "salt",
+      "amount": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "id": "black_pepper",
+      "amount": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "id": "tomatoes_diced",
+      "amount": 800,
+      "unit": "g",
+      "notes": "drvené, konzerva"
+    },
+    {
+      "id": "tomato_paste",
+      "amount": 2,
+      "unit": "tbsp"
+    },
+    {
+      "id": "oregano_dried",
+      "amount": 1,
+      "unit": "tsp"
+    },
+    {
+      "id": "nutmeg",
+      "amount": 0.25,
+      "unit": "tsp"
+    },
+    {
+      "id": "parsley_fresh",
+      "amount": null,
+      "unit": null,
+      "notes": "nasekaná, na podávanie"
+    },
+    {
+      "id": "parmesan",
+      "amount": null,
+      "unit": null,
+      "notes": "strúhaný, voliteľné"
+    }
+  ],
+  "steps": [
+    "Vo veľkom hrnci s hrubým dnom rozohrejte na strednom ohni olivový olej. Pridajte cibuľu, zeler, mrkvu a cesnak a niekoľko minút restujte, kým zelenina nezmäkne.",
+    "Pridajte mäso, osoľte a okoreňte. Za občasného miešania ho rozdrobte a opečte, kým nezhnedne.",
+    "Vmiešajte drvené paradajky, paradajkový pretlak, oregano a muškátový oriešok. Priveďte do varu a na miernom ohni bez pokrievky varte aspoň 30 minút, ideálne 1–2 hodiny.",
+    "Cestoviny uvarte v osolenej vode podľa návodu na obale a rozdeľte do tanierov.",
+    "Navrch dajte omáčku a podávajte posypané petržlenovou vňaťou a podľa chuti parmezánom."
+  ],
+  "notes": "Čím dlhšie omáčka pomaly varí, tým je chutnejšia."
+}
