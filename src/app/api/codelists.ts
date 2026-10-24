@@ -2,6 +2,7 @@ import { Codelist, type CodelistItem, type Codelists } from '../types';
 
 export interface CodelistsService {
   getCodelists(): Promise<Codelists>;
+  invalidate(): void;
 }
 
 const base = import.meta.env.BASE_URL;
@@ -35,5 +36,9 @@ export const codelistsService: CodelistsService = {
       throw err;
     });
     return codelists;
+  },
+
+  invalidate() {
+    codelists = null;
   },
 };
