@@ -1,21 +1,21 @@
 // Builds public/recipes.json – a minified index of public/recipes/*.json for list & search –
 // after optimizing oversized images in public/images.
-import { execFileSync } from 'node:child_process'
-import { existsSync, readdirSync, readFileSync, renameSync, statSync, unlinkSync, writeFileSync } from 'node:fs'
-import { basename, extname, join } from 'node:path'
+import { execFileSync } from 'node:child_process';
+import { existsSync, readdirSync, readFileSync, renameSync, statSync, unlinkSync, writeFileSync } from 'node:fs';
+import { basename, extname, join } from 'node:path';
 
-const publicDir = join(import.meta.dirname, '..', 'public')
-const recipesDir = join(publicDir, 'recipes')
+const publicDir = join(import.meta.dirname, '..', 'public');
+const recipesDir = join(publicDir, 'recipes');
 
-const readJson = (file) => JSON.parse(readFileSync(file, 'utf8'))
+const readJson = (file) => JSON.parse(readFileSync(file, 'utf8'));
 const enums = {
   categories: readJson(join(publicDir, 'enums', 'categories.json')),
   ingredients: readJson(join(publicDir, 'enums', 'ingredients.json')),
-}
-const label = (items, id) => items.find((item) => item.id === id)?.label ?? id
+};
+const label = (items, id) => items.find((item) => item.id === id)?.label ?? id;
 // cuisine is a country code – "it" -> "Taliansko"
-const regionNames = new Intl.DisplayNames(['sk'], { type: 'region' })
-const countryName = (code) => (code ? regionNames.of(code.toUpperCase()) : '')
+const regionNames = new Intl.DisplayNames(['sk'], { type: 'region' });
+const countryName = (code) => (code ? regionNames.of(code.toUpperCase()) : '');
 
 // lowercase, without diacritics, unique words – so "Langoše" matches "langose"
 const normalize = (texts) => [
@@ -28,24 +28,26 @@ const normalize = (texts) => [
       .split(/[^a-z0-9]+/)
       .filter(Boolean),
   ),
-].join(' ')
+].join(' ');
 
 // Re-encodes images over 100 KB as JPEG (quality 80, max 1200 px) via PowerShell
 // System.Drawing – no image tools are installed. Originals in other formats are
 // replaced by <id>.jpg and the recipes pointing at them are updated.
-const imagesDir = join(publicDir, 'images')
-const MAX_IMAGE_BYTES = 100 * 1024
-const MAX_IMAGE_SIZE = 1200
+const imagesDir = join(publicDir, 'images');
+const MAX_IMAGE_BYTES = 100 * 1024;
+const MAX_IMAGE_SIZE = 1200;
 
 // rewrites the "image" value as text, so the hand-written formatting of the file stays
 const replaceRecipeImage = (from, to) => {
   for (const file of readdirSync(recipesDir)) {
-    const path = join(recipesDir, file)
-    const text = readFileSync(path, 'utf8')
-    const updated = text.replace(`"image": ${JSON.stringify(from)}`, `"image": ${JSON.stringify(to)}`)
-    if (updated !== text) writeFileSync(path, updated)
+    const path = join(recipesDir, file);
+    const text = readFileSync(path, 'utf8');
+    const updated = text.replace(`"image": ${JSON.stringify(from)}`, `"image": ${JSON.stringify(to)}`);
+    if (updated !== text) {
+      writeFileSync(path, updated);
+    }
   }
-}
+};
 
 const optimizeImage = (src, dest) => {
   const script = `
@@ -64,35 +66,37 @@ const optimizeImage = (src, dest) => {
     $params.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter ([System.Drawing.Imaging.Encoder]::Quality), 80L
     $bmp.Save($env:DEST, $codec, $params)
     $bmp.Dispose()
-  `
+  `;
   execFileSync('powershell', ['-NoProfile', '-NonInteractive', '-Command', script], {
     env: { ...process.env, SRC: src, DEST: dest },
     stdio: 'inherit',
-  })
-}
+  });
+};
 
 if (process.platform !== 'win32') {
-  console.warn('images: skipped optimization (needs Windows PowerShell)')
+  console.warn('images: skipped optimization (needs Windows PowerShell)');
 } else {
   for (const file of readdirSync(imagesDir)) {
-    const src = join(imagesDir, file)
-    const before = statSync(src).size
-    if (before <= MAX_IMAGE_BYTES || !/\.(jpe?g|png)$/i.test(file)) continue
+    const src = join(imagesDir, file);
+    const before = statSync(src).size;
+    if (before <= MAX_IMAGE_BYTES || !/\.(jpe?g|png)$/i.test(file)) {
+      continue;
+    }
 
-    const dest = join(imagesDir, `${basename(file, extname(file))}.jpg`)
-    const tmp = `${dest}.tmp`
-    optimizeImage(src, tmp)
-    const after = statSync(tmp).size
+    const dest = join(imagesDir, `${basename(file, extname(file))}.jpg`);
+    const tmp = `${dest}.tmp`;
+    optimizeImage(src, tmp);
+    const after = statSync(tmp).size;
     // keep the original unless re-encoding saves at least 10 % – so already
     // optimized JPEGs aren't re-compressed (and degraded) on every build
     if (after > before * 0.9) {
-      unlinkSync(tmp)
-      continue
+      unlinkSync(tmp);
+      continue;
     }
-    unlinkSync(src)
-    renameSync(tmp, dest)
-    replaceRecipeImage(`images/${file}`, `images/${basename(dest)}`)
-    console.log(`images: ${file} ${Math.round(before / 1024)} KB -> ${basename(dest)} ${Math.round(after / 1024)} KB`)
+    unlinkSync(src);
+    renameSync(tmp, dest);
+    replaceRecipeImage(`images/${file}`, `images/${basename(dest)}`);
+    console.log(`images: ${file} ${Math.round(before / 1024)} KB -> ${basename(dest)} ${Math.round(after / 1024)} KB`);
   }
 }
 
@@ -101,9 +105,9 @@ const index = readdirSync(recipesDir)
   .filter((file) => file.endsWith('.json'))
   .sort()
   .map((file) => {
-    const recipe = readJson(join(recipesDir, file))
+    const recipe = readJson(join(recipesDir, file));
     if (recipe.image && !existsSync(join(publicDir, recipe.image))) {
-      console.warn(`${file}: image ${recipe.image} not found`)
+      console.warn(`${file}: image ${recipe.image} not found`);
     }
     return {
       // file name, because detail page loads recipes/<id>.json
@@ -117,8 +121,8 @@ const index = readdirSync(recipesDir)
         countryName(recipe.cuisine),
         ...recipe.ingredients.map((i) => label(enums.ingredients, i.id)),
       ]),
-    }
-  })
+    };
+  });
 
-writeFileSync(join(publicDir, 'recipes.json'), JSON.stringify(index))
-console.log(`recipes.json: ${index.length} recipes`)
+writeFileSync(join(publicDir, 'recipes.json'), JSON.stringify(index));
+console.log(`recipes.json: ${index.length} recipes`);

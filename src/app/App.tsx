@@ -1,9 +1,9 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
-import HomePage from './pages/home/HomePage'
-import RecipeDetailPage from './pages/recipe-detail/RecipeDetailPage'
-import RecipeListPage from './pages/recipe-list/RecipeListPage'
-import ShoppingListPage from './pages/shopping-list/ShoppingListPage'
-import { routes } from './services'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
+import HomePage from './pages/home/HomePage';
+import RecipeDetailPage from './pages/recipe-detail/RecipeDetailPage';
+import RecipeListPage from './pages/recipe-list/RecipeListPage';
+import ShoppingListPage from './pages/shopping-list/ShoppingListPage';
+import { routes } from './services';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="*" element={<Navigate to={routes.home.url()} replace />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

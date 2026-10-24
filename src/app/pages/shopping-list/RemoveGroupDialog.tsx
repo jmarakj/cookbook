@@ -1,26 +1,26 @@
-import { Trash2 } from 'lucide-react'
-import Dialog from '../../components/dialog/Dialog'
-import useCodelists from '../../hooks/useCodelists'
-import useRecipes from '../../hooks/useRecipes'
-import { formatAmounts, type ShoppingGroup } from './groupItems'
+import { Trash2 } from 'lucide-react';
+import Dialog from '../../components/dialog/Dialog';
+import useCodelists from '../../hooks/useCodelists';
+import useRecipes from '../../hooks/useRecipes';
+import { formatAmounts, type ShoppingGroup } from './groupItems';
 
 type Props = {
-  group: ShoppingGroup
-  onRemove: (ids: string[]) => void
-  onClose: () => void
-}
+  group: ShoppingGroup;
+  onRemove: (ids: string[]) => void;
+  onClose: () => void;
+};
 
 function RemoveGroupDialog({ group, onRemove, onClose }: Props) {
-  const codelists = useCodelists()
-  const { recipes } = useRecipes()
+  const codelists = useCodelists();
+  const { recipes } = useRecipes();
 
   const recipeName = (recipeId: string | null) =>
-    recipeId ? (recipes?.find((r) => r.id === recipeId)?.name ?? recipeId) : 'Pridané ručne'
+    recipeId ? (recipes?.find((r) => r.id === recipeId)?.name ?? recipeId) : 'Pridané ručne';
 
   const remove = (ids: string[]) => {
-    onRemove(ids)
-    onClose()
-  }
+    onRemove(ids);
+    onClose();
+  };
 
   return (
     <Dialog title={group.name} onClose={onClose}>
@@ -49,7 +49,7 @@ function RemoveGroupDialog({ group, onRemove, onClose }: Props) {
         </button>
       </div>
     </Dialog>
-  )
+  );
 }
 
-export default RemoveGroupDialog
+export default RemoveGroupDialog;

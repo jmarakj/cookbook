@@ -1,37 +1,47 @@
-import { useEffect, useState } from 'react'
-import { shoppingList } from '../api'
-import type { ShoppingItemNew, ShoppingItem } from '../types'
+import { useSyncExternalStore } from 'react';
+import { shoppingListService } from '../api';
+import type { ShoppingItemNew, ShoppingItem } from '../types';
 
-type Result = { items: ShoppingItem[] | null; error: string | null }
+type Result = { items: ShoppingItem[] | null; error: string | null };
 
-function useShoppingList() {
-  const [result, setResult] = useState<Result>({ items: null, error: null })
-  const [version, setVersion] = useState(0)
+let state: Result = { items: null, error: null };
+const listeners = new Set<() => void>();
 
-  useEffect(() => {
-    let ignore = false
-    shoppingList
-      .getItems()
-      .then((items) => !ignore && setResult({ items, error: null }))
-      .catch((err: Error) => !ignore && setResult({ items: null, error: err.message }))
-    return () => {
-      ignore = true
-    }
-  }, [version])
-
-  const change = (operation: Promise<unknown>) =>
-    operation
-      .catch((err: Error) => setResult((r) => ({ ...r, error: err.message })))
-      .finally(() => setVersion((v) => v + 1))
-
-  return {
-    ...result,
-    add: (items: ShoppingItemNew[]) => change(shoppingList.addItems(items)),
-    setBought: (ids: string[], bought: boolean) =>
-      change(shoppingList.updateItems(ids, { bought })),
-    remove: (ids: string[]) => change(shoppingList.deleteItems(ids)),
-    removeRecipe: (recipeId: string) => change(shoppingList.deleteRecipeItems(recipeId)),
-  }
+function setState(next: Result) {
+  state = next;
+  listeners.forEach((listener) => listener());
 }
 
-export default useShoppingList
+function load() {
+  return shoppingListService
+    .getItems()
+    .then((items) => setState({ items, error: null }))
+    .catch((err: Error) => setState({ items: null, error: err.message }));
+}
+
+function subscribe(listener: () => void) {
+  listeners.add(listener);
+  if (state.items === null) {
+    load();
+  }
+  return () => listeners.delete(listener);
+}
+
+const change = (operation: Promise<ShoppingItem[]>) =>
+  operation
+    .then((items) => setState({ items, error: null }))
+    .catch((err: Error) => setState({ ...state, error: err.message }));
+
+const actions = {
+  add: (items: ShoppingItemNew[]) => change(shoppingListService.addItems(items)),
+  setBought: (ids: string[], bought: boolean) => change(shoppingListService.updateItems(ids, { bought })),
+  remove: (ids: string[]) => change(shoppingListService.deleteItems(ids)),
+  removeRecipe: (recipeId: string) => change(shoppingListService.deleteRecipeItems(recipeId)),
+};
+
+function useShoppingList() {
+  const result = useSyncExternalStore(subscribe, () => state);
+  return { ...result, ...actions };
+}
+
+export default useShoppingList;

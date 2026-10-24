@@ -1,24 +1,28 @@
-import { BookOpen, Check, ListX, Trash2 } from 'lucide-react'
-import { useState } from 'react'
-import { Link } from 'react-router'
-import BackLink from '../../components/back-link/BackLink'
-import Dialog from '../../components/dialog/Dialog'
-import PageHeader from '../../components/page-header/PageHeader'
-import useCodelists from '../../hooks/useCodelists'
-import useRecipes from '../../hooks/useRecipes'
-import useShoppingList from '../../hooks/useShoppingList'
-import { routes } from '../../services'
-import type { ShoppingItem, ShoppingItemNew } from '../../types'
-import { groupItems, type ShoppingGroup } from './groupItems'
-import { parseItem } from './parseItem'
-import RemoveGroupDialog from './RemoveGroupDialog'
-import './ShoppingListPage.css'
+import { BookOpen, Check, ListX, Trash2 } from 'lucide-react';
+import { useState } from 'react';
+import { Link } from 'react-router';
+import BackLink from '../../components/back-link/BackLink';
+import Dialog from '../../components/dialog/Dialog';
+import PageHeader from '../../components/page-header/PageHeader';
+import useCodelists from '../../hooks/useCodelists';
+import useRecipes from '../../hooks/useRecipes';
+import useShoppingList from '../../hooks/useShoppingList';
+import { routes } from '../../services';
+import type { ShoppingItem, ShoppingItemNew } from '../../types';
+import { groupItems, type ShoppingGroup } from './groupItems';
+import { parseItem } from './parseItem';
+import RemoveGroupDialog from './RemoveGroupDialog';
+import './ShoppingListPage.css';
 
 function ShoppingListPage() {
-  const { items, error, add, setBought, remove, removeRecipe } = useShoppingList()
+  const { items, error, add, setBought, remove, removeRecipe } = useShoppingList();
 
-  if (error) return <ShoppingListError message={error} />
-  if (!items) return <ShoppingListLoading />
+  if (error) {
+    return <ShoppingListError message={error} />;
+  }
+  if (!items) {
+    return <ShoppingListLoading />;
+  }
 
   return (
     <ShoppingListView
@@ -28,7 +32,7 @@ function ShoppingListPage() {
       onRemove={remove}
       onRemoveRecipe={removeRecipe}
     />
-  )
+  );
 }
 
 function ShoppingListError({ message }: { message: string }) {
@@ -37,7 +41,7 @@ function ShoppingListError({ message }: { message: string }) {
       <PageHeader left={<BackLink to={routes.home.url()} />} />
       <p>{message}</p>
     </main>
-  )
+  );
 }
 
 function ShoppingListLoading() {
@@ -46,16 +50,16 @@ function ShoppingListLoading() {
       <PageHeader left={<BackLink to={routes.home.url()} />} />
       Načítavam…
     </main>
-  )
+  );
 }
 
 type ShoppingListViewProps = {
-  items: ShoppingItem[]
-  onAdd: (items: ShoppingItemNew[]) => void
-  onSetBought: (ids: string[], bought: boolean) => void
-  onRemove: (ids: string[]) => void
-  onRemoveRecipe: (recipeId: string) => void
-}
+  items: ShoppingItem[];
+  onAdd: (items: ShoppingItemNew[]) => void;
+  onSetBought: (ids: string[], bought: boolean) => void;
+  onRemove: (ids: string[]) => void;
+  onRemoveRecipe: (recipeId: string) => void;
+};
 
 function ShoppingListView({
   items,
@@ -64,29 +68,34 @@ function ShoppingListView({
   onRemove,
   onRemoveRecipe,
 }: ShoppingListViewProps) {
-  const codelists = useCodelists()
-  const { recipes } = useRecipes()
-  const [text, setText] = useState('')
-  const [removing, setRemoving] = useState<ShoppingGroup | null>(null)
-  const [confirmingClear, setConfirmingClear] = useState(false)
-  const [showingRecipes, setShowingRecipes] = useState(false)
+  const codelists = useCodelists();
+  const { recipes } = useRecipes();
+  const [text, setText] = useState('');
+  const [removing, setRemoving] = useState<ShoppingGroup | null>(null);
+  const [confirmingClear, setConfirmingClear] = useState(false);
+  const [showingRecipes, setShowingRecipes] = useState(false);
 
   const submit = () => {
-    if (!text.trim()) return
-    onAdd([parseItem(text, codelists)])
-    setText('')
-  }
+    if (!text.trim()) {
+      return;
+    }
+    onAdd([parseItem(text, codelists)]);
+    setText('');
+  };
 
-  const clearAll = () => onRemove(items.map((i) => i.id))
+  const clearAll = () => onRemove(items.map((i) => i.id));
 
   const clear = () => {
-    if (items.every((i) => i.bought)) clearAll()
-    else setConfirmingClear(true)
-  }
+    if (items.every((i) => i.bought)) {
+      clearAll();
+    } else {
+      setConfirmingClear(true);
+    }
+  };
 
-  const groups = groupItems(items, codelists)
-  const recipeIds = [...new Set(items.map((i) => i.recipeId).filter((id) => id != null))]
-  const recipeName = (id: string) => recipes?.find((r) => r.id === id)?.name ?? id
+  const groups = groupItems(items, codelists);
+  const recipeIds = [...new Set(items.map((i) => i.recipeId).filter((id) => id != null))];
+  const recipeName = (id: string) => recipes?.find((r) => r.id === id)?.name ?? id;
 
   return (
     <main className="shopping">
@@ -124,8 +133,8 @@ function ShoppingListView({
         <form
           className="shopping-add"
           onSubmit={(e) => {
-            e.preventDefault()
-            submit()
+            e.preventDefault();
+            submit();
           }}
         >
           <input
@@ -147,10 +156,10 @@ function ShoppingListView({
 
       <ul className="shopping-items">
         {groups.map((group, index) => {
-          const ids = group.items.map((i) => i.id)
-          const heading = group.bought ? 'Kúpené' : group.aisle
-          const previous = groups[index - 1]
-          const previousHeading = previous && (previous.bought ? 'Kúpené' : previous.aisle)
+          const ids = group.items.map((i) => i.id);
+          const heading = group.bought ? 'Kúpené' : group.aisle;
+          const previous = groups[index - 1];
+          const previousHeading = previous && (previous.bought ? 'Kúpené' : previous.aisle);
           return [
             heading && heading !== previousHeading && (
               <li key={`heading:${heading}`} className="shopping-aisle">
@@ -177,7 +186,7 @@ function ShoppingListView({
                 <Trash2 aria-hidden="true" />
               </button>
             </li>,
-          ]
+          ];
         })}
       </ul>
 
@@ -215,8 +224,8 @@ function ShoppingListView({
               type="button"
               className="danger"
               onClick={() => {
-                clearAll()
-                setConfirmingClear(false)
+                clearAll();
+                setConfirmingClear(false);
               }}
             >
               Vymazať
@@ -225,7 +234,7 @@ function ShoppingListView({
         </Dialog>
       )}
     </main>
-  )
+  );
 }
 
-export default ShoppingListPage
+export default ShoppingListPage;

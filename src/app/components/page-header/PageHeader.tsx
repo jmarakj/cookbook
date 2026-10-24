@@ -1,10 +1,10 @@
-import { House } from 'lucide-react'
-import type { ReactNode } from 'react'
-import { Link } from 'react-router'
-import { routes } from '../../services'
-import './PageHeader.css'
+import { House } from 'lucide-react';
+import type { ReactNode } from 'react';
+import { Link } from 'react-router';
+import { routes } from '../../services';
+import './PageHeader.css';
 
-type Props = { title?: ReactNode; left?: ReactNode; right?: ReactNode }
+type Props = { title?: ReactNode; left?: ReactNode; right?: ReactNode };
 
 function PageHeader({ title, left, right }: Props) {
   return (
@@ -18,7 +18,7 @@ function PageHeader({ title, left, right }: Props) {
       {title && <h1>{title}</h1>}
       <div className="page-header-right">{right}</div>
     </header>
-  )
+  );
 }
 
-export default PageHeader
+export default PageHeader;

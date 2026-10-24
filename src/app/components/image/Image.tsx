@@ -1,13 +1,15 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 // src is relative to public/, e.g. "images/langose.jpg"
-type Props = { src: string | null; alt: string; loading?: 'lazy' | 'eager' }
+type Props = { src: string | null; alt: string; loading?: 'lazy' | 'eager' };
 
 // renders nothing when there is no src or the image fails to load
 function Image({ src, alt, loading }: Props) {
-  const [failed, setFailed] = useState(false)
+  const [failed, setFailed] = useState(false);
 
-  if (!src || failed) return null
+  if (!src || failed) {
+    return null;
+  }
 
   return (
     <img
@@ -16,7 +18,7 @@ function Image({ src, alt, loading }: Props) {
       loading={loading}
       onError={() => setFailed(true)}
     />
-  )
+  );
 }
 
-export default Image
+export default Image;

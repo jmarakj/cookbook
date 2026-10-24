@@ -1,19 +1,19 @@
-import { X } from 'lucide-react'
-import { useEffect, useRef, type ReactNode } from 'react'
-import './Dialog.css'
+import { X } from 'lucide-react';
+import { useEffect, useRef, type ReactNode } from 'react';
+import './Dialog.css';
 
 type Props = {
-  title: ReactNode
-  onClose: () => void
-  children: ReactNode
-}
+  title: ReactNode;
+  onClose: () => void;
+  children: ReactNode;
+};
 
 function Dialog({ title, onClose, children }: Props) {
-  const dialogRef = useRef<HTMLDialogElement>(null)
+  const dialogRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
-    dialogRef.current?.showModal()
-  }, [])
+    dialogRef.current?.showModal();
+  }, []);
 
   return (
     <dialog
@@ -30,7 +30,7 @@ function Dialog({ title, onClose, children }: Props) {
       </header>
       {children}
     </dialog>
-  )
+  );
 }
 
-export default Dialog
+export default Dialog;

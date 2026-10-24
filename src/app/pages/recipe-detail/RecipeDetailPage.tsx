@@ -1,24 +1,24 @@
-import { ListCheck, ListPlus, ShoppingCart } from 'lucide-react'
-import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router'
-import { setLastSeenRecipe } from '../../api'
-import BackLink from '../../components/back-link/BackLink'
-import PageHeader from '../../components/page-header/PageHeader'
-import Image from '../../components/image/Image'
-import useCodelists from '../../hooks/useCodelists'
-import useRecipe from '../../hooks/useRecipe'
-import useShoppingList from '../../hooks/useShoppingList'
-import useWakeLock from '../../hooks/useWakeLock'
-import { routes } from '../../services'
-import type { Recipe } from '../../types'
-import './RecipeDetailPage.css'
+import { ListCheck, ListPlus, ShoppingCart } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router';
+import { recipesService } from '../../api';
+import BackLink from '../../components/back-link/BackLink';
+import PageHeader from '../../components/page-header/PageHeader';
+import Image from '../../components/image/Image';
+import useCodelists from '../../hooks/useCodelists';
+import useRecipe from '../../hooks/useRecipe';
+import useShoppingList from '../../hooks/useShoppingList';
+import useWakeLock from '../../hooks/useWakeLock';
+import { routes } from '../../services';
+import type { Recipe } from '../../types';
+import './RecipeDetailPage.css';
 
 // the slider snaps to these values, so its positions map to indexes here
-const SERVINGS_OPTIONS = [2, 3, 4, 6, 8, 10, 12]
+const SERVINGS_OPTIONS = [2, 3, 4, 6, 8, 10, 12];
 
 // smallest option that feeds the whole recipe, or the largest one
 function defaultServings(baseYield: number) {
-  return SERVINGS_OPTIONS.find((o) => o >= baseYield) ?? SERVINGS_OPTIONS.at(-1)!
+  return SERVINGS_OPTIONS.find((o) => o >= baseYield) ?? SERVINGS_OPTIONS.at(-1)!;
 }
 
 // Kitchen-measurable step for a scaled amount, e.g. 233.25 ml -> 250 ml
@@ -26,44 +26,58 @@ function roundingStep(amount: number, unit: string | null) {
   switch (unit) {
     case 'g':
     case 'ml':
-      if (amount < 10) return 1
-      if (amount < 50) return 5
-      if (amount < 200) return 10
-      if (amount < 1000) return 50
-      return 100
+      if (amount < 10) {
+        return 1;
+      }
+      if (amount < 50) {
+        return 5;
+      }
+      if (amount < 200) {
+        return 10;
+      }
+      if (amount < 1000) {
+        return 50;
+      }
+      return 100;
     case 'kg':
     case 'l':
     case 'tsp':
-      return 0.25
+      return 0.25;
     case 'tbsp':
     case 'pcs':
-      return 0.5
+      return 0.5;
     case 'pinch':
-      return 1
+      return 1;
     default:
-      return 0.25
+      return 0.25;
   }
 }
 
 function scaleAmount(amount: number, unit: string | null, baseYield: number, servings: number) {
-  if (servings === baseYield) return amount
-  const scaled = (amount * servings) / baseYield
-  const step = roundingStep(scaled, unit)
+  if (servings === baseYield) {
+    return amount;
+  }
+  const scaled = (amount * servings) / baseYield;
+  const step = roundingStep(scaled, unit);
   // Never round a non-zero amount down to 0 – fall back to the smallest step
-  return Math.max(step, Math.round(scaled / step) * step)
+  return Math.max(step, Math.round(scaled / step) * step);
 }
 
 function RecipeDetailPage() {
   // keep the screen on while cooking
   useWakeLock();
 
-  const { id = '' } = useParams()
-  const { recipe, error } = useRecipe(id)
+  const { id = '' } = useParams();
+  const { recipe, error } = useRecipe(id);
 
-  if (error) return <RecipeError message={error} />
-  if (!recipe) return <RecipeLoading />
+  if (error) {
+    return <RecipeError message={error} />;
+  }
+  if (!recipe) {
+    return <RecipeLoading />;
+  }
 
-  return <RecipeView key={recipe.id} recipe={recipe} />
+  return <RecipeView key={recipe.id} recipe={recipe} />;
 }
 
 function RecipeError({ message }: { message: string }) {
@@ -72,7 +86,7 @@ function RecipeError({ message }: { message: string }) {
       <PageHeader left={<BackLink />} />
       <p>{message}</p>
     </main>
-  )
+  );
 }
 
 function RecipeLoading() {
@@ -81,33 +95,33 @@ function RecipeLoading() {
       <PageHeader left={<BackLink />} />
       Načítavam…
     </main>
-  )
+  );
 }
 
 function RecipeView({ recipe }: { recipe: Recipe }) {
-  const codelists = useCodelists()
-  const [servings, setServings] = useState<number | null>(null)
-  const shopping = useShoppingList()
+  const codelists = useCodelists();
+  const [servings, setServings] = useState<number | null>(null);
+  const shopping = useShoppingList();
 
-  useEffect(() => setLastSeenRecipe(recipe), [recipe])
+  useEffect(() => recipesService.setLastSeen(recipe), [recipe]);
 
-  const baseYield = recipe.yield
+  const baseYield = recipe.yield;
   const currentServings =
     baseYield == null
       ? null
-      : (servings ?? defaultServings(baseYield))
+      : (servings ?? defaultServings(baseYield));
 
   const amountFor = (amount: number, unit: string | null) =>
     baseYield != null && currentServings != null
       ? scaleAmount(amount, unit, baseYield, currentServings)
-      : amount
+      : amount;
 
-  const inShoppingList = shopping.items?.some((i) => i.recipeId === recipe.id) ?? false
+  const inShoppingList = shopping.items?.some((i) => i.recipeId === recipe.id) ?? false;
 
   const toggleShoppingList = () => {
     if (inShoppingList) {
-      shopping.removeRecipe(recipe.id)
-      return
+      shopping.removeRecipe(recipe.id);
+      return;
     }
     shopping.add(
       recipe.ingredients.map((ing) => ({
@@ -117,8 +131,8 @@ function RecipeView({ recipe }: { recipe: Recipe }) {
         unit: ing.unit,
         recipeId: recipe.id,
       })),
-    )
-  }
+    );
+  };
 
   return (
     <main className="recipe">
@@ -239,7 +253,7 @@ function RecipeView({ recipe }: { recipe: Recipe }) {
         </section>
       </div>
     </main>
-  )
+  );
 }
 
-export default RecipeDetailPage
+export default RecipeDetailPage;

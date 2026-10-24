@@ -16,4 +16,4 @@ export const routes = {
     path: '/shopping-list',
     url: () => '/shopping-list',
   },
-}
+};

@@ -1,8 +1,8 @@
-import react from '@vitejs/plugin-react'
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { join } from 'node:path'
-import { defineConfig, type Plugin } from 'vite'
-import { VitePWA } from 'vite-plugin-pwa'
+import react from '@vitejs/plugin-react';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { defineConfig, type Plugin } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
 
 // Minifies the JSON copied from public/ into the build output; the sources stay
 // pretty-printed for editing.
@@ -11,14 +11,14 @@ function minifyJson(): Plugin {
     name: 'minify-json',
     apply: 'build',
     writeBundle({ dir }) {
-      if (!dir) return
+      if (!dir) {return;}
       for (const file of readdirSync(dir, { recursive: true, encoding: 'utf8' })) {
-        if (!file.endsWith('.json')) continue
-        const path = join(dir, file)
-        writeFileSync(path, JSON.stringify(JSON.parse(readFileSync(path, 'utf8'))))
+        if (!file.endsWith('.json')) {continue;}
+        const path = join(dir, file);
+        writeFileSync(path, JSON.stringify(JSON.parse(readFileSync(path, 'utf8'))));
       }
     },
-  }
+  };
 }
 
 // https://vite.dev/config/
@@ -69,4 +69,4 @@ export default defineConfig({
     }),
   ],
   base: '/cookbook/',
-})
+});

@@ -1,22 +1,22 @@
-export type CodelistItem = { id: string; label: string; aliases?: string[]; group?: string }
+export type CodelistItem = { id: string; label: string; aliases?: string[]; group?: string };
 
 export class Codelist {
-  readonly options: CodelistItem[]
-  private readonly labels: Map<string, string>
+  readonly options: CodelistItem[];
+  private readonly labels: Map<string, string>;
 
   constructor(options: CodelistItem[]) {
-    this.options = options
-    this.labels = new Map(options.map((o) => [o.id, o.label]))
+    this.options = options;
+    this.labels = new Map(options.map((o) => [o.id, o.label]));
   }
 
   // falls back to the id so an unknown code still shows something
   label(id: string) {
-    return this.labels.get(id) ?? id
+    return this.labels.get(id) ?? id;
   }
 
   has(id: string) {
-    return this.labels.has(id)
+    return this.labels.has(id);
   }
 }
 
-export type Codelists = Record<'categories' | 'units' | 'groups' | 'ingredients', Codelist>
+export type Codelists = Record<'categories' | 'units' | 'groups' | 'ingredients', Codelist>;
