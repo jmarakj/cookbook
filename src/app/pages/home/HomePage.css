@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   gap: var(--space-3);
+  position: relative;
   box-sizing: border-box;
   height: 100%;
   padding: var(--space-5) var(--space-3);
@@ -21,13 +22,26 @@
   background: var(--color-surface);
 }
 
-.home-tiles a:hover span {
+.home-tiles a:hover span:not(.home-badge) {
   text-decoration: underline;
 }
 
 .home-tiles span {
   font-weight: 600;
   text-align: center;
+}
+
+.home-tiles .home-badge {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  min-width: 1.5em;
+  padding: 0.125em 0.5em;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  color: var(--color-on-accent);
+  background: var(--color-accent);
+  border-radius: 999px;
 }
 
 .home-tiles .recipe-tile {

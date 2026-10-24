@@ -3,11 +3,15 @@ import { useState } from 'react'
 import { Link } from 'react-router'
 import { getLastSeenRecipe } from '../../api'
 import Image from '../../components/image/Image'
+import useShoppingList from '../../hooks/useShoppingList'
 import { routes } from '../../services'
+import { groupItems } from '../shopping-list/groupItems'
 import './HomePage.css'
 
 function HomePage() {
   const [lastSeen] = useState(getLastSeenRecipe)
+  const { items } = useShoppingList()
+  const unbought = items ? groupItems(items, null).filter((g) => !g.bought).length : 0
 
   return (
     <main>
@@ -23,6 +27,11 @@ function HomePage() {
           <Link to={routes.shoppingList.url()}>
             <ShoppingCart size={64} strokeWidth={1.5} aria-hidden />
             <span>Nákupný zoznam</span>
+            {unbought > 0 && (
+              <span className="home-badge" title="Nekúpené položky">
+                {unbought}
+              </span>
+            )}
           </Link>
         </li>
         {lastSeen && (
