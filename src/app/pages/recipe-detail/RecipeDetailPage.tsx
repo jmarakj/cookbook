@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { ListCheck, ListPlus } from 'lucide-react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import BackLink from './back-link/BackLink'
+import { setLastSeenRecipe } from '../../api'
+import BackLink from '../../components/back-link/BackLink'
+import PageHeader from '../../components/page-header/PageHeader'
 import Image from '../../components/image/Image'
 import useCodelists from '../../hooks/useCodelists'
 import useRecipe from '../../hooks/useRecipe'
+import useShoppingList from '../../hooks/useShoppingList'
 import useWakeLock from '../../hooks/useWakeLock'
 import type { Recipe } from '../../types'
 import './RecipeDetailPage.css'
@@ -64,7 +68,7 @@ function RecipeDetailPage() {
 function RecipeError({ message }: { message: string }) {
   return (
     <main>
-      <BackLink />
+      <PageHeader left={<BackLink />} />
       <p>{message}</p>
     </main>
   )
@@ -73,7 +77,7 @@ function RecipeError({ message }: { message: string }) {
 function RecipeLoading() {
   return (
     <main>
-      <BackLink />
+      <PageHeader left={<BackLink />} />
       Načítavam…
     </main>
   )
@@ -82,6 +86,9 @@ function RecipeLoading() {
 function RecipeView({ recipe }: { recipe: Recipe }) {
   const codelists = useCodelists()
   const [servings, setServings] = useState<number | null>(null)
+  const shopping = useShoppingList()
+
+  useEffect(() => setLastSeenRecipe(recipe), [recipe])
 
   const baseYield = recipe.yield
   const currentServings =
@@ -89,10 +96,47 @@ function RecipeView({ recipe }: { recipe: Recipe }) {
       ? null
       : (servings ?? defaultServings(baseYield))
 
+  const amountFor = (amount: number, unit: string | null) =>
+    baseYield != null && currentServings != null
+      ? scaleAmount(amount, unit, baseYield, currentServings)
+      : amount
+
+  const inShoppingList = shopping.items?.some((i) => i.recipeId === recipe.id) ?? false
+
+  const toggleShoppingList = () => {
+    if (inShoppingList) {
+      shopping.removeRecipe(recipe.id)
+      return
+    }
+    shopping.add(
+      recipe.ingredients.map((ing) => ({
+        ingredientId: ing.id,
+        name: codelists?.ingredients.label(ing.id) ?? ing.id,
+        amount: ing.amount == null ? null : amountFor(ing.amount, ing.unit),
+        unit: ing.unit,
+        recipeId: recipe.id,
+      })),
+    )
+  }
+
   return (
     <main className="recipe">
       <title>{`${recipe.name}`}</title>
-      <BackLink />
+      <PageHeader
+        left={<BackLink />}
+        right={
+          <button
+            type="button"
+            aria-label={inShoppingList ? 'Odobrať z nákupného zoznamu' : 'Pridať do nákupného zoznamu'}
+            title={inShoppingList ? 'Odobrať z nákupného zoznamu' : 'Pridať do nákupného zoznamu'}
+            aria-pressed={inShoppingList}
+            disabled={!shopping.items}
+            onClick={toggleShoppingList}
+          >
+            {inShoppingList ? <ListCheck aria-hidden="true" /> : <ListPlus aria-hidden="true" />}
+          </button>
+        }
+      />
       <div className="columns">
         <section>
           <Image src={recipe.image} alt={recipe.name} />
@@ -154,7 +198,7 @@ function RecipeView({ recipe }: { recipe: Recipe }) {
                 <tr key={ing.id}>
                   <td>
                     {ing.amount != null &&
-                      `${baseYield != null && currentServings != null ? scaleAmount(ing.amount, ing.unit, baseYield, currentServings) : ing.amount} ${ing.unit ? (codelists?.units.label(ing.unit) ?? ing.unit) : ''}`}
+                      `${amountFor(ing.amount, ing.unit)} ${ing.unit ? (codelists?.units.label(ing.unit) ?? ing.unit) : ''}`}
                   </td>
                   <td>
                     {codelists?.ingredients.label(ing.id) ?? ing.id}

@@ -25,12 +25,6 @@
       "notes": null
     },
     {
-      "id": "vegetable_seasoning",
-      "amount": null,
-      "unit": null,
-      "notes": "podľa chuti"
-    },
-    {
       "id": "vinegar_white",
       "amount": null,
       "unit": null,
@@ -75,7 +69,7 @@
   ],
   "steps": [
     "Zemiaky ošúpte, nakrájajte na kocky a vložte do hrnca.",
-    "Zalejte ich vodou tak, aby boli ponorené, pridajte bobkový list a Vegetu a varte, kým nezmäknú.",
+    "Zalejte ich vodou tak, aby boli ponorené, pridajte bobkový list a varte, kým nezmäknú.",
     "V miske rozmiešajte múku so smotanou a trochou mlieka na hladkú zmes bez hrudiek.",
     "Zátrepku za stáleho miešania vlejte k zemiakom a niekoľko minút povarte, kým prívarok nezhustne.",
     "Pridajte sladkú papriku, podľa potreby zrieďte mliekom a dochuťte soľou a octom. Pred podávaním vyberte bobkový list."

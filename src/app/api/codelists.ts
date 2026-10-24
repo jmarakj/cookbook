@@ -20,6 +20,7 @@ async function loadCodelists(): Promise<Codelists> {
   return {
     categories: new Codelist(raw.categories),
     units: new Codelist(raw.units),
+    groups: new Codelist(raw.groups),
     ingredients: new Codelist(raw.ingredients),
   }
 }

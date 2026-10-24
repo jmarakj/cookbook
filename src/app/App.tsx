@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 import HomePage from './pages/home/HomePage'
 import RecipeDetailPage from './pages/recipe-detail/RecipeDetailPage'
 import RecipeListPage from './pages/recipe-list/RecipeListPage'
+import ShoppingListPage from './pages/shopping-list/ShoppingListPage'
 import { routes } from './services'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path={routes.home.path} element={<HomePage />} />
         <Route path={routes.recipes.path} element={<RecipeListPage />} />
         <Route path={routes.recipe.path} element={<RecipeDetailPage />} />
+        <Route path={routes.shoppingList.path} element={<ShoppingListPage />} />
         {/* unknown URLs (old links, typos) -> home */}
         <Route path="*" element={<Navigate to={routes.home.url()} replace />} />
       </Routes>

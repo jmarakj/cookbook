@@ -1,7 +1,7 @@
 .home-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px;
+  gap: var(--space-4);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -11,23 +11,64 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  padding: 24px 12px;
+  gap: var(--space-3);
+  box-sizing: border-box;
+  height: 100%;
+  padding: var(--space-5) var(--space-3);
   color: inherit;
   text-decoration: none;
-  border-radius: 8px;
-  background: rgba(128, 128, 128, 0.1);
+  border-radius: var(--radius);
+  background: var(--color-surface);
 }
 
 .home-tiles a:hover span {
   text-decoration: underline;
 }
 
-.home-tiles img {
-  width: 64px;
-  height: 64px;
-}
-
 .home-tiles span {
   font-weight: 600;
+  text-align: center;
+}
+
+.home-tiles .recipe-tile {
+  position: relative;
+  justify-content: flex-end;
+  min-height: calc(64px + var(--space-3) + 1lh + 2 * var(--space-5));
+  overflow: hidden;
+  background: var(--color-surface-strong);
+}
+
+.home-tiles li:has(.recipe-tile) {
+  grid-column-start: 1;
+}
+
+@media (max-width: 767px) {
+  .home-tiles li:has(.recipe-tile) {
+    grid-column: 1 / -1;
+  }
+}
+
+.recipe-tile-backdrop {
+  position: absolute;
+  inset: 0;
+}
+
+.recipe-tile-backdrop::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.6));
+}
+
+.recipe-tile-backdrop img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-tile span {
+  position: relative;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }

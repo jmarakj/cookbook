@@ -12,4 +12,8 @@ export const routes = {
     path: '/recipe/:id',
     url: (id: string) => `/recipe/${encodeURIComponent(id)}`,
   },
+  shoppingList: {
+    path: '/shopping-list',
+    url: () => '/shopping-list',
+  },
 }

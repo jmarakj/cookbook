@@ -1,17 +1,18 @@
 import { ChevronLeft } from 'lucide-react'
 import { Link, useLocation, useNavigate } from 'react-router'
-import { routes } from '../../../services'
+import { routes } from '../../services'
 import './BackLink.css'
 
-// mobile only (hidden by CSS) – installed PWAs on iOS have no browser back button
-function BackLink() {
+type Props = { to?: string }
+
+function BackLink({ to = routes.recipes.url() }: Props) {
   const location = useLocation()
   const navigate = useNavigate()
   // 'default' = first entry in this tab (shared link, relaunch) – nothing to go back to
   const hasHistory = location.key !== 'default'
   return (
     <Link
-      to={routes.recipes.url()}
+      to={to}
       className="back"
       aria-label="Späť"
       title="Späť"

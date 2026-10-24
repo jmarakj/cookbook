@@ -83,554 +83,736 @@
             "label": "podľa chuti"
         }
     ],
+    "groups": [
+        {
+            "id": "produce",
+            "label": "Ovocie a zelenina"
+        },
+        {
+            "id": "bakery",
+            "label": "Pečivo"
+        },
+        {
+            "id": "meat",
+            "label": "Mäso a údeniny"
+        },
+        {
+            "id": "dairy",
+            "label": "Mliečne a chladené výrobky"
+        },
+        {
+            "id": "frozen",
+            "label": "Mrazené"
+        },
+        {
+            "id": "pantry",
+            "label": "Trvanlivé potraviny"
+        },
+        {
+            "id": "canned",
+            "label": "Konzervy a zaváraniny"
+        },
+        {
+            "id": "baking",
+            "label": "Múka, cukor a pečenie"
+        },
+        {
+            "id": "spices",
+            "label": "Koreniny a bujóny"
+        },
+        {
+            "id": "oils_sauces",
+            "label": "Oleje, octy a omáčky"
+        },
+        {
+            "id": "drinks",
+            "label": "Nápoje a alkohol"
+        },
+        {
+            "id": "other",
+            "label": "Ostatné"
+        }
+    ],
     "ingredients": [
         {
             "id": "flour_plain",
-            "label": "hladká múka"
+            "label": "hladká múka",
+            "group": "baking"
         },
         {
             "id": "sour_cream",
-            "label": "kyslá smotana"
+            "label": "kyslá smotana",
+            "group": "dairy"
         },
         {
             "id": "milk",
-            "label": "mlieko"
+            "label": "mlieko",
+            "group": "dairy"
         },
         {
             "id": "yeast_fresh",
-            "label": "čerstvé droždie"
+            "label": "čerstvé droždie",
+            "group": "dairy"
         },
         {
             "id": "sugar_white",
-            "label": "kryštálový cukor"
+            "label": "kryštálový cukor",
+            "group": "baking"
         },
         {
             "id": "vinegar_white",
-            "label": "biely ocot"
+            "label": "biely ocot",
+            "group": "oils_sauces"
         },
         {
             "id": "salt",
-            "label": "soľ"
+            "label": "soľ",
+            "group": "spices"
         },
         {
             "id": "baking_soda",
-            "label": "sóda bikarbóna"
+            "label": "sóda bikarbóna",
+            "group": "baking"
         },
         {
             "id": "oil_cooking",
-            "label": "olej"
+            "label": "olej",
+            "group": "oils_sauces"
         },
         {
             "id": "rice",
-            "label": "ryža"
+            "label": "ryža",
+            "group": "pantry"
         },
         {
             "id": "sugar_powdered",
-            "label": "práškový cukor"
+            "label": "práškový cukor",
+            "group": "baking"
         },
         {
             "id": "butter",
-            "label": "maslo"
+            "label": "maslo",
+            "group": "dairy"
         },
         {
             "id": "sugar_vanilla",
-            "label": "vanilkový cukor"
+            "label": "vanilkový cukor",
+            "group": "baking"
         },
         {
             "id": "egg",
-            "label": "vajce"
+            "label": "vajce",
+            "group": "dairy"
         },
         {
             "id": "peach_compote",
-            "label": "broskyňový kompót"
+            "label": "broskyňový kompót",
+            "group": "canned"
         },
         {
             "id": "breadcrumbs",
-            "label": "strúhanka"
+            "label": "strúhanka",
+            "group": "baking"
         },
         {
             "id": "sausage_smoked",
-            "label": "údená klobása"
+            "label": "údená klobása",
+            "group": "meat"
         },
         {
             "id": "bell_pepper",
-            "label": "paprika"
+            "label": "paprika",
+            "group": "produce"
         },
         {
             "id": "paprika_smoked",
-            "label": "údená mletá paprika"
+            "label": "údená mletá paprika",
+            "group": "spices"
         },
         {
             "id": "oregano_dried",
-            "label": "sušené oregano"
+            "label": "sušené oregano",
+            "group": "spices"
         },
         {
             "id": "thyme_dried",
-            "label": "sušený tymian"
+            "label": "sušený tymian",
+            "group": "spices"
         },
         {
             "id": "cayenne_pepper",
-            "label": "kajenské korenie"
+            "label": "kajenské korenie",
+            "group": "spices"
         },
         {
             "id": "black_pepper",
-            "label": "čierne korenie"
+            "label": "čierne korenie",
+            "group": "spices"
         },
         {
             "id": "tomatoes_diced",
-            "label": "krájané paradajky"
+            "label": "krájané paradajky",
+            "group": "canned"
         },
         {
             "id": "chicken_broth",
-            "label": "kurací vývar"
+            "label": "kurací vývar",
+            "group": "spices"
         },
         {
             "id": "spring_onion",
-            "label": "jarná cibuľka"
+            "label": "jarná cibuľka",
+            "group": "produce"
         },
         {
             "id": "yogurt_plain",
-            "label": "biely jogurt"
+            "label": "biely jogurt",
+            "group": "dairy"
         },
         {
             "id": "baking_powder",
-            "label": "prášok do pečiva"
+            "label": "prášok do pečiva",
+            "group": "baking"
         },
         {
             "id": "cocoa_powder",
-            "label": "kakao"
+            "label": "kakao",
+            "group": "baking"
         },
         {
             "id": "flour_semi_coarse",
-            "label": "polohrubá múka"
+            "label": "polohrubá múka",
+            "group": "baking"
         },
         {
             "id": "nutella",
-            "label": "Nutella"
+            "label": "Nutella",
+            "group": "pantry"
         },
         {
             "id": "banana",
-            "label": "banán"
+            "label": "banán",
+            "group": "produce"
         },
         {
             "id": "strawberries",
-            "label": "jahody"
+            "label": "jahody",
+            "group": "produce"
         },
         {
             "id": "peach",
-            "label": "broskyňa"
+            "label": "broskyňa",
+            "group": "produce"
         },
         {
             "id": "whipping_cream",
-            "label": "smotana na šľahanie"
+            "label": "smotana na šľahanie",
+            "group": "dairy"
         },
         {
             "id": "chocolate_glaze",
-            "label": "čokoládová poleva"
+            "label": "čokoládová poleva",
+            "group": "baking"
         },
         {
             "id": "beef_shank",
-            "label": "hovädzia nožina"
+            "label": "hovädzia nožina",
+            "group": "meat"
         },
         {
             "id": "onion",
-            "label": "cibuľa"
+            "label": "cibuľa",
+            "group": "produce"
         },
         {
             "id": "paprika_sweet",
-            "label": "sladká mletá paprika"
+            "label": "sladká mletá paprika",
+            "group": "spices"
         },
         {
             "id": "paprika_hot",
-            "label": "štipľavá mletá paprika"
+            "label": "štipľavá mletá paprika",
+            "group": "spices"
         },
         {
             "id": "chili_pepper_dried",
-            "label": "sušená feferónka"
+            "label": "sušená feferónka",
+            "group": "spices"
         },
         {
             "id": "tomato",
-            "label": "paradajka"
+            "label": "paradajka",
+            "group": "produce"
         },
         {
             "id": "pork_lard",
-            "label": "bravčová masť"
+            "label": "bravčová masť",
+            "group": "meat"
         },
         {
             "id": "water",
-            "label": "voda"
+            "label": "voda",
+            "group": "other"
         },
         {
             "id": "egg_yolk",
-            "label": "vaječný žĺtok"
+            "label": "vaječný žĺtok",
+            "group": "dairy"
         },
         {
             "id": "rum",
-            "label": "rum"
+            "label": "rum",
+            "group": "drinks"
         },
         {
             "id": "jam",
-            "label": "džem"
+            "label": "džem",
+            "group": "pantry"
         },
         {
             "id": "pork_knuckle_smoked",
-            "label": "údené bravčové koleno"
+            "label": "údené bravčové koleno",
+            "group": "meat"
         },
         {
             "id": "lentils",
-            "label": "šošovica"
+            "label": "šošovica",
+            "group": "pantry"
         },
         {
             "id": "potato",
-            "label": "zemiak"
+            "label": "zemiak",
+            "group": "produce"
         },
         {
             "id": "bacon",
-            "label": "slanina"
+            "label": "slanina",
+            "group": "meat"
         },
         {
             "id": "garlic",
-            "label": "cesnak"
+            "label": "cesnak",
+            "group": "produce"
         },
         {
             "id": "black_pepper_whole",
-            "label": "celé čierne korenie"
+            "label": "celé čierne korenie",
+            "group": "spices"
         },
         {
             "id": "bay_leaf",
-            "label": "bobkový list"
+            "label": "bobkový list",
+            "group": "spices"
         },
         {
             "id": "tomato_paste",
-            "label": "paradajkový pretlak"
+            "label": "paradajkový pretlak",
+            "group": "canned"
         },
         {
             "id": "sugar_brown",
-            "label": "trstinový cukor"
+            "label": "trstinový cukor",
+            "group": "baking"
         },
         {
             "id": "olive_oil",
-            "label": "olivový olej"
+            "label": "olivový olej",
+            "group": "oils_sauces"
         },
         {
             "id": "herb_mix",
-            "label": "zmes byliniek"
+            "label": "zmes byliniek",
+            "group": "spices"
         },
         {
             "id": "parmesan",
-            "label": "parmezán"
+            "label": "parmezán",
+            "group": "dairy"
         },
         {
             "id": "basil",
-            "label": "bazalka"
+            "label": "bazalka",
+            "group": "produce"
         },
         {
             "id": "croutons",
-            "label": "krutóny"
+            "label": "krutóny",
+            "group": "bakery"
         },
         {
             "id": "pumpkin_hokkaido",
-            "label": "tekvica Hokkaido"
+            "label": "tekvica Hokkaido",
+            "group": "produce"
         },
         {
             "id": "carrot",
-            "label": "mrkva"
+            "label": "mrkva",
+            "group": "produce"
         },
         {
             "id": "pumpkin_seed_oil",
-            "label": "tekvicový olej"
+            "label": "tekvicový olej",
+            "group": "oils_sauces"
         },
         {
             "id": "eggplant",
-            "label": "baklažán"
+            "label": "baklažán",
+            "group": "produce"
         },
         {
             "id": "zucchini",
-            "label": "cuketa"
+            "label": "cuketa",
+            "group": "produce"
         },
         {
             "id": "herbes_de_provence",
-            "label": "provensalské korenie"
+            "label": "provensalské korenie",
+            "group": "spices"
         },
         {
             "id": "beetroot",
-            "label": "cvikla"
+            "label": "cvikla",
+            "group": "produce"
         },
         {
             "id": "white_wine",
-            "label": "biele víno"
+            "label": "biele víno",
+            "group": "drinks"
         },
         {
             "id": "red_wine",
-            "label": "červené víno"
+            "label": "červené víno",
+            "group": "drinks"
         },
         {
             "id": "vegetable_broth",
-            "label": "zeleninový vývar"
+            "label": "zeleninový vývar",
+            "group": "spices"
         },
         {
             "id": "dill",
-            "label": "kôpor"
+            "label": "kôpor",
+            "group": "produce"
         },
         {
             "id": "shallot",
-            "label": "šalotka"
+            "label": "šalotka",
+            "group": "produce"
         },
         {
             "id": "saffron",
-            "label": "šafran"
+            "label": "šafran",
+            "group": "spices"
         },
         {
             "id": "sweet_potato",
-            "label": "batát"
+            "label": "batát",
+            "group": "produce"
         },
         {
             "id": "bryndza",
-            "label": "bryndza"
+            "label": "bryndza",
+            "group": "dairy"
         },
         {
             "id": "chives",
-            "label": "pažítka"
+            "label": "pažítka",
+            "group": "produce"
         },
         {
             "id": "puff_pastry",
-            "label": "lístkové cesto"
+            "label": "lístkové cesto",
+            "group": "dairy"
         },
         {
             "id": "hermelin_cheese",
-            "label": "syr Hermelín"
+            "label": "syr Hermelín",
+            "group": "dairy"
         },
         {
             "id": "spinach_baby",
-            "label": "baby špenát"
+            "label": "baby špenát",
+            "group": "produce"
         },
         {
             "id": "lemon_juice",
-            "label": "citrónová šťava"
+            "label": "citrónová šťava",
+            "group": "oils_sauces"
         },
         {
             "id": "walnuts",
-            "label": "vlašské orechy"
+            "label": "vlašské orechy",
+            "group": "baking"
         },
         {
             "id": "processed_cheese",
-            "label": "tavený syr"
+            "label": "tavený syr",
+            "group": "dairy"
         },
         {
             "id": "chicken_breast",
-            "label": "kuracie mäso"
+            "label": "kuracie mäso",
+            "group": "meat"
         },
         {
             "id": "corn",
-            "label": "kukurica"
+            "label": "kukurica",
+            "group": "canned"
         },
         {
             "id": "tortilla",
-            "label": "tortilla"
+            "label": "tortilla",
+            "group": "bakery"
         },
         {
             "id": "lettuce_mix",
-            "label": "šalátová zmes"
+            "label": "šalátová zmes",
+            "group": "produce"
         },
         {
             "id": "tartar_sauce",
-            "label": "tatárska omáčka"
+            "label": "tatárska omáčka",
+            "group": "oils_sauces"
         },
         {
             "id": "lime_zest",
-            "label": "limetková kôra"
+            "label": "limetková kôra",
+            "group": "produce"
         },
         {
             "id": "gyros_spice",
-            "label": "gyros korenie"
+            "label": "gyros korenie",
+            "group": "spices"
         },
         {
             "id": "grill_seasoning",
-            "label": "grilovacie korenie"
+            "label": "grilovacie korenie",
+            "group": "spices"
         },
         {
             "id": "pasta_wide",
-            "label": "široké rezance"
+            "label": "široké rezance",
+            "group": "pantry"
         },
         {
             "id": "tvaroh",
-            "label": "tvaroh"
+            "label": "tvaroh",
+            "group": "dairy"
         },
         {
             "id": "spaghetti",
-            "label": "špagety"
+            "label": "špagety",
+            "group": "pantry"
         },
         {
             "id": "pasta_water",
-            "label": "voda z varenia cestovín"
+            "label": "voda z varenia cestovín",
+            "group": "other"
         },
         {
             "id": "parsley_fresh",
-            "label": "čerstvá petržlenová vňať"
+            "label": "čerstvá petržlenová vňať",
+            "group": "produce"
         },
         {
             "id": "bread",
-            "label": "chlieb"
+            "label": "chlieb",
+            "group": "bakery"
         },
         {
             "id": "beef_roast",
-            "label": "hovädzia roštenka"
+            "label": "hovädzia roštenka",
+            "group": "meat"
         },
         {
             "id": "mustard",
-            "label": "horčica"
+            "label": "horčica",
+            "group": "oils_sauces"
         },
         {
             "id": "pickles",
-            "label": "kyslé uhorky"
+            "label": "kyslé uhorky",
+            "group": "canned"
         },
         {
             "id": "pickle_brine",
-            "label": "nálev z kyslých uhoriek"
+            "label": "nálev z kyslých uhoriek",
+            "group": "other"
         },
         {
             "id": "beef_broth",
-            "label": "hovädzí vývar"
-        },
-        {
-            "id": "vegetable_seasoning",
-            "label": "zeleninové korenie (Vegeta)"
+            "label": "hovädzí vývar",
+            "group": "spices"
         },
         {
             "id": "celery",
-            "label": "zeler"
+            "label": "zeler",
+            "group": "produce"
         },
         {
             "id": "parsley_root",
-            "label": "petržlen"
+            "label": "petržlen",
+            "group": "produce"
         },
         {
             "id": "rosemary",
-            "label": "rozmarín"
+            "label": "rozmarín",
+            "group": "produce"
         },
         {
             "id": "eidam",
-            "label": "syr Eidam"
+            "label": "syr Eidam",
+            "group": "dairy"
         },
         {
             "id": "pork_tenderloin",
-            "label": "bravčová panenka"
+            "label": "bravčová panenka",
+            "group": "meat"
         },
         {
             "id": "honey",
-            "label": "med"
+            "label": "med",
+            "group": "pantry"
         },
         {
             "id": "soy_sauce",
-            "label": "sójová omáčka"
+            "label": "sójová omáčka",
+            "group": "oils_sauces"
         },
         {
             "id": "vinegar_apple",
-            "label": "jablkový ocot"
+            "label": "jablkový ocot",
+            "group": "oils_sauces"
         },
         {
             "id": "cornstarch",
-            "label": "kukuričný škrob"
+            "label": "kukuričný škrob",
+            "group": "baking"
         },
         {
             "id": "pasta",
-            "label": "cestoviny"
+            "label": "cestoviny",
+            "group": "pantry"
         },
         {
             "id": "beef_ground",
-            "label": "mleté hovädzie mäso"
+            "label": "mleté hovädzie mäso",
+            "group": "meat"
         },
         {
             "id": "nutmeg",
-            "label": "muškátový oriešok"
+            "label": "muškátový oriešok",
+            "group": "spices"
         },
         {
             "id": "cumin_ground",
-            "label": "mletá rímska rasca"
+            "label": "mletá rímska rasca",
+            "group": "spices"
         },
         {
             "id": "kidney_beans",
-            "label": "červená fazuľa"
+            "label": "červená fazuľa",
+            "group": "canned"
         },
         {
             "id": "chocolate_dark",
-            "label": "horká čokoláda"
+            "label": "horká čokoláda",
+            "group": "baking"
         },
         {
             "id": "chili_pepper_fresh",
-            "label": "čerstvá chilli paprička"
+            "label": "čerstvá chilli paprička",
+            "group": "produce"
         },
         {
             "id": "coriander_fresh",
-            "label": "čerstvý koriander"
+            "label": "čerstvý koriander",
+            "group": "produce"
         },
         {
             "id": "lime",
-            "label": "limetka"
+            "label": "limetka",
+            "group": "produce"
         },
         {
             "id": "vegetable_trio",
-            "label": "zeleninové trio (hrášok, kukurica, mrkva)"
+            "label": "zeleninové trio (hrášok, kukurica, mrkva)",
+            "group": "frozen"
         },
         {
             "id": "ketchup",
-            "label": "kečup"
+            "label": "kečup",
+            "group": "oils_sauces"
         },
         {
             "id": "pork_cracklings",
-            "label": "oškvarky"
+            "label": "oškvarky",
+            "group": "meat"
         },
         {
             "id": "radish",
-            "label": "reďkovka"
+            "label": "reďkovka",
+            "group": "produce"
         },
         {
             "id": "worcestershire_sauce",
-            "label": "worčestrová omáčka"
+            "label": "worčestrová omáčka",
+            "group": "oils_sauces"
         },
         {
             "id": "sun_dried_tomatoes",
-            "label": "sušené paradajky"
+            "label": "sušené paradajky",
+            "group": "canned"
         },
         {
             "id": "ricotta",
-            "label": "ricotta"
+            "label": "ricotta",
+            "group": "dairy"
         },
         {
             "id": "basil_dried",
-            "label": "sušená bazalka"
+            "label": "sušená bazalka",
+            "group": "spices"
         },
         {
             "id": "couscous",
-            "label": "kuskus"
+            "label": "kuskus",
+            "group": "pantry"
         },
         {
             "id": "cucumber",
-            "label": "šalátová uhorka"
+            "label": "šalátová uhorka",
+            "group": "produce"
         },
         {
             "id": "feta",
-            "label": "syr feta"
+            "label": "syr feta",
+            "group": "dairy"
         },
         {
             "id": "mint_fresh",
-            "label": "čerstvá mäta"
+            "label": "čerstvá mäta",
+            "group": "produce"
         },
         {
             "id": "sausage_paris",
-            "label": "parížska saláma"
+            "label": "parížska saláma",
+            "group": "meat"
         },
         {
             "id": "peas",
-            "label": "sterilizovaný hrášok"
+            "label": "sterilizovaný hrášok",
+            "group": "canned"
         },
         {
             "id": "mayonnaise",
-            "label": "majonéza"
+            "label": "majonéza",
+            "group": "oils_sauces"
         },
         {
             "id": "yogurt_greek",
-            "label": "grécky jogurt"
+            "label": "grécky jogurt",
+            "group": "dairy"
         }
     ]
 }

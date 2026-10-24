@@ -42,7 +42,7 @@ Rules:
 - **yield:** the number of servings, as an integer. If the source gives pieces instead (e.g. "8 langoše"), estimate servings and mention it in your assumptions line.
 - **times:** whole minutes. `prep` is hands-on work, `cook` is baking, frying or cooking, `rest` is rising, cooling or marinating. `total` = prep + cook + rest. If the source doesn't give a time, do not fill it.
 - **ingredients:**
-  - `id`: **reuse an existing ingredient id if it's the same ingredient**, even when the source names it differently. Otherwise create a new id: English, snake_case, general before specific (e.g. `flour_plain`, `yeast_fresh`, `oil_cooking`). Its `label` is the Slovak name in lowercase.
+  - `id`: **reuse an existing ingredient id if it's the same ingredient**, even when the source names it differently. Otherwise create a new id: English, snake_case, general before specific (e.g. `flour_plain`, `yeast_fresh`, `oil_cooking`). Its `label` is the Slovak name in lowercase and its `group` is the id of the shop aisle where it is sold (one of the `groups` ids, e.g. `produce`, `dairy`, `spices`).
   - `amount`: a number (`0.5`, not `"1/2"`), or `null` when the source gives no amount (e.g. "oil for frying").
   - `unit`: one of the unit ids, or `null` when `amount` is null. For countable items use `pcs`. Convert cups, ounces, pounds and °F to metric (`g` / `ml`, °C). Keep `tsp` and `tbsp`.
   - `notes`: a short lowercase Slovak note such as type, temperature or "1/2 kocky", or `null`. Don't repeat the ingredient label (not "cibuľa" for `onion`). Put "podľa chuti" here instead of a unit when there's no amount.

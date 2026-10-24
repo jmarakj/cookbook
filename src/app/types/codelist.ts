@@ -1,4 +1,4 @@
-export type CodelistItem = { id: string; label: string }
+export type CodelistItem = { id: string; label: string; group?: string }
 
 export class Codelist {
   readonly options: CodelistItem[]
@@ -19,4 +19,4 @@ export class Codelist {
   }
 }
 
-export type Codelists = Record<'categories' | 'units' | 'ingredients', Codelist>
+export type Codelists = Record<'categories' | 'units' | 'groups' | 'ingredients', Codelist>

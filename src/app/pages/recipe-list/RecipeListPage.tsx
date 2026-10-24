@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import { Link, useSearchParams } from 'react-router'
 import Image from '../../components/image/Image'
+import PageHeader from '../../components/page-header/PageHeader'
 import useCodelists from '../../hooks/useCodelists'
 import useRecipes from '../../hooks/useRecipes'
 import { routes } from '../../services'
@@ -60,6 +61,7 @@ function RecipeListPage() {
   return (
     <main>
       <title>Recepty</title>
+      <PageHeader />
       {categories.length > 0 && (
         <div className="categories">
           {categories.map((c) => (
