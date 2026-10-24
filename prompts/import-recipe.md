@@ -81,4 +81,4 @@ Rules:
 
 ## Existing enums
 
-These are the ids you can use. Reuse them before creating new ones. https://github.com/jmarakj/cookbook/blob/main/public/enums.json
+These are the ids you can use. Reuse them before creating new ones. https://github.com/jmarakj/cookbook/tree/main/public/enums

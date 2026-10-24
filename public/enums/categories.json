@@ -1,0 +1,46 @@
+[
+    {
+        "id": "meat",
+        "label": "Mäsité"
+    },
+    {
+        "id": "vegetarian",
+        "label": "Bezmäsité"
+    },
+    {
+        "id": "sweet",
+        "label": "Sladké"
+    },
+    {
+        "id": "soup",
+        "label": "Polievky"
+    },
+    {
+        "id": "pasta",
+        "label": "Cestoviny"
+    },
+    {
+        "id": "risotto",
+        "label": "Rizoto"
+    },
+    {
+        "id": "baking",
+        "label": "Pečené"
+    },
+    {
+        "id": "fried",
+        "label": "Vyprážané"
+    },
+    {
+        "id": "spread",
+        "label": "Nátierky"
+    },
+    {
+        "id": "salad",
+        "label": "Šaláty"
+    },
+    {
+        "id": "miscellaneous",
+        "label": "Ostatné"
+    }
+]

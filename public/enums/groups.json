@@ -1,0 +1,50 @@
+[
+    {
+        "id": "produce",
+        "label": "Ovocie a zelenina"
+    },
+    {
+        "id": "bakery",
+        "label": "Pečivo"
+    },
+    {
+        "id": "meat",
+        "label": "Mäso a údeniny"
+    },
+    {
+        "id": "dairy",
+        "label": "Mliečne a chladené výrobky"
+    },
+    {
+        "id": "frozen",
+        "label": "Mrazené"
+    },
+    {
+        "id": "pantry",
+        "label": "Trvanlivé potraviny"
+    },
+    {
+        "id": "canned",
+        "label": "Konzervy a zaváraniny"
+    },
+    {
+        "id": "baking",
+        "label": "Múka, cukor a pečenie"
+    },
+    {
+        "id": "spices",
+        "label": "Koreniny a bujóny"
+    },
+    {
+        "id": "oils_sauces",
+        "label": "Oleje, octy a omáčky"
+    },
+    {
+        "id": "drinks",
+        "label": "Nápoje a alkohol"
+    },
+    {
+        "id": "other",
+        "label": "Ostatné"
+    }
+]

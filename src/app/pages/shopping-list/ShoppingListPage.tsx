@@ -120,6 +120,29 @@ function ShoppingListView({
         }
       />
 
+      <div className="shopping-add-bar">
+        <form
+          className="shopping-add"
+          onSubmit={(e) => {
+            e.preventDefault()
+            submit()
+          }}
+        >
+          <input
+            type="text"
+            placeholder="Pridať položku…"
+            aria-label="Nová položka"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+          />
+          {text.trim() && (
+            <button type="submit" aria-label="Pridať" title="Pridať">
+              <Check aria-hidden="true" />
+            </button>
+          )}
+        </form>
+      </div>
+
       {groups.length === 0 && <p className="shopping-empty">Zoznam je prázdny.</p>}
 
       <ul className="shopping-items">
@@ -157,27 +180,6 @@ function ShoppingListView({
           ]
         })}
       </ul>
-
-      <div className="shopping-add-bar">
-        <form
-          className="shopping-add"
-          onSubmit={(e) => {
-            e.preventDefault()
-            submit()
-          }}
-        >
-          <input
-            type="text"
-            placeholder="Pridať položku…"
-            aria-label="Nová položka"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-          />
-          <button type="submit" aria-label="Pridať" title="Pridať" disabled={!text.trim()}>
-            <Check aria-hidden="true" />
-          </button>
-        </form>
-      </div>
 
       {removing && (
         <RemoveGroupDialog group={removing} onRemove={onRemove} onClose={() => setRemoving(null)} />

@@ -1,4 +1,4 @@
-export type CodelistItem = { id: string; label: string; group?: string }
+export type CodelistItem = { id: string; label: string; aliases?: string[]; group?: string }
 
 export class Codelist {
   readonly options: CodelistItem[]

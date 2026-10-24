@@ -1,3 +1,7 @@
+:root {
+  --page-header-height: calc(var(--space-4) + env(safe-area-inset-top) + 24px + 3 * var(--space-2));
+}
+
 .page-header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;

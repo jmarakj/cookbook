@@ -9,6 +9,8 @@ export type ShoppingGroup = {
   items: ShoppingItem[]
 }
 
+const UNBUYABLE_UNITS = new Set(['tsp', 'tbsp', 'pinch', 'to_taste'])
+
 export function normalizeName(text: string) {
   return text
     .normalize('NFD')
@@ -21,7 +23,7 @@ export function normalizeName(text: string) {
 export function formatAmounts(items: ShoppingItem[], codelists: Codelists | null) {
   const sums = new Map<string | null, number>()
   for (const { amount, unit } of items) {
-    if (amount != null) sums.set(unit, (sums.get(unit) ?? 0) + amount)
+    if (amount != null && !(unit && UNBUYABLE_UNITS.has(unit))) sums.set(unit, (sums.get(unit) ?? 0) + amount)
   }
   return [...sums]
     .map(([unit, sum]) => {

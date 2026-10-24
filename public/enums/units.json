@@ -1,0 +1,38 @@
+[
+    {
+        "id": "g",
+        "label": "g"
+    },
+    {
+        "id": "kg",
+        "label": "kg"
+    },
+    {
+        "id": "ml",
+        "label": "ml"
+    },
+    {
+        "id": "l",
+        "label": "l"
+    },
+    {
+        "id": "tsp",
+        "label": "čl"
+    },
+    {
+        "id": "tbsp",
+        "label": "pl"
+    },
+    {
+        "id": "pcs",
+        "label": "ks"
+    },
+    {
+        "id": "pinch",
+        "label": "štipka"
+    },
+    {
+        "id": "to_taste",
+        "label": "podľa chuti"
+    }
+]

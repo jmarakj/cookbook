@@ -1,9 +1,10 @@
 .shopping {
-  display: flex;
-  flex-direction: column;
   max-width: 680px;
-  height: calc(100dvh - 2 * var(--space-4));
   margin: 0 auto;
+}
+
+.shopping .page-header {
+  margin-bottom: 0;
 }
 
 .shopping-clear:hover {
@@ -11,8 +12,10 @@
 }
 
 .shopping-add-bar {
-  margin-bottom: calc(-1 * var(--space-4));
-  padding: var(--space-3) 0 calc(var(--space-4) + env(safe-area-inset-bottom));
+  position: sticky;
+  top: var(--page-header-height);
+  z-index: 1;
+  padding-bottom: var(--space-2);
   background: Canvas;
 }
 
@@ -51,21 +54,13 @@
   color: var(--color-accent);
 }
 
-.shopping-add button:disabled {
-  color: var(--color-muted);
-  cursor: default;
-}
-
 .shopping-empty {
   color: var(--color-muted);
 }
 
 .shopping-items {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
   margin: 0;
-  padding: 0;
+  padding: 0 0 env(safe-area-inset-bottom);
   list-style: none;
 }
 

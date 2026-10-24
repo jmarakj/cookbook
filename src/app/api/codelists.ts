@@ -13,14 +13,19 @@ export function fetchCodelists(): Promise<Codelists> {
   return codelists
 }
 
-async function loadCodelists(): Promise<Codelists> {
-  const res = await fetch(`${base}enums.json`)
+async function loadCodelist(name: keyof Codelists): Promise<Codelist> {
+  const res = await fetch(`${base}enums/${name}.json`)
   if (!res.ok) throw new Error('Nepodarilo sa načítať číselníky')
-  const raw: Record<keyof Codelists, CodelistItem[]> = await res.json()
-  return {
-    categories: new Codelist(raw.categories),
-    units: new Codelist(raw.units),
-    groups: new Codelist(raw.groups),
-    ingredients: new Codelist(raw.ingredients),
-  }
+  const items: CodelistItem[] = await res.json()
+  return new Codelist(items)
+}
+
+async function loadCodelists(): Promise<Codelists> {
+  const [categories, units, groups, ingredients] = await Promise.all([
+    loadCodelist('categories'),
+    loadCodelist('units'),
+    loadCodelist('groups'),
+    loadCodelist('ingredients'),
+  ])
+  return { categories, units, groups, ingredients }
 }

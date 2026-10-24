@@ -8,8 +8,9 @@ const AMOUNT_LAST = new RegExp(String.raw`^(.*\S)\s+${NUMBER}\s*(\S*)$`)
 function findIngredient(name: string, codelists: Codelists | null) {
   const normalized = normalizeName(name)
   return (
-    codelists?.ingredients.options.find((o) => normalizeName(o.label) === normalized)?.id ??
-    null
+    codelists?.ingredients.options.find((o) =>
+      [o.label, ...(o.aliases ?? [])].some((n) => normalizeName(n) === normalized),
+    )?.id ?? null
   )
 }
 

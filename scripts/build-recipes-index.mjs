@@ -8,7 +8,10 @@ const publicDir = join(import.meta.dirname, '..', 'public')
 const recipesDir = join(publicDir, 'recipes')
 
 const readJson = (file) => JSON.parse(readFileSync(file, 'utf8'))
-const enums = readJson(join(publicDir, 'enums.json'))
+const enums = {
+  categories: readJson(join(publicDir, 'enums', 'categories.json')),
+  ingredients: readJson(join(publicDir, 'enums', 'ingredients.json')),
+}
 const label = (items, id) => items.find((item) => item.id === id)?.label ?? id
 // cuisine is a country code – "it" -> "Taliansko"
 const regionNames = new Intl.DisplayNames(['sk'], { type: 'region' })

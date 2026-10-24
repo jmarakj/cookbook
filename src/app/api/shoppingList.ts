@@ -9,8 +9,8 @@ export interface ShoppingListService {
 }
 
 const STORAGE_KEY = 'shopping-list'
-const CREATED_KEY = 'shopping-list-created'
-const MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000
+const EDITED_KEY = 'shopping-list-edited'
+const MAX_AGE_MS = 3 * 24 * 60 * 60 * 1000
 
 function read(): ShoppingItem[] {
   try {
@@ -22,13 +22,13 @@ function read(): ShoppingItem[] {
 
 function write(items: ShoppingItem[]) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(items))
-  if (items.length === 0) localStorage.removeItem(CREATED_KEY)
-  else if (!localStorage.getItem(CREATED_KEY)) localStorage.setItem(CREATED_KEY, String(Date.now()))
+  if (items.length === 0) localStorage.removeItem(EDITED_KEY)
+  else localStorage.setItem(EDITED_KEY, String(Date.now()))
 }
 
 function clearIfStale() {
-  const created = Number(localStorage.getItem(CREATED_KEY))
-  if (created && Date.now() - created > MAX_AGE_MS) write([])
+  const edited = Number(localStorage.getItem(EDITED_KEY))
+  if (edited && Date.now() - edited > MAX_AGE_MS) write([])
 }
 
 function newId() {
