@@ -1,6 +1,7 @@
 import { BookOpen, Check, ListX, Trash2 } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router'
+import BackLink from '../../components/back-link/BackLink'
 import Dialog from '../../components/dialog/Dialog'
 import PageHeader from '../../components/page-header/PageHeader'
 import useCodelists from '../../hooks/useCodelists'
@@ -33,7 +34,7 @@ function ShoppingListPage() {
 function ShoppingListError({ message }: { message: string }) {
   return (
     <main>
-      <PageHeader />
+      <PageHeader left={<BackLink to={routes.home.url()} />} />
       <p>{message}</p>
     </main>
   )
@@ -42,7 +43,7 @@ function ShoppingListError({ message }: { message: string }) {
 function ShoppingListLoading() {
   return (
     <main>
-      <PageHeader />
+      <PageHeader left={<BackLink to={routes.home.url()} />} />
       Načítavam…
     </main>
   )
@@ -91,6 +92,7 @@ function ShoppingListView({
     <main className="shopping">
       <title>Nákupný zoznam</title>
       <PageHeader
+        left={<BackLink to={routes.home.url()} />}
         right={
           <>
             {recipeIds.length > 0 && (

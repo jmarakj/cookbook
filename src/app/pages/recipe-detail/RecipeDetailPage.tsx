@@ -1,6 +1,6 @@
-import { ListCheck, ListPlus } from 'lucide-react'
+import { ListCheck, ListPlus, ShoppingCart } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
+import { Link, useParams } from 'react-router'
 import { setLastSeenRecipe } from '../../api'
 import BackLink from '../../components/back-link/BackLink'
 import PageHeader from '../../components/page-header/PageHeader'
@@ -9,6 +9,7 @@ import useCodelists from '../../hooks/useCodelists'
 import useRecipe from '../../hooks/useRecipe'
 import useShoppingList from '../../hooks/useShoppingList'
 import useWakeLock from '../../hooks/useWakeLock'
+import { routes } from '../../services'
 import type { Recipe } from '../../types'
 import './RecipeDetailPage.css'
 
@@ -125,16 +126,27 @@ function RecipeView({ recipe }: { recipe: Recipe }) {
       <PageHeader
         left={<BackLink />}
         right={
-          <button
-            type="button"
-            aria-label={inShoppingList ? 'Odobrať z nákupného zoznamu' : 'Pridať do nákupného zoznamu'}
-            title={inShoppingList ? 'Odobrať z nákupného zoznamu' : 'Pridať do nákupného zoznamu'}
-            aria-pressed={inShoppingList}
-            disabled={!shopping.items}
-            onClick={toggleShoppingList}
-          >
-            {inShoppingList ? <ListCheck aria-hidden="true" /> : <ListPlus aria-hidden="true" />}
-          </button>
+          <>
+            <button
+              type="button"
+              aria-label={inShoppingList ? 'Odobrať z nákupného zoznamu' : 'Pridať do nákupného zoznamu'}
+              title={inShoppingList ? 'Odobrať z nákupného zoznamu' : 'Pridať do nákupného zoznamu'}
+              aria-pressed={inShoppingList}
+              disabled={!shopping.items}
+              onClick={toggleShoppingList}
+            >
+              {inShoppingList ? <ListCheck aria-hidden="true" /> : <ListPlus aria-hidden="true" />}
+            </button>
+            {inShoppingList && (
+              <Link
+                to={routes.shoppingList.url()}
+                aria-label="Nákupný zoznam"
+                title="Nákupný zoznam"
+              >
+                <ShoppingCart aria-hidden="true" />
+              </Link>
+            )}
+          </>
         }
       />
       <div className="columns">

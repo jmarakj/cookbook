@@ -39,6 +39,7 @@
   justify-content: flex-end;
 }
 
+.page-header-right a,
 .page-header-right button {
   display: inline-flex;
   padding: var(--space-2);
@@ -48,7 +49,7 @@
   cursor: pointer;
 }
 
-.page-header-right button:last-child {
+.page-header-right > :last-child {
   margin-right: calc(-1 * var(--space-2));
 }
 
