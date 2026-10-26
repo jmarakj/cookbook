@@ -2,10 +2,16 @@
   "id": "LydDriek2Fgcpeyj9Smc",
   "name": "Palacinky",
   "image": "images/LydDriek2Fgcpeyj9Smc.jpg",
-  "category": ["sweet"],
+  "category": [
+    "sweet"
+  ],
   "cuisine": "fr",
   "yield": 4,
-  "times": {},
+  "times": {
+    "prep": 5,
+    "cook": 40,
+    "total": 45
+  },
   "ingredients": [
     {
       "id": "flour_plain",
@@ -20,7 +26,7 @@
     },
     {
       "id": "baking_powder",
-      "amount": 0.5,
+      "amount": 1,
       "unit": "tsp"
     },
     {
@@ -35,9 +41,8 @@
     },
     {
       "id": "oil_cooking",
-      "amount": 200,
-      "unit": "ml",
-      "notes": "slnečnicový"
+      "amount": 20,
+      "unit": "ml"
     },
     {
       "id": "egg",
@@ -47,7 +52,7 @@
   ],
   "steps": [
     "Vymiešajte hladké riedke cesto bez hrudiek.",
-    "Rozohrejte panvicu na palacinky. Olej je v ceste, takže panvicu stačí potrieť len pred prvou palacinkou."
+    "Rozohrejte panvicu na palacinky a pečte."
   ],
-  "notes": null
+  "notes": "Olej je v ceste, takže panvicu stačí potrieť len pred prvou palacinkou. Cesto vystačí na cca 16 palaciniek."
 }
