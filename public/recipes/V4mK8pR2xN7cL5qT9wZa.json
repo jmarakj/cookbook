@@ -1,0 +1,81 @@
+{
+    "id": "V4mK8pR2xN7cL5qT9wZa",
+    "name": "Nakladaný hermelín",
+    "image": "images/V4mK8pR2xN7cL5qT9wZa.jpg",
+    "category": [
+        "miscellaneous"
+    ],
+    "cuisine": "cz",
+    "yield": 3,
+    "times": {
+        "prep": 20,
+        "cook": 0,
+        "rest": 0,
+        "total": 20
+    },
+    "ingredients": [
+        {
+            "id": "hermelin_cheese",
+            "amount": 3,
+            "unit": "pcs",
+            "notes": null
+        },
+        {
+            "id": "oil_cooking",
+            "amount": 300,
+            "unit": "ml",
+            "notes": "slnečnicový alebo iný neutrálny"
+        },
+        {
+            "id": "onion",
+            "amount": 2,
+            "unit": "pcs",
+            "notes": "veľké"
+        },
+        {
+            "id": "bell_pepper",
+            "amount": 1,
+            "unit": "pcs",
+            "notes": "kapia"
+        },
+        {
+            "id": "garlic",
+            "amount": 3,
+            "unit": "pcs",
+            "notes": "strúčiky"
+        },
+        {
+            "id": "paprika_sweet",
+            "amount": 1,
+            "unit": "tsp",
+            "notes": null
+        },
+        {
+            "id": "black_pepper_whole",
+            "amount": 10,
+            "unit": "pcs",
+            "notes": null
+        },
+        {
+            "id": "allspice_whole",
+            "amount": 10,
+            "unit": "pcs",
+            "notes": null
+        },
+        {
+            "id": "bay_leaf",
+            "amount": 3,
+            "unit": "pcs",
+            "notes": null
+        }
+    ],
+    "steps": [
+        "Cibuľu ošúpte a nakrájajte na kolieska. Cesnak nakrájajte na tenké plátky a kapiu na menšie kúsky.",
+        "Hermelíny rozpoľte a reznú stranu posypte trochou mletej sladkej papriky a plátkami cesnaku.",
+        "Do čistého pohára s viečkom ukladajte striedavo hermelín, cibuľu, kapiu a bobkový list.",
+        "Jednotlivé vrstvy priebežne zalievajte olejom a pridávajte celé čierne korenie a nové korenie.",
+        "Skontrolujte, že všetky syry aj ostatné suroviny sú úplne ponorené v oleji a medzi nimi nezostali vzduchové bubliny.",
+        "Pohár uzavrite a uložte do chladničky. Hermelín nechajte odležať približne 7–10 dní, aby sa chute spojili."
+    ],
+    "notes": null
+}

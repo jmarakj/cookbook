@@ -2,7 +2,7 @@
   "id": "nLAqKVWyi60XDcP6XPPZ",
   "name": "Kuracie soté so zeleninovým triom",
   "image": "images/nLAqKVWyi60XDcP6XPPZ.jpg",
-  "category": ["meat"],
+  "category": ["meat", "wok"],
   "cuisine": "sk",
   "yield": 4,
   "times": {

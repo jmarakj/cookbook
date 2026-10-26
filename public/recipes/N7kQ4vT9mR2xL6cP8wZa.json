@@ -1,0 +1,92 @@
+{
+  "id": "N7kQ4vT9mR2xL6cP8wZa",
+  "name": "Kuracie Kung Pao",
+  "image": "images/N7kQ4vT9mR2xL6cP8wZa.jpg",
+  "category": ["meat", "wok"],
+  "cuisine": "cn",
+  "yield": 3,
+  "times": {
+    "prep": 15,
+    "cook": 15,
+    "rest": 60,
+    "total": 90
+  },
+  "ingredients": [
+    {
+      "id": "chicken_breast",
+      "amount": 300,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "bell_pepper",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "červená"
+    },
+    {
+      "id": "onion_red",
+      "amount": 1,
+      "unit": "pcs",
+      "notes": "malá"
+    },
+    {
+      "id": "garlic",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": "nasekané nadrobno"
+    },
+    {
+      "id": "ginger",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "peanuts",
+      "amount": 50,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "soy_sauce",
+      "amount": 2,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "water",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "sugar_white",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "cornstarch",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": null
+    },
+    {
+      "id": "oil_cooking",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": null
+    }
+  ],
+  "steps": [
+    "V miske zmiešajte sójovú omáčku, vodu, cukor a kukuričný škrob. Nakrájajte mäso a nechajte marinovať.",
+    "Na suchej panvici opražte arašidy alebo kešu orechy na strednom ohni 3–5 minút dozlatista. Pravidelne ich premiešavajte, potom ich odložte bokom.",
+    "Vo woku alebo veľkej panvici rozohrejte rastlinný olej na stredne vysokom ohni. Pridajte kuracie prsia a opekajte 5–7 minút dozlatista, kým nie sú úplne prepečené.",
+    "Pridajte červenú cibuľu a papriku nakrájané na väčšie plátky. Opekajte 3–4 minúty, aby zelenina mierne zmäkla, ale zostala chrumkavá.",
+    "Pridajte cesnak a zázvor a za stáleho miešania opekajte 30–60 sekúnd.",
+    "Prilejte pripravenú omáčku (marinádu), pridajte opražené orechy a premiešajte. Varte ďalšie 1–2 minúty, kým omáčka nezhustne a neobalí mäso aj zeleninu.",
+    "Podávajte horúce s varenou ryžou."
+  ],
+  "notes": "Arašidy možno nahradiť kešu orechmi."
+}

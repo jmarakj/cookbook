@@ -266,6 +266,11 @@
         "group": "spices"
     },
     {
+        "id": "allspice_whole",
+        "label": "celé nové korenie",
+        "group": "spices"
+    },
+    {
         "id": "bay_leaf",
         "label": "bobkový list",
         "group": "spices"
@@ -408,7 +413,7 @@
     {
         "id": "walnuts",
         "label": "vlašské orechy",
-        "group": "baking"
+        "group": "snacks"
     },
     {
         "id": "processed_cheese",
@@ -551,6 +556,26 @@
         "group": "oils_sauces"
     },
     {
+        "id": "onion_red",
+        "label": "červená cibuľa",
+        "group": "produce"
+    },
+    {
+        "id": "peanuts",
+        "label": "arašidy",
+        "group": "snacks"
+    },
+    {
+        "id": "sesame_seeds",
+        "label": "sezamové semienka",
+        "group": "pantry"
+    },
+    {
+        "id": "ginger",
+        "label": "zázvor",
+        "group": "produce"
+    },
+    {
         "id": "cornstarch",
         "label": "kukuričný škrob",
         "group": "baking"
@@ -568,6 +593,11 @@
     {
         "id": "nutmeg",
         "label": "muškátový oriešok",
+        "group": "spices"
+    },
+    {
+        "id": "caraway_whole",
+        "label": "celá rasca",
         "group": "spices"
     },
     {

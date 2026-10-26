@@ -40,6 +40,10 @@
         "label": "Oleje, octy a omáčky"
     },
     {
+        "id": "snacks",
+        "label": "Slané pochutiny"
+    },
+    {
         "id": "drinks",
         "label": "Nápoje a alkohol"
     },

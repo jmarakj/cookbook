@@ -1,0 +1,92 @@
+{
+    "id": "T7mK2pV9xR4nL8cQ5wZa",
+    "name": "Hovädzie Stir-Fry",
+    "image": "images/T7mK2pV9xR4nL8cQ5wZa.jpg",
+    "category": [
+        "meat",
+        "wok"
+    ],
+    "cuisine": "cn",
+    "yield": 4,
+    "times": {
+        "prep": 15,
+        "cook": 15,
+        "total": 30
+    },
+    "ingredients": [
+        {
+            "id": "beef_roast",
+            "amount": 400,
+            "unit": "g",
+            "notes": "alebo steak, nakrájaná na pásiky"
+        },
+        {
+            "id": "bell_pepper",
+            "amount": 1,
+            "unit": "pcs",
+            "notes": "nakrájaná na tenké pásiky"
+        },
+        {
+            "id": "carrot",
+            "amount": 2,
+            "unit": "pcs",
+            "notes": "nakrájané na tenké pásiky"
+        },
+        {
+            "id": "spring_onion",
+            "amount": 1,
+            "unit": "pcs"
+        },
+        {
+            "id": "garlic",
+            "amount": 1,
+            "unit": "pcs"
+        },
+        {
+            "id": "ginger",
+            "amount": 1,
+            "unit": "tbsp",
+            "notes": "čerstvý nastrúhaný, alebo 1/2 sušeného mletého"
+        },
+        {
+            "id": "cornstarch",
+            "amount": 1,
+            "unit": "tbsp"
+        },
+        {
+            "id": "oil_cooking",
+            "amount": 2,
+            "unit": "tbsp",
+            "notes": null
+        },
+        {
+            "id": "soy_sauce",
+            "amount": 2,
+            "unit": "tbsp",
+            "notes": null
+        },
+        {
+            "id": "sesame_seeds",
+            "amount": 2,
+            "unit": "tbsp"
+        },
+        {
+            "id": "salt",
+            "amount": null,
+            "unit": null
+        },
+        {
+            "id": "black_pepper",
+            "amount": null,
+            "unit": null
+        }
+    ],
+    "steps": [
+        "Pripravte si všetky suroviny. Hovädzie mäso osušte, nakrájajte na pásiky a obaľte v kukuričnom škrobe.",
+        "Vo veľkej panvici alebo woku rozohrejte rastlinný olej na stredne vysokom ohni. Pridajte hovädzie mäso a za stáleho miešania ho opekajte 3–4 minúty, kým nezhnedne.",
+        "Mäso odsuňte na okraj panvice. Do stredu pridajte červenú papriku, mrkvu, jarnú cibuľku, cesnak a zázvor. Opekajte približne 2 minúty.",
+        "Premiešajte mäso so zeleninou. Pridajte sójovú omáčku a sezamové semienka a za stáleho miešania varte ďalšie približne 2 minúty, kým zelenina nezmäkne.",
+        "Podávajte horúce, samostatne alebo s ryžou či rezancami."
+    ],
+    "notes": "Môžete pridať aj ďalšiu zeleninu, napríklad brokolicu, cukety, hrášok, fazuľové struky alebo huby."
+}

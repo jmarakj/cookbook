@@ -1,0 +1,68 @@
+{
+  "id": "M6pR9xK2vT7nL4cQ8wZa",
+  "name": "Pečené zemiaky s cibuľou a slaninou",
+  "image": "images/M6pR9xK2vT7nL4cQ8wZa.jpg",
+  "category": [
+    "meat",
+    "baking"
+  ],
+  "cuisine": "sk",
+  "yield": 4,
+  "times": {
+    "prep": 15,
+    "cook": 45,
+    "total": 60
+  },
+  "ingredients": [
+    {
+      "id": "potato",
+      "amount": 600,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "onion",
+      "amount": 2,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "bacon",
+      "amount": 200,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "oil_cooking",
+      "amount": 1,
+      "unit": "tbsp",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": null
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": null
+    },
+    {
+      "id": "caraway_whole",
+      "amount": 1,
+      "unit": "tsp",
+      "notes": null
+    }
+  ],
+  "steps": [
+    "Rúru predhrejte na 200 °C. Plech vyložte papierom na pečenie.",
+    "Zemiaky umyte a nakrájajte na mesiačiky. Premiešajte ich s olejom, rascou, čiernym korením a trochou soli.",
+    "Zemiaky rozložte na plech v jednej vrstve a pečte 15 minút.",
+    "Pridajte cibuľu a slaninu a premiešajte.",
+    "Pečte ďalších 25–30 minút, kým zemiaky nezmäknú a nezískajú zlatistý, chrumkavý povrch."
+  ],
+  "notes": null
+}

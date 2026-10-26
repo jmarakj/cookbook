@@ -1,0 +1,70 @@
+{
+  "id": "R8mK2vP7xL4nQ9cT6wZa",
+  "name": "Francúzske zemiaky (po našom)",
+  "image": "images/R8mK2vP7xL4nQ9cT6wZa.jpg",
+  "category": [
+    "meat",
+    "baking"
+  ],
+  "cuisine": "sk",
+  "yield": 4,
+  "times": {
+    "prep": 45,
+    "cook": 45,
+    "rest": 60,
+    "total": 150
+  },
+  "ingredients": [
+    {
+      "id": "potato",
+      "amount": 600,
+      "unit": "g",
+      "notes": null
+    },
+    {
+      "id": "sausage_smoked",
+      "amount": 300,
+      "unit": "g",
+      "notes": "nakrájaná na kolieska"
+    },
+    {
+      "id": "egg",
+      "amount": 4,
+      "unit": "pcs",
+      "notes": null
+    },
+    {
+      "id": "salt",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "black_pepper",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "paprika_sweet",
+      "amount": null,
+      "unit": null,
+      "notes": "podľa chuti"
+    },
+    {
+      "id": "sour_cream",
+      "amount": 150,
+      "unit": "g",
+      "notes": "na podávanie"
+    }
+  ],
+  "steps": [
+    "Zemiaky uvarte v šupke takmer domäkka, nechajte ich vychladnúť, ošúpte a nakrájajte.",
+    "Vajcia uvarte natvrdo, nechajte vychladnúť, ošúpte a nakrájajte.",
+    "Rúru predhrejte na 180 °C.",
+    "Zemiaky, vajcia a klobásu dajte do zapekacej misy, osoľte, okoreňte, posypte mletou paprikou a premiešajte.",
+    "Pečte približne 35–45 minút, kým vrch jemne nezhnedne a jedlo sa dobre prehreje.",
+    "Podávajte teplé s kyslou smotanou."
+  ],
+  "notes": null
+}
